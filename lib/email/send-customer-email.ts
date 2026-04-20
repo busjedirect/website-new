@@ -16,8 +16,8 @@ function buildCustomerHtml(
     .map(
       (item) =>
         `<tr>
-          <td style="padding:6px 0;border-bottom:1px solid #f0f0f0">${item.naam}</td>
-          <td style="padding:6px 0;border-bottom:1px solid #f0f0f0;text-align:right">${item.aantal}× ${item.variant}</td>
+          <td style="padding:6px 0;border-bottom:1px solid #f0f0f0">${item.label}</td>
+          <td style="padding:6px 0;border-bottom:1px solid #f0f0f0;text-align:right">${item.aantal}×</td>
         </tr>`
     )
     .join("");

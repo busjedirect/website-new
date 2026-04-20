@@ -17,8 +17,8 @@ function buildInternalHtml(
     .map(
       (item) =>
         `<tr>
-          <td style="padding:6px 0;border-bottom:1px solid #f0f0f0;font-size:14px">${item.naam}</td>
-          <td style="padding:6px 0;border-bottom:1px solid #f0f0f0;font-size:14px;text-align:right">${item.aantal}× ${item.variant}${item.opmerking ? ` · ${item.opmerking}` : ""}</td>
+          <td style="padding:6px 0;border-bottom:1px solid #f0f0f0;font-size:14px">${item.label}</td>
+          <td style="padding:6px 0;border-bottom:1px solid #f0f0f0;font-size:14px;text-align:right">${item.aantal}×${item.opmerking ? ` · ${item.opmerking}` : ""}</td>
         </tr>`
     )
     .join("");
