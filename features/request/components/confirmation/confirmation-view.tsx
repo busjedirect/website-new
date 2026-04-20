@@ -223,9 +223,13 @@ export function ConfirmationView({
 
       {/* Foutmelding */}
       {submitError && (
-        <p className="rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-600">
-          {submitError}
-        </p>
+        <div
+          role="alert"
+          className="sticky bottom-0 rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700 shadow-md"
+        >
+          <p className="font-semibold">Aanvraag niet verstuurd</p>
+          <p className="mt-0.5 text-red-600">{submitError}</p>
+        </div>
       )}
     </form>
   );

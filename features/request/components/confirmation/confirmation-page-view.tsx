@@ -13,8 +13,8 @@ export function ConfirmationPageView() {
   const [agreedToExtraTime, setAgreedToExtraTime] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const storeState = useRequestStore.getState();
-  const dataComplete = isRequestComplete(storeState);
+  // Use the hook (not getState) so this re-evaluates reactively
+  const dataComplete = useRequestStore(isRequestComplete);
   const canSubmit = agreedToTerms && dataComplete;
 
   return (
