@@ -8,8 +8,19 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "BusjeDirect",
-  description: "Snel en eenvoudig een busje regelen",
+  title: {
+    default: "BusjeDirect — Transport snel geregeld",
+    template: "%s | BusjeDirect",
+  },
+  description:
+    "Regel snel en eenvoudig transport voor banken, kasten, witgoed en meer. Kies ophaaladres en bestemming en ontdek direct de prijs. Door heel Nederland.",
+  openGraph: {
+    title: "BusjeDirect — Transport snel geregeld",
+    description:
+      "Regel snel en eenvoudig transport voor banken, kasten, witgoed en meer. Door heel Nederland.",
+    locale: "nl_NL",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
