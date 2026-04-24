@@ -4,12 +4,30 @@ import { useState } from "react";
 import Link from "next/link";
 
 const FAQS = [
-  { question: "Wat kost een busje met chauffeur?",           answer: "De prijs is afhankelijk van de afstand. We rekenen een starttarief van €65 plus €0,85 per kilometer. De minimumprijs is €75. Je ziet de exacte prijs direct nadat je je adressen hebt ingevuld." },
-  { question: "Kunnen jullie een bank vervoeren?",           answer: "Ja. We vervoeren banken, hoekbanken, slaapbanken en fauteuils. Geef bij je aanvraag aan wat voor bank het is, dan houden we daar rekening mee." },
-  { question: "Helpen jullie ook met tillen?",               answer: "Ja. Onze chauffeurs helpen bij het in- en uitladen. Bij zware of grote items zoals kasten of witgoed is het handig als er iemand aanwezig is om te assisteren." },
-  { question: "Halen jullie spullen op van Marktplaats?",    answer: "Ja. We halen regelmatig Marktplaats-aankopen op. Vul het ophaaladres van de verkoper in als vertrekpunt en je eigen adres als bestemming." },
-  { question: "Rijden jullie ook in het weekend?",           answer: "Ja, we zijn ook in het weekend beschikbaar. Bij het plannen van je aanvraag kun je zelf een datum en tijdvak kiezen dat jou uitkomt." },
-  { question: "Vervoeren jullie ook dozen of witgoed?",      answer: "Ja. We vervoeren wasmachines, drogers, koelkasten en verhuisdozen. Geef bij je aanvraag aan om welke items het gaat." },
+  {
+    question: "Wat kost transport van meubels of witgoed?",
+    answer: "De kosten zijn gebaseerd op de afstand en het aantal items dat vervoerd moet worden. Via onze prijsberekening krijg je direct een duidelijke indicatie van de kosten, zonder verrassingen achteraf.",
+  },
+  {
+    question: "Kunnen jullie een bank, kast of wasmachine vervoeren?",
+    answer: "Ja, wij vervoeren dagelijks grote en zware items zoals banken, kasten, wasmachines en koelkasten. Onze chauffeurs zorgen voor veilig laden, transport en lossen zonder beschadigingen.",
+  },
+  {
+    question: "Doen jullie ook kleine verhuizingen?",
+    answer: "Ja, wij zijn gespecialiseerd in kleine verhuizingen. Of het nu gaat om een paar meubels of een complete studio, wij regelen het snel en efficiënt.",
+  },
+  {
+    question: "Halen jullie spullen op van Marktplaats of IKEA?",
+    answer: "Ja, wij bieden een ophaalservice voor aankopen via Marktplaats, IKEA of andere winkels. Wij halen het op en bezorgen het veilig bij jou thuis.",
+  },
+  {
+    question: "Helpen jullie ook met tillen en naar binnen zetten?",
+    answer: "Onze chauffeur helpt met het inladen en uitladen van je spullen, van drempel tot drempel. Wij zijn een transportbedrijf en geen verhuisbedrijf, dus we verplaatsen geen spullen binnen woningen of naar verdiepingen.",
+  },
+  {
+    question: "In welke regio's of landen rijden jullie?",
+    answer: "Wij rijden vanuit onze standplaats in Diemen en verzorgen transport in Amsterdam, door heel Nederland en ook internationaal binnen Europa. Neem gerust contact op voor de mogelijkheden van jouw rit.",
+  },
 ];
 
 function FaqItem({ question, answer }: { question: string; answer: string }) {
