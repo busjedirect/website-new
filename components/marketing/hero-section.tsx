@@ -99,15 +99,13 @@ export function HeroSection() {
 
             {/* Headline + subtext */}
             <div className="max-w-[420px]">
-              <h1 className="text-[58px] font-extrabold leading-[1.04] tracking-tight text-[#111111]">
-                Groot vervoer,
+              <h1 className="text-[52px] font-extrabold leading-[1.04] tracking-tight text-[#111111]">
+                Groot transport,
                 <br />
                 <span className="text-[#FF7A00]">zonder gedoe.</span>
               </h1>
               <p className="mt-5 text-[17px] leading-[1.65] text-zinc-600">
-                Van bank tot wasmachine, wij brengen
-                <br />
-                het snel en veilig van A naar B.
+                Van banken en kasten tot witgoed en dozen: wij regelen jouw transport snel, veilig en zonder gedoe, door heel Nederland.
               </p>
             </div>
 
@@ -152,12 +150,12 @@ export function HeroSection() {
         {/* Headline + subtext */}
         <div className="px-5 pt-7 pb-4">
           <h1 className="text-[36px] font-extrabold leading-[1.05] tracking-tight text-[#111111]">
-            Groot vervoer,
+            Groot transport,
             <br />
             <span className="text-[#FF7A00]">zonder gedoe.</span>
           </h1>
           <p className="mt-3 text-[15px] leading-[1.65] text-zinc-500">
-            Van bank tot wasmachine, wij brengen het snel en veilig van A naar B.
+            Van banken en kasten tot witgoed en dozen: wij regelen jouw transport snel, veilig en zonder gedoe, door heel Nederland.
           </p>
         </div>
 
