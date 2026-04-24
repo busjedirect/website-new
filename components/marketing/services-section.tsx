@@ -1,64 +1,62 @@
 import Link from "next/link";
-import Image from "next/image";
 
 // ---------------------------------------------------------------------------
 // Icons
 // ---------------------------------------------------------------------------
 
-function PickupIcon() {
+function SofaIcon() {
   return (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
-      <polyline points="9 22 9 12 15 12 15 22" />
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M3 10.5A2.5 2.5 0 015.5 8h13A2.5 2.5 0 0121 10.5V14H3v-3.5z" />
+      <path d="M3 14v2a1 1 0 001 1h16a1 1 0 001-1v-2" />
+      <path d="M5 8V6a1 1 0 011-1h12a1 1 0 011 1v2" />
+      <path d="M5 17v1M19 17v1" />
     </svg>
   );
 }
 
-function MoveIcon() {
+function BoxIcon() {
   return (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" />
+      <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+      <line x1="12" y1="22.08" x2="12" y2="12" />
+    </svg>
+  );
+}
+
+function TrolleyIcon() {
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+      <line x1="3" y1="6" x2="21" y2="6" />
+      <path d="M16 10a4 4 0 01-8 0" />
+    </svg>
+  );
+}
+
+function BriefcaseIcon() {
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <rect x="2" y="7" width="20" height="14" rx="2" />
       <path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2" />
-      <line x1="12" y1="12" x2="12" y2="16" />
-      <line x1="10" y1="14" x2="14" y2="14" />
     </svg>
   );
 }
 
-function HammerIcon() {
+function GlobeIcon() {
   return (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <path d="M15 5l4 4-9.5 9.5-4-4L15 5z" />
-      <path d="M3 21l4.5-4.5" strokeWidth="2" />
-    </svg>
-  );
-}
-
-function VanIcon() {
-  return (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <rect x="1" y="7" width="15" height="11" rx="1.5" />
-      <path d="M16 10h4l3 4v4h-7V10z" />
-      <circle cx="5.5" cy="18.5" r="1.5" />
-      <circle cx="18.5" cy="18.5" r="1.5" />
-    </svg>
-  );
-}
-
-function VanIconOrange() {
-  return (
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <rect x="1" y="7" width="15" height="11" rx="1.5" />
-      <path d="M16 10h4l3 4v4h-7V10z" />
-      <circle cx="5.5" cy="18.5" r="1.5" />
-      <circle cx="18.5" cy="18.5" r="1.5" />
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <circle cx="12" cy="12" r="10" />
+      <line x1="2" y1="12" x2="22" y2="12" />
+      <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
     </svg>
   );
 }
 
 function ArrowRight() {
   return (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <line x1="5" y1="12" x2="19" y2="12" />
       <polyline points="12 5 19 12 12 19" />
     </svg>
@@ -66,56 +64,70 @@ function ArrowRight() {
 }
 
 // ---------------------------------------------------------------------------
-// Service list items
+// Data
 // ---------------------------------------------------------------------------
 
 const SERVICES = [
   {
-    icon: <PickupIcon />,
+    icon: <SofaIcon />,
+    title: "Meubeltransport\n(incl. witgoed)",
+    description: "Van banken en kasten tot witgoed. Wij vervoeren jouw spullen met zorg.",
+    href: "/diensten",
+  },
+  {
+    icon: <BoxIcon />,
+    title: "Kleine verhuizingen",
+    description: "Een paar items of een complete inboedel. Wij helpen je snel en efficiënt.",
+    href: "/diensten",
+  },
+  {
+    icon: <TrolleyIcon />,
     title: "Ophaalservice",
-    description: "Wij halen het voor je op.",
+    description: "Iets gekocht of op te halen? Wij halen het op en brengen het waar jij wilt.",
     href: "/diensten",
   },
   {
-    icon: <MoveIcon />,
-    title: "Kleine verhuizing",
-    description: "Wij helpen je verder.",
+    icon: <BriefcaseIcon />,
+    title: "Zakelijk transport",
+    description: "Betrouwbaar transport voor bedrijven. Snel, discreet en professioneel.",
     href: "/diensten",
   },
   {
-    icon: <HammerIcon />,
-    title: "Veilingtransport",
-    description: "Veilig en zorgvuldig transport.",
-    href: "/diensten",
-  },
-  {
-    icon: <VanIcon />,
-    title: "Busje met chauffeur",
-    description: "Inclusief chauffeur die helpt.",
+    icon: <GlobeIcon />,
+    title: "Internationale\ntransporten",
+    description: "Wij verzorgen transporten naar en vanuit heel Europa. Efficiënt en betrouwbaar.",
     href: "/diensten",
   },
 ];
 
-function ServiceRow({ icon, title, description, href }: typeof SERVICES[0]) {
+// ---------------------------------------------------------------------------
+// Card
+// ---------------------------------------------------------------------------
+
+function ServiceCard({ icon, title, description, href }: (typeof SERVICES)[0]) {
   return (
     <Link
       href={href}
-      className="group flex items-center gap-4 rounded-xl px-4 py-3.5 transition hover:bg-zinc-50"
+      className="group flex flex-col rounded-2xl border border-zinc-100 bg-white p-6 shadow-[0_1px_4px_rgba(0,0,0,0.05)] transition duration-200 hover:-translate-y-1 hover:shadow-[0_6px_20px_rgba(0,0,0,0.08)]"
     >
       {/* Icon circle */}
-      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#FFF3E8]">
+      <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#FFF3E8]">
         {icon}
       </div>
 
-      {/* Text */}
-      <div className="flex-1 min-w-0">
-        <p className="text-[14px] font-bold text-[#111111]">{title}</p>
-        <p className="text-[12.5px] text-zinc-400">{description}</p>
-      </div>
+      {/* Title */}
+      <h3 className="mt-5 text-[15px] font-bold leading-snug text-[#111111] whitespace-pre-line">
+        {title}
+      </h3>
 
-      {/* Arrow */}
-      <span className="shrink-0 text-zinc-300 transition group-hover:text-zinc-500">
-        <ArrowRight />
+      {/* Description */}
+      <p className="mt-2 flex-1 text-[13px] leading-[1.65] text-zinc-400">
+        {description}
+      </p>
+
+      {/* Meer info link */}
+      <span className="mt-4 inline-flex items-center gap-1 text-[12.5px] font-semibold text-[#FF7A00] transition-all group-hover:gap-2">
+        Meer info <ArrowRight />
       </span>
     </Link>
   );
@@ -127,79 +139,40 @@ function ServiceRow({ icon, title, description, href }: typeof SERVICES[0]) {
 
 export function ServicesSection() {
   return (
-    <section className="bg-white py-14 sm:py-20">
+    <section className="bg-white py-16 sm:py-24">
       <div className="mx-auto max-w-[1200px] px-8">
 
-        {/* ── Desktop: two columns ── */}
-        <div className="flex flex-col gap-10 lg:flex-row lg:items-stretch lg:gap-8">
+        {/* Header — centered */}
+        <div className="mb-12 text-center">
+          <p className="mb-4 text-[11px] font-bold uppercase tracking-widest text-[#FF7A00]">
+            Onze diensten
+          </p>
+          <h2 className="text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#111111] sm:text-[42px]">
+            Transport geregeld.<br />
+            Snel, veilig en betrouwbaar.
+          </h2>
+          <p className="mx-auto mt-4 max-w-[480px] text-[15px] leading-[1.7] text-zinc-400">
+            Van meubels tot internationale zendingen.<br className="hidden sm:block" />
+            Wij leveren maatwerk voor elke transportbehoefte.
+          </p>
+        </div>
 
-          {/* LEFT — title + service list */}
-          <div className="flex flex-col lg:w-[340px] lg:shrink-0">
-            <h2 className="text-[32px] font-extrabold tracking-tight text-[#111111]">
-              Onze diensten
-            </h2>
-            <p className="mt-3 text-[15px] leading-[1.65] text-zinc-500">
-              Van meubels verhuizen tot veilig transport.
-              Wij regelen het voor je.
-            </p>
+        {/* Cards — 5 col desktop, 2 col tablet, 1 col mobile */}
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-5">
+          {SERVICES.map((s) => (
+            <ServiceCard key={s.title} {...s} />
+          ))}
+        </div>
 
-            {/* Service rows */}
-            <div className="mt-6 flex flex-col divide-y divide-zinc-100">
-              {SERVICES.map((s) => (
-                <ServiceRow key={s.title} {...s} />
-              ))}
-            </div>
-
-            <Link
-              href="/diensten"
-              className="mt-6 inline-flex items-center gap-1.5 px-4 text-[13.5px] font-semibold text-[#FF7A00] transition hover:text-[#E86E00]"
-            >
-              Meer over onze diensten
-              <ArrowRight />
-            </Link>
-          </div>
-
-          {/* RIGHT — feature card */}
-          <div className="flex-1">
-            <div
-              className="relative flex h-full min-h-[360px] flex-col justify-center overflow-hidden rounded-3xl p-6 sm:min-h-[460px] sm:p-8 lg:pl-16"
-              style={{ backgroundColor: "#FDF0E4" }}
-            >
-              {/* Icon circle */}
-              <div className="relative z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white shadow-sm">
-                <VanIconOrange />
-              </div>
-
-              {/* Image — anchored bottom-right, full height, clipped */}
-              <Image
-                src="/Onze_diensten.png"
-                alt="Meubeltransport"
-                width={800}
-                height={640}
-                className="absolute bottom-0 right-0 z-0 h-[85%] w-auto lg:right-[-5%] lg:h-[115%]"
-              />
-
-              {/* Text — left side, responsive max-width */}
-              <div className="relative z-10 mt-5 max-w-[55%] sm:max-w-[52%]">
-                <h3 className="text-[22px] font-extrabold tracking-tight text-[#111111] sm:text-[26px]">
-                  Meubeltransport
-                </h3>
-                <p className="mt-2 text-[13.5px] leading-[1.65] text-zinc-500">
-                  Banken, kasten, tafels en meer.
-                  Wij vervoeren het zorgvuldig.
-                </p>
-                <Link
-                  href="/diensten"
-                  className="mt-5 inline-flex items-center gap-2 rounded-xl bg-[#FF7A00] px-5 py-2.5 text-[13.5px] font-bold text-white transition hover:bg-[#E86E00] active:scale-[0.98]"
-                >
-                  Meer info
-                  <ArrowRight />
-                </Link>
-              </div>
-
-            </div>
-          </div>
-
+        {/* CTA — centered below cards */}
+        <div className="mt-10 text-center">
+          <Link
+            href="/diensten"
+            className="inline-flex items-center gap-2 text-[14px] font-semibold text-[#FF7A00] transition hover:text-[#E86E00]"
+          >
+            Meer over onze diensten
+            <ArrowRight />
+          </Link>
         </div>
 
       </div>
