@@ -52,7 +52,7 @@ function OverviewTrigger({ onOpen, price }: OverviewTriggerProps) {
         {price ? (
           <span className="text-base font-bold text-zinc-900">
             {price}{" "}
-            <span className="text-xs font-normal text-zinc-400">incl. btw</span>
+            <span className="text-xs font-normal text-zinc-400">excl. btw</span>
           </span>
         ) : (
           <span className="text-sm text-zinc-400">Jouw aanvraag</span>

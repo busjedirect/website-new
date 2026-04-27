@@ -34,25 +34,25 @@ const CATEGORIES = [
     label: "Banken",
     description: "Wij vervoeren banken veilig en zonder beschadigingen.",
     image: "/Wat Vervoeren Wij/Banken.png",
-    href: "/diensten",
+    href: "/vervoeren/bank-vervoeren",
   },
   {
     label: "Kasten",
     description: "Van kleine kasten tot grote garderobekasten, wij regelen het.",
     image: "/Wat Vervoeren Wij/Kasten.png",
-    href: "/diensten",
+    href: "/vervoeren/kast-vervoeren",
   },
   {
     label: "Witgoed",
     description: "Wasmachines, koelkasten, drogers en meer. Wij vervoeren het zorgvuldig.",
     image: "/Wat Vervoeren Wij/Witgoed.png",
-    href: "/diensten",
+    href: "/vervoeren/witgoed-vervoeren",
   },
   {
     label: "Boxsprings & bedden",
     description: "Snel en veilig transport van bedden en boxsprings.",
     image: "/Wat Vervoeren Wij/Matrassen.png",
-    href: "/diensten",
+    href: "/vervoeren/bed-vervoeren",
   },
 ];
 
@@ -127,7 +127,7 @@ export function WhatWeTransportSection() {
               Wij vervoeren dagelijks meubels, witgoed en andere grote spullen voor particulieren en kleine verhuizingen. Van banken en kasten tot wasmachines en verhuisdozen. Ook voor complete inboedels kun je bij ons terecht.
             </p>
             <Link
-              href="/diensten"
+              href="/vervoeren"
               className="mt-6 inline-flex items-center gap-1.5 text-[14px] font-semibold text-[#FF7A00] transition hover:text-[#E86E00]"
             >
               Bekijk alles wat we vervoeren
@@ -158,7 +158,7 @@ export function WhatWeTransportSection() {
             </div>
           </div>
           <Link
-            href="/diensten"
+            href="/vervoeren"
             className="inline-flex shrink-0 items-center gap-2 rounded-xl bg-[#FF7A00] px-6 py-3 text-[14px] font-bold text-white transition hover:bg-[#E86E00] active:scale-[0.98] sm:w-auto w-full justify-center"
           >
             Bekijk alles wat we vervoeren

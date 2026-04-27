@@ -19,7 +19,7 @@ export function FinalCtaSection() {
           {/* CTA */}
           <div className="w-full shrink-0 lg:w-auto">
             <Link
-              href="/aanvraag/items"
+              href="/"
               className="flex w-full items-center justify-center rounded-xl bg-white px-10 py-4 text-base font-semibold text-orange-600 transition hover:bg-orange-50 active:scale-[0.98] lg:w-auto"
             >
               Start aanvraag

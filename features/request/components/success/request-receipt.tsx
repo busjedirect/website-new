@@ -104,7 +104,7 @@ export function RequestReceipt({
           <div className="flex items-center justify-between pt-3">
             <div className="flex flex-col">
               <span className="text-sm font-semibold text-gray-900">Totaalprijs</span>
-              <span className="text-xs text-gray-400">incl. btw</span>
+              <span className="text-xs text-gray-400">excl. btw</span>
             </div>
             <span className="text-lg font-bold text-gray-900">
               {formatPrice(priceCents)}

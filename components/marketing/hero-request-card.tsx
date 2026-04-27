@@ -9,7 +9,7 @@ export function HeroRequestCard() {
       </h1>
       <p className="mt-3 text-base leading-relaxed text-zinc-500">
         Drempel tot drempel transport voor particulieren en bedrijven.
-        Van pakketten en meubels tot verhuizingen — snel geregeld.
+        Van pakketten en meubels tot verhuizingen, snel geregeld.
       </p>
       <div className="mt-8 rounded-xl border border-zinc-200 bg-white p-6">
         <AddressHeroForm />

@@ -113,7 +113,7 @@ export function RequestSummary({ title = "Overzicht", cta }: RequestSummaryProps
           <div>
             <p className="text-sm font-semibold text-zinc-900">Totaalprijs</p>
             {priceCents !== null && (
-              <p className="text-xs text-zinc-400">incl. btw</p>
+              <p className="text-xs text-zinc-400">excl. btw</p>
             )}
           </div>
           <p className="text-xl font-bold text-zinc-900">

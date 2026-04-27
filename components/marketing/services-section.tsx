@@ -72,31 +72,31 @@ const SERVICES = [
     icon: <SofaIcon />,
     title: "Meubeltransport\n(incl. witgoed)",
     description: "Van banken en kasten tot witgoed. Wij vervoeren jouw spullen met zorg.",
-    href: "/diensten",
+    href: "/diensten/meubeltransport",
   },
   {
     icon: <BoxIcon />,
     title: "Kleine verhuizingen",
     description: "Een paar items of een complete inboedel. Wij helpen je snel en efficiënt.",
-    href: "/diensten",
+    href: "/diensten/kleine-verhuizing",
   },
   {
     icon: <TrolleyIcon />,
     title: "Ophaalservice",
     description: "Iets gekocht of op te halen? Wij halen het op en brengen het waar jij wilt.",
-    href: "/diensten",
+    href: "/diensten/ophaalservice",
   },
   {
     icon: <BriefcaseIcon />,
     title: "Zakelijk transport",
     description: "Betrouwbaar transport voor bedrijven. Snel, discreet en professioneel.",
-    href: "/diensten",
+    href: "/diensten/zakelijk-transport",
   },
   {
     icon: <GlobeIcon />,
     title: "Internationale\ntransporten",
     description: "Wij verzorgen transporten naar en vanuit heel Europa. Efficiënt en betrouwbaar.",
-    href: "/diensten",
+    href: "/diensten/internationaal-transport",
   },
 ];
 

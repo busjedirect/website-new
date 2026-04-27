@@ -4,12 +4,8 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-const NAV_LINKS = [
-  { href: "/diensten",    label: "Diensten" },
-  { href: "/diensten",    label: "Veel vervoerd" },
-  { href: "/#hoe-het-werkt", label: "Hoe het werkt" },
-  { href: "/contact",     label: "Over ons" },
-  { href: "/faq",         label: "FAQ" },
+const NAV_LINKS: { href: string; label: string }[] = [
+  // Nieuwe nav items komen hier
 ];
 
 // Phone icon
@@ -76,8 +72,8 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        {/* ---- Desktop right: phone + CTA ---- */}
-        <div className="hidden items-center gap-5 lg:flex">
+        {/* ---- Desktop right: phone number ---- */}
+        <div className="hidden items-center lg:flex">
           <a
             href="tel:0850606126"
             className="flex items-center gap-2 text-[13.5px] font-semibold text-zinc-800 transition hover:text-zinc-600"
@@ -85,12 +81,6 @@ export function SiteHeader() {
             <PhoneIcon />
             085 06 06 126
           </a>
-          <Link
-            href="/aanvraag/items"
-            className="rounded-lg bg-[#FF7A00] px-5 py-2.5 text-[13.5px] font-bold text-white transition hover:bg-[#E86E00] active:scale-[0.98]"
-          >
-            Bereken prijs
-          </Link>
         </div>
 
         {/* ---- Mobile right: phone icon + hamburger ---- */}
@@ -130,13 +120,13 @@ export function SiteHeader() {
               </Link>
             ))}
           </nav>
-          <Link
-            href="/aanvraag/items"
-            onClick={() => setMobileOpen(false)}
-            className="mt-4 flex w-full items-center justify-center rounded-xl bg-[#FF7A00] py-3 text-sm font-bold text-white transition hover:bg-[#E86E00]"
+          <a
+            href="tel:0850606126"
+            className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl border border-zinc-200 py-3 text-sm font-semibold text-zinc-800 transition hover:bg-zinc-50"
           >
-            Bereken prijs
-          </Link>
+            <PhoneIcon />
+            085 06 06 126
+          </a>
         </div>
       )}
     </header>

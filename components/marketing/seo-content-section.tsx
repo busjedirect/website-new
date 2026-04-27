@@ -87,23 +87,23 @@ const USPS = [
 ];
 
 const POPULAR_SERVICES = [
-  { label: "Bank vervoeren",            href: "/diensten/bank-vervoeren",            icon: (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><path d="M3 10h18M3 14h18M5 6h14a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2z"/></svg>
+  { label: "Bank vervoeren",        href: "/vervoeren/bank-vervoeren",        icon: (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><path d="M3 10.5A2.5 2.5 0 015.5 8h13A2.5 2.5 0 0121 10.5V14H3v-3.5z"/><path d="M3 14v2a1 1 0 001 1h16a1 1 0 001-1v-2"/></svg>
   )},
-  { label: "Wasmachine vervoeren",      href: "/diensten/wasmachine-vervoeren",      icon: (
+  { label: "Wasmachine vervoeren",  href: "/vervoeren/wasmachine-vervoeren",  icon: (
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="2"/><circle cx="12" cy="13" r="4"/><line x1="6" y1="6" x2="6.01" y2="6"/></svg>
   )},
-  { label: "Marktplaats ophaalservice", href: "/diensten/marktplaats-ophaalservice", icon: (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+  { label: "Kast vervoeren",        href: "/vervoeren/kast-vervoeren",        icon: (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="2"/><line x1="12" y1="2" x2="12" y2="22"/></svg>
   )},
-  { label: "Kleine verhuizing",         href: "/diensten/kleine-verhuizing",         icon: (
+  { label: "Kleine verhuizing",     href: "/diensten/kleine-verhuizing",      icon: (
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
   )},
-  { label: "Meubeltransport",           href: "/diensten/meubeltransport",           icon: (
+  { label: "Meubeltransport",       href: "/diensten/meubeltransport",        icon: (
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><rect x="1" y="7" width="15" height="11" rx="1.5"/><path d="M16 10h4l3 4v4h-7V10z"/><circle cx="5.5" cy="18.5" r="1.5"/><circle cx="18.5" cy="18.5" r="1.5"/></svg>
   )},
-  { label: "IKEA ophaalservice",        href: "/diensten/ikea-ophaalservice",        icon: (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+  { label: "Witgoed vervoeren",     href: "/vervoeren/witgoed-vervoeren",     icon: (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="4" y1="10" x2="20" y2="10"/></svg>
   )},
 ];
 

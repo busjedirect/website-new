@@ -12,7 +12,7 @@ export function PriceBanner() {
       <p className="text-sm text-zinc-500">Totaalprijs</p>
       <div className="flex items-baseline gap-2">
         <p className="text-2xl font-bold text-zinc-900">{price}</p>
-        <p className="text-xs text-zinc-400">incl. btw</p>
+        <p className="text-xs text-zinc-400">excl. btw</p>
       </div>
     </div>
   );

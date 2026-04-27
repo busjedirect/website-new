@@ -1,4 +1,9 @@
 import Link from "next/link";
+import { LOCATIES } from "@/lib/locaties";
+
+// ---------------------------------------------------------------------------
+// Icons
+// ---------------------------------------------------------------------------
 
 function PhoneIcon() {
   return (
@@ -28,119 +33,153 @@ function ClockIcon() {
 
 function StarIcon() {
   return (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="#FF7A00" stroke="none" aria-hidden="true">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="#FF7A00" stroke="none" aria-hidden="true">
       <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
     </svg>
   );
 }
 
+// ---------------------------------------------------------------------------
+// Data
+// ---------------------------------------------------------------------------
+
+const DIENSTEN = [
+  { label: "Meubeltransport", href: "/diensten/meubeltransport" },
+  { label: "Kleine verhuizing", href: "/diensten/kleine-verhuizing" },
+  { label: "Ophaalservice", href: "/diensten/ophaalservice" },
+  { label: "Zakelijk transport", href: "/diensten/zakelijk-transport" },
+  { label: "Internationaal transport", href: "/diensten/internationaal-transport" },
+];
+
+const VERVOEREN = [
+  { label: "Bank vervoeren", href: "/vervoeren/bank-vervoeren" },
+  { label: "Kast vervoeren", href: "/vervoeren/kast-vervoeren" },
+  { label: "Wasmachine vervoeren", href: "/vervoeren/wasmachine-vervoeren" },
+  { label: "Witgoed vervoeren", href: "/vervoeren/witgoed-vervoeren" },
+  { label: "Inboedel vervoeren", href: "/vervoeren/inboedel-vervoeren" },
+];
+
+// ---------------------------------------------------------------------------
+// Footer
+// ---------------------------------------------------------------------------
+
 export function SiteFooter() {
   return (
     <footer className="bg-[#111111] text-white">
-      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-[1200px] px-6 py-12 sm:px-8">
 
-        {/* Main grid */}
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-6">
+        {/* ── Top section: brand + 3 link columns ── */}
+        <div className="grid grid-cols-2 gap-x-8 gap-y-10 sm:grid-cols-4 lg:grid-cols-[2fr_1fr_1fr_1fr]">
 
-          {/* Brand col — 2 wide */}
-          <div className="lg:col-span-2">
-            <Link href="/" className="mb-3 flex items-center text-[17px] font-extrabold">
+          {/* Brand — full width on mobile, 2fr on desktop */}
+          <div className="col-span-2 sm:col-span-4 lg:col-span-1">
+            <Link href="/" className="mb-3 inline-flex items-center text-[17px] font-extrabold">
               <span className="text-white">Busje</span>
               <span className="text-[#FF7A00]">Direct</span>
             </Link>
-            <p className="mb-4 text-[12px] leading-relaxed text-zinc-400">
+            <p className="mb-5 text-[12px] leading-relaxed text-zinc-400">
               Groot vervoer, zonder gedoe.<br />
-              Snel, veilig en transparant<br />
-              van A naar B.
+              Snel, veilig en transparant van A naar B.
             </p>
-            {/* Social icons */}
-            <div className="flex gap-2">
-              {["f", "in", "G"].map((s) => (
-                <div key={s} className="flex h-7 w-7 items-center justify-center rounded-full border border-zinc-700 text-[11px] font-bold text-zinc-400">
-                  {s}
+            {/* Contact compact */}
+            <ul className="mb-5 flex flex-col gap-2">
+              <li>
+                <a href="tel:0850606126" className="flex items-center gap-2 text-[12px] text-zinc-400 transition hover:text-white">
+                  <PhoneIcon /> 085 06 06 126
+                </a>
+              </li>
+              <li>
+                <a href="mailto:info@busjedirect.nl" className="flex items-center gap-2 text-[12px] text-zinc-400 transition hover:text-white">
+                  <MailIcon /> info@busjedirect.nl
+                </a>
+              </li>
+              <li>
+                <span className="flex items-center gap-2 text-[12px] text-zinc-400">
+                  <ClockIcon /> Ma – Za 08:00 – 22:00
+                </span>
+              </li>
+            </ul>
+            {/* Google rating */}
+            <div className="inline-flex items-center gap-3 rounded-xl border border-zinc-700 bg-zinc-800/60 px-4 py-3">
+              <div>
+                <div className="flex items-center gap-1.5">
+                  <span className="text-[11px] font-bold text-white">G</span>
+                  <span className="text-[14px] font-extrabold text-white">4.8 / 5</span>
                 </div>
-              ))}
+                <div className="mt-1 flex gap-0.5">
+                  {Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} />)}
+                </div>
+              </div>
+              <p className="text-[11px] leading-snug text-zinc-400">250+<br />reviews</p>
             </div>
           </div>
 
           {/* Diensten */}
           <div>
-            <p className="mb-3 text-[12px] font-bold uppercase tracking-wider text-zinc-400">Diensten</p>
-            <ul className="flex flex-col gap-2">
-              {["Meubeltransport", "Ophaalservice", "Kleine verhuizing", "Veilingtransport", "Busje met chauffeur"].map((s) => (
-                <li key={s}>
-                  <Link href="/diensten" className="text-[12px] text-zinc-400 hover:text-white">{s}</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Over ons */}
-          <div>
-            <p className="mb-3 text-[12px] font-bold uppercase tracking-wider text-zinc-400">Over ons</p>
-            <ul className="flex flex-col gap-2">
-              {["Hoe het werkt", "Over ons", "Veelgestelde vragen", "Contact"].map((s) => (
-                <li key={s}>
-                  <Link href="/contact" className="text-[12px] text-zinc-400 hover:text-white">{s}</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Klantenservice */}
-          <div>
-            <p className="mb-3 text-[12px] font-bold uppercase tracking-wider text-zinc-400">Klantenservice</p>
+            <p className="mb-4 text-[11px] font-bold uppercase tracking-wider text-zinc-500">Diensten</p>
             <ul className="flex flex-col gap-2.5">
+              {DIENSTEN.map((s) => (
+                <li key={s.label}>
+                  <Link href={s.href} className="text-[12.5px] text-zinc-400 transition hover:text-white">
+                    {s.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Vervoeren */}
+          <div>
+            <p className="mb-4 text-[11px] font-bold uppercase tracking-wider text-zinc-500">Vervoeren</p>
+            <ul className="flex flex-col gap-2.5">
+              {VERVOEREN.map((s) => (
+                <li key={s.label}>
+                  <Link href={s.href} className="text-[12.5px] text-zinc-400 transition hover:text-white">
+                    {s.label}
+                  </Link>
+                </li>
+              ))}
               <li>
-                <a href="tel:0850606126" className="flex items-center gap-1.5 text-[12px] text-zinc-400 hover:text-white">
-                  <PhoneIcon /> 085 06 06 126
-                </a>
-              </li>
-              <li>
-                <a href="mailto:info@busjedirect.nl" className="flex items-center gap-1.5 text-[12px] text-zinc-400 hover:text-white">
-                  <MailIcon /> info@busjedirect.nl
-                </a>
-              </li>
-              <li>
-                <span className="flex items-center gap-1.5 text-[12px] text-zinc-400">
-                  <ClockIcon /> Ma - Za 08:00 - 22:00
-                </span>
+                <Link href="/vervoeren" className="text-[12.5px] text-[#FF7A00] transition hover:text-[#E86E00]">
+                  Bekijk alle items →
+                </Link>
               </li>
             </ul>
           </div>
 
-          {/* Werkgebied + Google rating */}
+          {/* Locaties — 2-column pill grid */}
           <div>
-            <p className="mb-3 text-[12px] font-bold uppercase tracking-wider text-zinc-400">Werkgebied</p>
-            <ul className="mb-5 flex flex-col gap-2">
-              {["Door heel Nederland", "Alle steden en regio's"].map((s) => (
-                <li key={s}>
-                  <span className="text-[12px] text-zinc-400">{s}</span>
-                </li>
+            <p className="mb-4 text-[11px] font-bold uppercase tracking-wider text-zinc-500">Locaties</p>
+            <div className="grid grid-cols-2 gap-x-3 gap-y-2">
+              {LOCATIES.map((l) => (
+                <Link
+                  key={l.slug}
+                  href={`/locaties/${l.slug}`}
+                  className="text-[12.5px] text-zinc-400 transition hover:text-white"
+                >
+                  {l.name}
+                </Link>
               ))}
-            </ul>
-
-            {/* Google rating block */}
-            <div className="rounded-xl border border-zinc-700 bg-zinc-800 p-3">
-              <div className="mb-1 flex items-center gap-1.5">
-                <span className="text-[11px] font-bold text-white">G</span>
-                <span className="text-[13px] font-extrabold text-white">4.8 / 5</span>
-              </div>
-              <div className="mb-1 flex gap-0.5">
-                {Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} />)}
-              </div>
-              <p className="text-[11px] text-zinc-400">Gebaseerd op 250+ reviews</p>
             </div>
+            <Link href="/locaties" className="mt-3 inline-block text-[12.5px] text-[#FF7A00] transition hover:text-[#E86E00]">
+              Alle locaties →
+            </Link>
           </div>
 
         </div>
 
-        {/* Bottom bar */}
-        <div className="mt-8 flex flex-col items-start justify-between gap-3 border-t border-zinc-800 pt-6 sm:flex-row sm:items-center">
-          <p className="text-[11px] text-zinc-500">© 2024 BusjeDirect.nl</p>
-          <div className="flex gap-4">
-            {["Algemene voorwaarden", "Privacyverklaring", "Cookieverklaring"].map((l) => (
-              <Link key={l} href="/contact" className="text-[11px] text-zinc-500 hover:text-zinc-300">{l}</Link>
+        {/* ── Bottom bar ── */}
+        <div className="mt-10 flex flex-col items-start justify-between gap-3 border-t border-zinc-800 pt-6 sm:flex-row sm:items-center">
+          <p className="text-[11px] text-zinc-500">© {new Date().getFullYear()} BusjeDirect.nl · Gevestigd in Diemen</p>
+          <div className="flex flex-wrap gap-4">
+            {[
+              { label: "Algemene voorwaarden", href: "/contact" },
+              { label: "Privacyverklaring", href: "/contact" },
+              { label: "Cookieverklaring", href: "/contact" },
+            ].map((l) => (
+              <Link key={l.label} href={l.href} className="text-[11px] text-zinc-500 transition hover:text-zinc-300">
+                {l.label}
+              </Link>
             ))}
           </div>
         </div>

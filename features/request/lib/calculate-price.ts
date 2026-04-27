@@ -25,13 +25,13 @@ export interface CalculatePriceResult {
 // ---------------------------------------------------------------------------
 
 /**
- * Berekent de totaalprijs incl. btw op basis van de operationele afstand.
+ * Berekent de totaalprijs excl. btw op basis van de operationele afstand.
  *
  * Formule:
  *   prijs = starttarief + (totale operationele km × kilometerprijs)
  *   minimumprijs altijd van toepassing
  *
- * Alle tarieven zijn incl. btw — geen btw-splitsing in de UI.
+ * Alle tarieven zijn excl. btw.
  */
 export function calculatePrice(
   input: CalculatePriceInput
