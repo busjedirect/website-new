@@ -20,7 +20,19 @@ export const metadata: Metadata = {
 // Data
 // ---------------------------------------------------------------------------
 
-const ALL_ITEMS = [
+interface VervoerItem {
+  label: string;
+  href: string;
+  description: string;
+  icon: React.ReactNode;
+  image?: string;
+}
+
+interface PopulaireItem extends VervoerItem {
+  image: string;
+}
+
+const ALL_ITEMS: VervoerItem[] = [
   {
     label: "Bank vervoeren",
     href: "/vervoeren/bank-vervoeren",
@@ -183,8 +195,8 @@ const ALL_ITEMS = [
   },
 ];
 
-// Popular items — first 4
-const POPULAR_ITEMS = ALL_ITEMS.slice(0, 4);
+// Popular items — first 4, cast to PopulaireItem since they all have image
+const POPULAR_ITEMS = ALL_ITEMS.slice(0, 4) as PopulaireItem[];
 
 const RELATED_SERVICES = [
   { label: "Meubeltransport", href: "/diensten/meubeltransport", description: "Professioneel transport van meubels van elk formaat." },
