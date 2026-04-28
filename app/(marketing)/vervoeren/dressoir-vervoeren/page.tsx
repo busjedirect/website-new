@@ -3,15 +3,15 @@ import { VervoerPageTemplate } from "@/components/vervoeren/shared/vervoer-templ
 import type { VervoerPageData } from "@/components/vervoeren/shared/vervoer-template";
 
 export const metadata: Metadata = {
-  title: "Dressoir vervoeren — Snel & veilig | BusjeDirect",
+  title: "Dressoir vervoeren",
   description:
-    "Dressoir vervoeren in Nederland? BusjeDirect vervoert dressoiren van alle formaten snel en veilig. Van Marktplaats of winkel naar jouw woning.",
+    "Dressoir laten vervoeren? BusjeDirect haalt op bij Marktplaats of winkel en bezorgt veilig bij jou thuis. Door heel Nederland.",
 };
 
 const data: VervoerPageData = {
-  metaTitle: "Dressoir vervoeren — Snel & veilig | BusjeDirect",
+  metaTitle: "Dressoir vervoeren | BusjeDirect",
   metaDescription:
-    "Dressoir vervoeren in Nederland? BusjeDirect vervoert dressoiren van alle formaten snel en veilig. Van Marktplaats of winkel naar jouw woning.",
+    "Dressoir laten vervoeren? BusjeDirect haalt op bij Marktplaats of winkel en bezorgt veilig bij jou thuis. Door heel Nederland.",
   slug: "dressoir-vervoeren",
   item: "Dressoir",
   label: "Dressoir vervoeren",
@@ -70,12 +70,12 @@ const data: VervoerPageData = {
     {
       question: "Wat als mijn dressoir beschadigd raakt?",
       answer:
-        "Al onze transporten zijn verzekerd. Wij gaan altijd zorgvuldig om met jouw meubels. Mocht er iets misgaan, dan lossen we dit samen op.",
+        "Wij gaan zorgvuldig om met uw goederen. Tijdens transport geldt een beperkte aansprakelijkheid conform onze algemene voorwaarden. Eventuele schade dient direct bij levering gemeld te worden.",
     },
     {
       question: "Hoe snel kunnen jullie een dressoir vervoeren?",
       answer:
-        "In de meeste gevallen kunnen wij binnen 24–48 uur transport regelen. Vul je aanvraag in en we plannen snel een datum en tijdvak in.",
+        "In de meeste gevallen kunnen wij binnen 24–48 uur transport regelen. Is er beschikbaarheid? Dan kunnen wij vaak ook dezelfde dag nog rijden. Vul je aanvraag in en we nemen snel contact met je op om een datum en tijdvak af te spreken. Bij last-minute aanvragen kan een toeslag van toepassing zijn.",
     },
   ],
   anderItems: [

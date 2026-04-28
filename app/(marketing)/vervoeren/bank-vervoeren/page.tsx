@@ -3,15 +3,15 @@ import { VervoerPageTemplate } from "@/components/vervoeren/shared/vervoer-templ
 import type { VervoerPageData } from "@/components/vervoeren/shared/vervoer-template";
 
 export const metadata: Metadata = {
-  title: "Bank vervoeren — Snel & veilig | BusjeDirect",
+  title: "Bank vervoeren",
   description:
-    "Bank vervoeren in Nederland? BusjeDirect regelt het snel, veilig en tegen een transparante prijs. Hoekbank, 2-zits of 3-zits. Wij tillen en vervoeren jouw bank.",
+    "Hoekbank, 2-zits of 3-zits bank laten vervoeren? BusjeDirect haalt op en bezorgt door heel Nederland. Prijs direct berekenen.",
 };
 
 const data: VervoerPageData = {
-  metaTitle: "Bank vervoeren — Snel & veilig | BusjeDirect",
+  metaTitle: "Bank vervoeren | BusjeDirect",
   metaDescription:
-    "Bank vervoeren in Nederland? BusjeDirect regelt het snel, veilig en tegen een transparante prijs. Hoekbank, 2-zits of 3-zits. Wij tillen en vervoeren jouw bank.",
+    "Hoekbank, 2-zits of 3-zits bank laten vervoeren? BusjeDirect haalt op en bezorgt door heel Nederland. Prijs direct berekenen.",
   slug: "bank-vervoeren",
   item: "Bank",
   label: "Bank vervoeren",
@@ -70,7 +70,7 @@ const data: VervoerPageData = {
     {
       question: "Wat als mijn bank beschadigd raakt tijdens transport?",
       answer:
-        "Al onze transporten zijn verzekerd. Mocht er onverhoopt iets misgaan, dan lossen we dit samen op. Wij gaan altijd zorgvuldig om met jouw spullen.",
+        "Wij gaan zorgvuldig om met uw goederen. Tijdens transport geldt een beperkte aansprakelijkheid conform onze algemene voorwaarden. Eventuele schade dient direct bij levering gemeld te worden.",
     },
     {
       question: "Kunnen jullie ook in het weekend een bank vervoeren?",

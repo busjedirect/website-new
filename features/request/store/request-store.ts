@@ -4,6 +4,7 @@ import type { RequestItem, RequestItemInput } from "../types/item.types";
 import type { TimeSlotKey } from "../types/schedule.types";
 import type { CreateRequestResponse } from "../types/request.types";
 import type { RouteSegments } from "../lib/calculate-distance";
+import { calculatePrice } from "../lib/calculate-price";
 
 // ---------------------------------------------------------------------------
 // State
@@ -17,6 +18,8 @@ export interface RequestState {
   /** Afzonderlijke routesegmenten — intern, nooit tonen aan klant */
   routeSegments: RouteSegments | null;
   priceCents: number | null;
+  /** Of één of meer items een geschatte oppervlakte hebben */
+  hasEstimatedItems: boolean;
   items: RequestItem[];
   selectedDate: string | null;
   selectedTimeSlot: TimeSlotKey | null;
@@ -76,6 +79,7 @@ const initialState: RequestState = {
   totalOperationalMeters: null,
   routeSegments: null,
   priceCents: null,
+  hasEstimatedItems: false,
   items: [],
   selectedDate: null,
   selectedTimeSlot: null,
@@ -103,26 +107,44 @@ export const useRequestStore = create<RequestState & RequestActions>((set) => ({
     set({ fromAddress, toAddress }),
 
   setRouteAndPrice: (totalOperationalMeters, priceCents, routeSegments) =>
-    set({ totalOperationalMeters, priceCents, routeSegments }),
+    set((state) => {
+      const result = calculatePrice({ totalOperationalMeters, items: state.items });
+      return {
+        totalOperationalMeters,
+        routeSegments,
+        priceCents: result.totalCents,
+        hasEstimatedItems: result.hasEstimatedItems,
+      };
+    }),
 
   addItem: (item) =>
-    set((state) => ({
-      items: [
-        ...state.items,
-        { ...item, id: crypto.randomUUID() },
-      ],
-    })),
+    set((state) => {
+      const items = [...state.items, { ...item, id: crypto.randomUUID() }];
+      const meters = state.totalOperationalMeters;
+      if (meters === null) return { items };
+      const result = calculatePrice({ totalOperationalMeters: meters, items });
+      return { items, priceCents: result.totalCents, hasEstimatedItems: result.hasEstimatedItems };
+    }),
 
   updateItem: (itemId, updates) =>
-    set((state) => ({
-      items: state.items.map((item) =>
+    set((state) => {
+      const items = state.items.map((item) =>
         item.id === itemId ? { ...item, ...updates } : item
-      ),
-    })),
+      );
+      const meters = state.totalOperationalMeters;
+      if (meters === null) return { items };
+      const result = calculatePrice({ totalOperationalMeters: meters, items });
+      return { items, priceCents: result.totalCents, hasEstimatedItems: result.hasEstimatedItems };
+    }),
+
   removeItem: (itemId) =>
-    set((state) => ({
-      items: state.items.filter((item) => item.id !== itemId),
-    })),
+    set((state) => {
+      const items = state.items.filter((item) => item.id !== itemId);
+      const meters = state.totalOperationalMeters;
+      if (meters === null) return { items };
+      const result = calculatePrice({ totalOperationalMeters: meters, items });
+      return { items, priceCents: result.totalCents, hasEstimatedItems: result.hasEstimatedItems };
+    }),
 
   setSchedule: (selectedDate, selectedTimeSlot) =>
     set({ selectedDate, selectedTimeSlot }),

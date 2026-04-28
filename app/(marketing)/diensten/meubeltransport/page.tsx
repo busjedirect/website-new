@@ -3,16 +3,17 @@ import { DienstPageTemplate } from "@/components/diensten/shared/dienst-template
 import type { DienstPageData } from "@/components/diensten/shared/dienst-template";
 
 export const metadata: Metadata = {
-  title: "Meubeltransport — Snel & veilig | BusjeDirect",
+  title: "Meubeltransport",
   description:
-    "Meubeltransport voor banken, kasten, tafels en witgoed. BusjeDirect regelt jouw meubeltransport snel, veilig en tegen een transparante prijs. Door heel Nederland.",
+    "Bank, kast, tafel of witgoed laten vervoeren? Wij halen op aan de buitendeur en bezorgen op de begane grond. Prijs berekenen via onze website.",
 };
 
 const data: DienstPageData = {
-  metaTitle: "Meubeltransport — Snel & veilig | BusjeDirect",
-  metaDescription: "Meubeltransport voor banken, kasten, tafels en witgoed. BusjeDirect regelt jouw meubeltransport snel, veilig en tegen een transparante prijs.",
+  metaTitle: "Meubeltransport | BusjeDirect",
+  metaDescription: "Bank, kast, tafel of witgoed laten vervoeren? Wij halen op aan de buitendeur en bezorgen op de begane grond. Prijs berekenen via onze website.",
   label: "Meubeltransport",
   h1: "Meubeltransport snel en betrouwbaar geregeld",
+  heroImage: "/Diensten/Meubeltransport.png",
   heroSubtext:
     "Professioneel meubeltransport voor particulieren en bedrijven. Van banken en kasten tot witgoed en matrassen. Wij vervoeren jouw meubels veilig en zonder beschadigingen, door heel Nederland.",
   introParagraphs: [
@@ -82,9 +83,9 @@ const data: DienstPageData = {
   ],
   faqs: [
     { question: "Wat kost meubeltransport?", answer: "De prijs start vanaf €65 excl. btw en hangt af van de afstand tussen het ophaaladres en het afleveradres. Bereken je prijs via onze website." },
-    { question: "Hoe snel kunnen jullie leveren?", answer: "In de meeste gevallen kunnen wij binnen 24–48 uur transport regelen. Vul je aanvraag in en we plannen snel een datum en tijdvak in." },
+    { question: "Hoe snel kunnen jullie leveren?", answer: "In de meeste gevallen kunnen wij binnen 24–48 uur transport regelen. Is er beschikbaarheid? Dan kunnen wij vaak ook dezelfde dag nog rijden. Vul je aanvraag in en we nemen snel contact met je op om een datum en tijdvak af te spreken. Bij last-minute aanvragen kan een toeslag van toepassing zijn." },
     { question: "Helpen jullie met tillen?", answer: "Wij werken drempel tot drempel: ophalen en afleveren bij de buitendeur op de begane grond. Wij lopen geen trappen en komen niet binnenshuis." },
-    { question: "Is mijn meubeltransport verzekerd?", answer: "Ja, al onze transporten zijn verzekerd. Jouw meubels zijn in goede handen tijdens het hele traject." },
+    { question: "Is mijn meubeltransport verzekerd?", answer: "Wij gaan zorgvuldig om met uw goederen. Tijdens transport geldt een beperkte aansprakelijkheid conform onze algemene voorwaarden. Wij adviseren om waardevolle goederen vooraf te melden en indien nodig aanvullend te verzekeren. Eventuele schade dient direct bij levering gemeld te worden." },
     { question: "Kunnen jullie ook witgoed vervoeren?", answer: "Ja, wij vervoeren wasmachines, drogers, koelkasten en andere witgoedapparaten. Geef dit aan bij je aanvraag." },
     { question: "Rijden jullie ook in het weekend?", answer: "Ja, wij zijn ook in het weekend beschikbaar. Kies zelf een datum en tijdvak dat jou uitkomt." },
   ],

@@ -21,7 +21,6 @@ export interface CreateRequestPayload {
   email: string;
   note?: string;
   agreedToTerms: true;
-  agreedToExtraTime: boolean;
 }
 
 /** Response van de API na succesvolle aanvraag */

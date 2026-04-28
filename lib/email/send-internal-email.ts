@@ -4,6 +4,12 @@ import type { CreateRequestPayload } from "@/features/request/types/request.type
 import { formatPrice, formatDate } from "@/lib/utils/format";
 import { TIME_SLOT_MAP } from "@/features/request/constants/time-slots";
 
+const LOGO_HTML = `
+  <span style="font-size:20px;font-weight:800;letter-spacing:-0.5px;color:#fff">
+    Busje<span style="color:#FF7A00">Direct</span>
+  </span>
+`;
+
 function buildInternalHtml(
   payload: CreateRequestPayload,
   referenceNumber: string
@@ -18,7 +24,7 @@ function buildInternalHtml(
       (item) =>
         `<tr>
           <td style="padding:6px 0;border-bottom:1px solid #f0f0f0;font-size:14px">${item.label}</td>
-          <td style="padding:6px 0;border-bottom:1px solid #f0f0f0;font-size:14px;text-align:right">${item.aantal}×${item.opmerking ? ` · ${item.opmerking}` : ""}</td>
+          <td style="padding:6px 0;border-bottom:1px solid #f0f0f0;font-size:14px;text-align:right;color:#555">${item.aantal}×${item.opmerking ? ` &middot; ${item.opmerking}` : ""}</td>
         </tr>`
     )
     .join("");
@@ -26,21 +32,30 @@ function buildInternalHtml(
   return `<!DOCTYPE html>
 <html lang="nl">
 <head><meta charset="UTF-8"></head>
-<body style="margin:0;padding:0;background:#f9f9f9;font-family:system-ui,sans-serif;color:#111">
-  <table width="100%" cellpadding="0" cellspacing="0" style="background:#f9f9f9;padding:32px 16px">
+<body style="margin:0;padding:0;background:#f5f5f4;font-family:system-ui,-apple-system,sans-serif;color:#111">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background:#f5f5f4;padding:32px 16px">
     <tr><td align="center">
-      <table width="100%" style="max-width:560px;background:#fff;border-radius:12px;border:1px solid #e5e5e5">
+      <table width="100%" style="max-width:560px;background:#fff;border-radius:12px;border:1px solid #e5e5e5;overflow:hidden">
 
         <!-- Header -->
-        <tr><td style="background:#111;padding:20px 32px">
-          <p style="margin:0;color:#fff;font-size:16px;font-weight:600">🚐 Nieuwe aanvraag — BusjeDirect</p>
+        <tr><td style="background:#111111;padding:20px 32px">
+          <table width="100%" cellpadding="0" cellspacing="0">
+            <tr>
+              <td>${LOGO_HTML}</td>
+              <td style="text-align:right">
+                <span style="background:#FF7A00;color:#fff;font-size:11px;font-weight:700;padding:4px 10px;border-radius:20px;text-transform:uppercase;letter-spacing:.05em">Nieuwe aanvraag</span>
+              </td>
+            </tr>
+          </table>
         </td></tr>
 
         <tr><td style="padding:32px">
 
-          <!-- Referentie + tijdstip -->
-          <p style="margin:0 0 4px;font-size:13px;color:#888">Referentienummer</p>
-          <p style="margin:0 0 24px;font-size:16px;font-weight:700;font-family:monospace">${referenceNumber}</p>
+          <!-- Referentie -->
+          <div style="background:#f5f5f4;border-radius:8px;padding:12px 16px;margin-bottom:24px">
+            <p style="margin:0;font-size:12px;color:#888;text-transform:uppercase;letter-spacing:.05em;font-weight:600">Referentienummer</p>
+            <p style="margin:4px 0 0;font-size:18px;font-weight:700;font-family:monospace;color:#111">${referenceNumber}</p>
+          </div>
 
           <!-- Klantgegevens -->
           <p style="margin:0 0 8px;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:#888">Klantgegevens</p>
@@ -52,18 +67,18 @@ function buildInternalHtml(
             <tr>
               <td style="padding:8px 0;border-bottom:1px solid #f0f0f0;font-size:13px;color:#888">Telefoon</td>
               <td style="padding:8px 0;border-bottom:1px solid #f0f0f0;font-size:14px;text-align:right">
-                <a href="tel:${payload.phone}" style="color:#111">${payload.phone}</a>
+                <a href="tel:${payload.phone}" style="color:#111;font-weight:500">${payload.phone}</a>
               </td>
             </tr>
             <tr>
-              <td style="padding:8px 0;border-bottom:1px solid #f0f0f0;font-size:13px;color:#888">E-mail</td>
-              <td style="padding:8px 0;border-bottom:1px solid #f0f0f0;font-size:14px;text-align:right">
-                <a href="mailto:${payload.email}" style="color:#111">${payload.email}</a>
+              <td style="padding:8px 0;font-size:13px;color:#888">E-mail</td>
+              <td style="padding:8px 0;font-size:14px;text-align:right">
+                <a href="mailto:${payload.email}" style="color:#111;font-weight:500">${payload.email}</a>
               </td>
             </tr>
           </table>
 
-          <!-- Adressen -->
+          <!-- Route -->
           <p style="margin:0 0 8px;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:#888">Route</p>
           <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:24px">
             <tr>
@@ -71,8 +86,8 @@ function buildInternalHtml(
               <td style="padding:8px 0;border-bottom:1px solid #f0f0f0;font-size:14px;font-weight:500;text-align:right">${payload.fromAddress.fullAddress}</td>
             </tr>
             <tr>
-              <td style="padding:8px 0;border-bottom:1px solid #f0f0f0;font-size:13px;color:#888">Afleveradres</td>
-              <td style="padding:8px 0;border-bottom:1px solid #f0f0f0;font-size:14px;font-weight:500;text-align:right">${payload.toAddress.fullAddress}</td>
+              <td style="padding:8px 0;font-size:13px;color:#888">Afleveradres</td>
+              <td style="padding:8px 0;font-size:14px;font-weight:500;text-align:right">${payload.toAddress.fullAddress}</td>
             </tr>
           </table>
 
@@ -90,32 +105,59 @@ function buildInternalHtml(
               <td style="padding:8px 0;border-bottom:1px solid #f0f0f0;font-size:14px;font-weight:500;text-align:right">${formatDate(payload.selectedDate)}</td>
             </tr>
             <tr>
-              <td style="padding:8px 0;border-bottom:1px solid #f0f0f0;font-size:13px;color:#888">Tijdvak</td>
-              <td style="padding:8px 0;border-bottom:1px solid #f0f0f0;font-size:14px;font-weight:500;text-align:right">${tijdvak}</td>
+              <td style="padding:8px 0;font-size:13px;color:#888">Tijdvak</td>
+              <td style="padding:8px 0;font-size:14px;font-weight:500;text-align:right">${tijdvak}</td>
             </tr>
           </table>
 
           <!-- Prijs -->
-          <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:24px;border-top:2px solid #111;padding-top:12px">
+          <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:24px;border-top:2px solid #111">
             <tr>
-              <td style="padding:10px 0;font-size:14px;font-weight:600">Totaalprijs</td>
-              <td style="padding:10px 0;font-size:20px;font-weight:700;text-align:right">${formatPrice(payload.priceCents)}</td>
+              <td style="padding:12px 0 4px;font-size:14px;font-weight:600">Totaalprijs</td>
+              <td style="padding:12px 0 4px;font-size:20px;font-weight:700;text-align:right">${formatPrice(payload.priceCents)}</td>
+            </tr>
+            <tr>
+              <td colspan="2" style="font-size:12px;color:#aaa;padding-bottom:12px">excl. btw</td>
+            </tr>
+          </table>
+
+          <!-- Tijdinformatie -->
+          <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:24px">
+            <tr>
+              <td>
+                <div style="background:#f0fdf4;border-radius:8px;padding:12px 16px;margin-bottom:8px">
+                  <p style="margin:0 0 6px;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:#166534">Inbegrepen</p>
+                  <p style="margin:0 0 4px;font-size:13px;color:#15803d">&#10003;&nbsp; 15 minuten laadtijd</p>
+                  <p style="margin:0;font-size:13px;color:#15803d">&#10003;&nbsp; 15 minuten lostijd</p>
+                </div>
+                <div style="background:#fffbeb;border:1px solid #fde68a;border-radius:8px;padding:12px 16px">
+                  <p style="margin:0 0 6px;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:#92400e">Mogelijke extra kosten</p>
+                  <p style="margin:0 0 4px;font-size:13px;color:#78350f">+ &nbsp;<strong>&#8364;25 per kwartier</strong> als het inladen of uitladen langer duurt dan 15 minuten</p>
+                  <p style="margin:0;font-size:13px;color:#78350f">+ &nbsp;<strong>&#8364;15 per adres</strong> binnen de Ring Amsterdam</p>
+                </div>
+              </td>
             </tr>
           </table>
 
           ${payload.note ? `
-          <!-- Opmerking -->
+          <!-- Opmerking klant -->
           <div style="background:#fffbeb;border:1px solid #fde68a;border-radius:8px;padding:12px 16px;margin-bottom:24px">
-            <p style="margin:0 0 4px;font-size:12px;font-weight:600;color:#92400e">Opmerking klant</p>
+            <p style="margin:0 0 4px;font-size:12px;font-weight:600;color:#92400e;text-transform:uppercase;letter-spacing:.05em">Opmerking klant</p>
             <p style="margin:0;font-size:14px;color:#111">${payload.note}</p>
           </div>` : ""}
 
-          <!-- Extra tijd akkoord -->
+          <!-- Akkoord -->
           <p style="margin:0;font-size:13px;color:#888">
-            Extra tijd akkoord: <strong style="color:#111">${payload.agreedToExtraTime ? "Ja" : "Nee"}</strong>
+            Akkoord algemene voorwaarden: <strong style="color:#111">Ja</strong>
           </p>
 
         </td></tr>
+
+        <!-- Footer -->
+        <tr><td style="padding:16px 32px;border-top:1px solid #f0f0f0;font-size:12px;color:#aaa">
+          BusjeDirect &middot; Gevestigd in Diemen
+        </td></tr>
+
       </table>
     </td></tr>
   </table>
@@ -123,10 +165,6 @@ function buildInternalHtml(
 </html>`;
 }
 
-/**
- * Stuurt een notificatiemail naar het interne e-mailadres.
- * Gooit een fout als de e-mail niet verstuurd kan worden.
- */
 export async function sendInternalEmail(
   payload: CreateRequestPayload,
   referenceNumber: string

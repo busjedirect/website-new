@@ -111,7 +111,17 @@ function DimensionsFields({
 
 interface ItemConfigPanelProps {
   category: ItemCategory_;
+  /** Bestaand item voor bewerkingsmodus */
+  editItem?: {
+    id: string;
+    subtype: string;
+    aantal: number;
+    properties: Record<string, unknown>;
+    dimensions?: import("../../types/item.types").ItemDimensions;
+    opmerking?: string;
+  };
   onAdd: (input: RequestItemInput) => void;
+  onUpdate?: (id: string, updates: Partial<RequestItemInput>) => void;
   onCancel: () => void;
 }
 
@@ -119,18 +129,20 @@ interface ItemConfigPanelProps {
 // Component
 // ---------------------------------------------------------------------------
 
-export function ItemConfigPanel({ category, onAdd, onCancel }: ItemConfigPanelProps) {
+export function ItemConfigPanel({ category, editItem, onAdd, onUpdate, onCancel }: ItemConfigPanelProps) {
   const Icon = ITEM_ICON_MAP[category.iconSlug] ?? CustomIcon;
+  const isEditMode = Boolean(editItem);
 
-  const [selectedSubtype, setSelectedSubtype] = useState<string>("");
-  const [aantal, setAantal] = useState(1);
-  const [properties, setProperties] = useState<Record<string, unknown>>({});
-  const [dimensions, setDimensions] = useState<ItemDimensions>({});
-  const [opmerking, setOpmerking] = useState("");
+  const [selectedSubtype, setSelectedSubtype] = useState<string>(editItem?.subtype ?? "");
+  const [aantal, setAantal] = useState(editItem?.aantal ?? 1);
+  const [properties, setProperties] = useState<Record<string, unknown>>(
+    editItem?.properties as Record<string, unknown> ?? {}
+  );
+  const [dimensions, setDimensions] = useState<ItemDimensions>(editItem?.dimensions ?? {});
+  const [opmerking, setOpmerking] = useState(editItem?.opmerking ?? "");
 
-  // Track whether the user has manually edited the dimension fields.
-  // If they have, subtype changes will NOT overwrite their values.
-  const dimensionsUserEdited = useRef(false);
+  // In edit mode, dimensions are already user-provided — mark as edited
+  const dimensionsUserEdited = useRef(isEditMode);
 
   // Apply field defaults on mount
   useEffect(() => {
@@ -174,8 +186,7 @@ export function ItemConfigPanel({ category, onAdd, onCancel }: ItemConfigPanelPr
 
   function handleAdd() {
     if (!canAdd || !subtypeObj) return;
-    onAdd({
-      category: category.id,
+    const updates: Partial<RequestItemInput> = {
       subtype: selectedSubtype,
       label: subtypeObj.label,
       aantal,
@@ -183,7 +194,12 @@ export function ItemConfigPanel({ category, onAdd, onCancel }: ItemConfigPanelPr
       dimensions:
         Object.values(dimensions).some((v) => v !== undefined) ? dimensions : undefined,
       opmerking: opmerking.trim() || undefined,
-    });
+    };
+    if (isEditMode && editItem && onUpdate) {
+      onUpdate(editItem.id, updates);
+    } else {
+      onAdd({ category: category.id, ...updates } as RequestItemInput);
+    }
   }
 
   const visibleFields = category.fields.filter(isFieldVisible);
@@ -196,7 +212,9 @@ export function ItemConfigPanel({ category, onAdd, onCancel }: ItemConfigPanelPr
           <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-zinc-100">
             <Icon className="text-zinc-600" />
           </div>
-          <h3 className="text-base font-semibold text-zinc-900">{category.label}</h3>
+          <h3 className="text-base font-semibold text-zinc-900">
+            {isEditMode ? `${category.label} bewerken` : category.label}
+          </h3>
         </div>
         <button
           type="button"
@@ -328,7 +346,7 @@ export function ItemConfigPanel({ category, onAdd, onCancel }: ItemConfigPanelPr
           disabled={!canAdd}
           className="flex-1 rounded-lg bg-zinc-900 py-2.5 text-sm font-semibold text-white transition hover:bg-zinc-700 disabled:cursor-not-allowed disabled:opacity-40 active:scale-[0.98]"
         >
-          Toevoegen
+          {isEditMode ? "Opslaan" : "Toevoegen"}
         </button>
       </div>
     </div>

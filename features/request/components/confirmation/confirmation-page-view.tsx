@@ -10,10 +10,8 @@ import { ConfirmationView } from "./confirmation-view";
 
 export function ConfirmationPageView() {
   const [agreedToTerms, setAgreedToTerms] = useState(false);
-  const [agreedToExtraTime, setAgreedToExtraTime] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  // Use the hook (not getState) so this re-evaluates reactively
   const dataComplete = useRequestStore(isRequestComplete);
   const canSubmit = agreedToTerms && dataComplete;
 
@@ -24,9 +22,7 @@ export function ConfirmationPageView() {
         <div className="flex-1">
           <ConfirmationView
             agreedToTerms={agreedToTerms}
-            agreedToExtraTime={agreedToExtraTime}
             onTermsChange={setAgreedToTerms}
-            onExtraTimeChange={setAgreedToExtraTime}
             onLoadingChange={setLoading}
           />
         </div>
@@ -44,18 +40,16 @@ export function ConfirmationPageView() {
         </div>
       </div>
 
-      {/* Mobiel — geen inline submit-knop, alleen sticky bottom bar */}
+      {/* Mobiel */}
       <div className="flex flex-col gap-5 pb-24 lg:hidden">
         <ConfirmationView
           agreedToTerms={agreedToTerms}
-          agreedToExtraTime={agreedToExtraTime}
           onTermsChange={setAgreedToTerms}
-          onExtraTimeChange={setAgreedToExtraTime}
           onLoadingChange={setLoading}
         />
       </div>
 
-      {/* Mobile sticky bottom bar — enige primaire actie op mobiel */}
+      {/* Mobile sticky bottom bar */}
       <MobileBottomBar
         drawerTitle="Samenvatting"
         cta={

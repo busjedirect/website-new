@@ -3,15 +3,15 @@ import { VervoerPageTemplate } from "@/components/vervoeren/shared/vervoer-templ
 import type { VervoerPageData } from "@/components/vervoeren/shared/vervoer-template";
 
 export const metadata: Metadata = {
-  title: "Witgoed vervoeren? Snel en veilig transport | BusjeDirect",
+  title: "Witgoed vervoeren",
   description:
-    "Laat je witgoed veilig en snel vervoeren door BusjeDirect. Transparante prijs en snelle service. Vraag direct vrijblijvend aan.",
+    "Wasmachine, droger, koelkast of vaatwasser laten vervoeren? BusjeDirect vervoert al je witgoed veilig door heel Nederland.",
 };
 
 const data: VervoerPageData = {
-  metaTitle: "Witgoed vervoeren? Snel en veilig transport | BusjeDirect",
+  metaTitle: "Witgoed vervoeren | BusjeDirect",
   metaDescription:
-    "Laat je witgoed veilig en snel vervoeren door BusjeDirect. Transparante prijs en snelle service. Vraag direct vrijblijvend aan.",
+    "Wasmachine, droger, koelkast of vaatwasser laten vervoeren? BusjeDirect vervoert al je witgoed veilig door heel Nederland.",
   slug: "witgoed-vervoeren",
   item: "Witgoed",
   label: "Witgoed vervoeren",
@@ -40,11 +40,6 @@ const data: VervoerPageData = {
       description:
         "Je verhuist en wilt je wasmachine, droger of koelkast meenemen. Wij vervoeren het veilig naar het nieuwe adres.",
     },
-    {
-      title: "Oud witgoed laten ophalen",
-      description:
-        "Je wilt je oude wasmachine of koelkast kwijt. Wij halen het op en brengen het naar het gewenste adres of inleverpunt.",
-    },
   ],
   prijsUitleg: [
     "De prijs voor witgoed vervoeren is gebaseerd op de rijafstand tussen het ophaaladres en het afleveradres. Hoe verder de rit, hoe hoger de prijs. Simpel en eerlijk.",
@@ -70,7 +65,7 @@ const data: VervoerPageData = {
     {
       question: "Kunnen jullie ook mijn oude witgoed meenemen?",
       answer:
-        "Ja, wij kunnen je oude witgoed ophalen als extra item. Geef dit aan bij je aanvraag, dan nemen we dit mee in de prijsberekening.",
+        "Nee, wij vervoeren geen oude apparaten ter afvoer. De klant dient zelf zorg te dragen voor het afvoeren van oude witgoedapparaten. Wij vervoeren uitsluitend van A naar B.",
     },
     {
       question: "Hoe lang moet ik wachten na transport voordat ik de koelkast aanzet?",
@@ -80,7 +75,7 @@ const data: VervoerPageData = {
     {
       question: "Is mijn witgoed verzekerd tijdens transport?",
       answer:
-        "Ja, al onze transporten zijn verzekerd. Jouw witgoed is in goede handen tijdens het hele traject.",
+        "Wij gaan zorgvuldig om met uw goederen. Tijdens transport geldt een beperkte aansprakelijkheid conform onze algemene voorwaarden. Wij adviseren om waardevolle goederen vooraf te melden en indien nodig aanvullend te verzekeren. Eventuele schade dient direct bij levering gemeld te worden.",
     },
   ],
   anderItems: [

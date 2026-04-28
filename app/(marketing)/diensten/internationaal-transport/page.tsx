@@ -3,16 +3,17 @@ import { DienstPageTemplate } from "@/components/diensten/shared/dienst-template
 import type { DienstPageData } from "@/components/diensten/shared/dienst-template";
 
 export const metadata: Metadata = {
-  title: "Internationaal transport — Europa | BusjeDirect",
+  title: "Internationaal transport Europa",
   description:
-    "Internationaal transport naar België, Duitsland en andere Europese landen. BusjeDirect verzorgt grensoverschrijdend transport snel, veilig en tegen een vaste prijs.",
+    "Transport naar België, Duitsland, Frankrijk en verder. BusjeDirect verzorgt grensoverschrijdend transport voor particulieren en bedrijven.",
 };
 
 const data: DienstPageData = {
-  metaTitle: "Internationaal transport — Europa | BusjeDirect",
-  metaDescription: "Internationaal transport naar België, Duitsland en andere Europese landen. BusjeDirect verzorgt grensoverschrijdend transport snel en veilig.",
+  metaTitle: "Internationaal transport Europa | BusjeDirect",
+  metaDescription: "Transport naar België, Duitsland, Frankrijk en verder. BusjeDirect verzorgt grensoverschrijdend transport voor particulieren en bedrijven.",
   label: "Internationaal transport",
   h1: "Internationaal transport snel en betrouwbaar geregeld",
+  heroImage: "/Diensten/Internationaal Transport.png",
   heroSubtext:
     "Transport naar en vanuit heel Europa. BusjeDirect verzorgt grensoverschrijdend transport voor particulieren en bedrijven naar België, Duitsland, Frankrijk en verder. Snel, verzekerd en met een vaste prijs.",
   introParagraphs: [
@@ -75,7 +76,7 @@ const data: DienstPageData = {
   faqs: [
     { question: "Naar welke landen rijden jullie?", answer: "Wij rijden door heel Europa. Populaire bestemmingen zijn België, Duitsland, Frankrijk en Luxemburg. Neem contact op voor andere bestemmingen." },
     { question: "Wat kost internationaal transport?", answer: "De prijs is gebaseerd op de afstand en het aantal items. Neem contact op voor een offerte op maat voor jouw internationale rit." },
-    { question: "Is mijn transport verzekerd in het buitenland?", answer: "Ja, al onze transporten zijn verzekerd, ook internationaal. Jouw spullen zijn in goede handen." },
+    { question: "Is mijn transport verzekerd in het buitenland?", answer: "Wij gaan zorgvuldig om met uw goederen. Tijdens transport geldt een beperkte aansprakelijkheid conform onze algemene voorwaarden. Wij adviseren om waardevolle goederen vooraf te melden en indien nodig aanvullend te verzekeren. Eventuele schade dient direct bij levering gemeld te worden." },
     { question: "Hoe lang duurt een internationale rit?", answer: "Dat hangt af van de bestemming. Een rit naar België duurt een dag, verder weg kan langer duren. Wij bespreken dit bij de offerte." },
     { question: "Kunnen jullie ook vanuit het buitenland ophalen?", answer: "Ja, wij halen ook op in het buitenland en bezorgen in Nederland. Geef het buitenlandse adres op als ophaaladres." },
     { question: "Zijn er extra kosten voor internationaal transport?", answer: "Nee, wij hanteren transparante prijzen zonder verborgen kosten. De prijs wordt vooraf vastgesteld en gecommuniceerd." },

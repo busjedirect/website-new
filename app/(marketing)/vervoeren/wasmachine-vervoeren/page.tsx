@@ -3,15 +3,15 @@ import { VervoerPageTemplate } from "@/components/vervoeren/shared/vervoer-templ
 import type { VervoerPageData } from "@/components/vervoeren/shared/vervoer-template";
 
 export const metadata: Metadata = {
-  title: "Wasmachine vervoeren — Snel & veilig | BusjeDirect",
+  title: "Wasmachine vervoeren",
   description:
-    "Wasmachine vervoeren in Nederland? BusjeDirect haalt je wasmachine op en bezorgt hem veilig. Nieuwe wasmachine bezorgen of oude ophalen. Wij regelen het.",
+    "Wasmachine of droger laten vervoeren? BusjeDirect haalt op en bezorgt veilig. Nieuw of tweedehands, door heel Nederland.",
 };
 
 const data: VervoerPageData = {
-  metaTitle: "Wasmachine vervoeren — Snel & veilig | BusjeDirect",
+  metaTitle: "Wasmachine vervoeren | BusjeDirect",
   metaDescription:
-    "Wasmachine vervoeren in Nederland? BusjeDirect haalt je wasmachine op en bezorgt hem veilig. Nieuwe wasmachine bezorgen of oude ophalen. Wij regelen het.",
+    "Wasmachine of droger laten vervoeren? BusjeDirect haalt op en bezorgt veilig. Nieuw of tweedehands, door heel Nederland.",
   slug: "wasmachine-vervoeren",
   item: "Wasmachine",
   label: "Wasmachine vervoeren",
@@ -21,7 +21,7 @@ const data: VervoerPageData = {
   heroImage: "/Vervoeren/Wasmachine.png",
   introParagraphs: [
     "Een wasmachine vervoeren is geen eenvoudige klus. Het apparaat is zwaar, onhandig en gevoelig voor beschadigingen als het niet goed wordt vervoerd. BusjeDirect heeft de ervaring en het materiaal om jouw wasmachine veilig te transporteren.",
-    "Of je nu een nieuwe wasmachine wilt laten bezorgen, een tweedehands wasmachine hebt gekocht via Marktplaats, of je oude wasmachine wilt laten ophalen. Wij regelen het transport. Onze chauffeurs weten hoe ze witgoed veilig inladen en vervoeren.",
+    "Of je nu een nieuwe wasmachine wilt laten bezorgen of een tweedehands wasmachine hebt gekocht via Marktplaats. Wij regelen het transport. Onze chauffeurs weten hoe ze witgoed veilig inladen en vervoeren.",
     "Wasmachine vervoeren via BusjeDirect is eenvoudig: vul je adressen in, geef aan wat je wilt laten vervoeren en ontvang direct een transparante prijs. Snel geregeld, zonder gedoe.",
   ],
   wanneerItems: [
@@ -31,9 +31,9 @@ const data: VervoerPageData = {
         "Je hebt een nieuwe wasmachine gekocht maar de winkel bezorgt niet. Wij halen hem op en bezorgen hem bij jou thuis.",
     },
     {
-      title: "Oude wasmachine laten ophalen",
+      title: "Tweedehands wasmachine ophalen",
       description:
-        "Je wilt je oude wasmachine kwijt. Wij halen hem op en brengen hem naar het gewenste adres of inleverpunt.",
+        "Je hebt een tweedehands wasmachine gekocht maar geen vervoer. Wij halen hem op bij de verkoper en bezorgen hem bij jou.",
     },
     {
       title: "Wasmachine meenemen bij verhuizing",
@@ -70,12 +70,12 @@ const data: VervoerPageData = {
     {
       question: "Kunnen jullie ook mijn oude wasmachine meenemen?",
       answer:
-        "Ja, wij kunnen je oude wasmachine ophalen als extra item. Geef dit aan bij je aanvraag, dan nemen we dit mee in de prijsberekening.",
+        "Nee, wij vervoeren geen oude apparaten ter afvoer. De klant dient zelf zorg te dragen voor het afvoeren van oude wasmachines. Wij vervoeren uitsluitend van A naar B.",
     },
     {
       question: "Hoe snel kunnen jullie een wasmachine vervoeren?",
       answer:
-        "In de meeste gevallen kunnen wij binnen 24–48 uur transport regelen. Vul je aanvraag in en we plannen snel een datum en tijdvak in.",
+        "In de meeste gevallen kunnen wij binnen 24–48 uur transport regelen. Is er beschikbaarheid? Dan kunnen wij vaak ook dezelfde dag nog rijden. Vul je aanvraag in en we nemen snel contact met je op om een datum en tijdvak af te spreken. Bij last-minute aanvragen kan een toeslag van toepassing zijn.",
     },
   ],
   anderItems: [

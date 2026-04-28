@@ -3,15 +3,15 @@ import { VervoerPageTemplate } from "@/components/vervoeren/shared/vervoer-templ
 import type { VervoerPageData } from "@/components/vervoeren/shared/vervoer-template";
 
 export const metadata: Metadata = {
-  title: "Kast vervoeren — Snel & veilig | BusjeDirect",
+  title: "Kast vervoeren",
   description:
-    "Kast vervoeren in Nederland? BusjeDirect vervoert garderobekasten, IKEA-kasten en grote kasten snel en veilig. Inclusief demonteren op aanvraag.",
+    "Garderobekast, IKEA-kast of grote boekenkast laten vervoeren? BusjeDirect regelt het. Ophalen en bezorgen door heel Nederland.",
 };
 
 const data: VervoerPageData = {
-  metaTitle: "Kast vervoeren — Snel & veilig | BusjeDirect",
+  metaTitle: "Kast vervoeren | BusjeDirect",
   metaDescription:
-    "Kast vervoeren in Nederland? BusjeDirect vervoert garderobekasten, IKEA-kasten en grote kasten snel en veilig. Inclusief demonteren op aanvraag.",
+    "Garderobekast, IKEA-kast of grote boekenkast laten vervoeren? BusjeDirect regelt het. Ophalen en bezorgen door heel Nederland.",
   slug: "kast-vervoeren",
   item: "Kast",
   label: "Kast vervoeren",
@@ -70,12 +70,12 @@ const data: VervoerPageData = {
     {
       question: "Wat als mijn kast beschadigd raakt?",
       answer:
-        "Al onze transporten zijn verzekerd. Wij gaan altijd zorgvuldig om met jouw meubels. Mocht er iets misgaan, dan lossen we dit samen op.",
+        "Wij gaan zorgvuldig om met uw goederen. Tijdens transport geldt een beperkte aansprakelijkheid conform onze algemene voorwaarden. Eventuele schade dient direct bij levering gemeld te worden.",
     },
     {
       question: "Hoe snel kunnen jullie een kast vervoeren?",
       answer:
-        "In de meeste gevallen kunnen wij binnen 24–48 uur transport regelen. Vul je aanvraag in en we plannen snel een datum en tijdvak in.",
+        "In de meeste gevallen kunnen wij binnen 24–48 uur transport regelen. Is er beschikbaarheid? Dan kunnen wij vaak ook dezelfde dag nog rijden. Vul je aanvraag in en we nemen snel contact met je op om een datum en tijdvak af te spreken. Bij last-minute aanvragen kan een toeslag van toepassing zijn.",
     },
   ],
   anderItems: [

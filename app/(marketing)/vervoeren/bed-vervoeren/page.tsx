@@ -3,15 +3,15 @@ import { VervoerPageTemplate } from "@/components/vervoeren/shared/vervoer-templ
 import type { VervoerPageData } from "@/components/vervoeren/shared/vervoer-template";
 
 export const metadata: Metadata = {
-  title: "Bed vervoeren — Snel & veilig | BusjeDirect",
+  title: "Bed vervoeren",
   description:
-    "Bed vervoeren in Nederland? BusjeDirect vervoert eenpersoons-, tweepersoons- en boxspringbedden snel en veilig. Inclusief matras op aanvraag.",
+    "Eenpersoonsbed, tweepersoonsbed of boxspring laten vervoeren? BusjeDirect regelt het snel. Ophalen en bezorgen door heel Nederland.",
 };
 
 const data: VervoerPageData = {
-  metaTitle: "Bed vervoeren — Snel & veilig | BusjeDirect",
+  metaTitle: "Bed vervoeren | BusjeDirect",
   metaDescription:
-    "Bed vervoeren in Nederland? BusjeDirect vervoert eenpersoons-, tweepersoons- en boxspringbedden snel en veilig. Inclusief matras op aanvraag.",
+    "Eenpersoonsbed, tweepersoonsbed of boxspring laten vervoeren? BusjeDirect regelt het snel. Ophalen en bezorgen door heel Nederland.",
   slug: "bed-vervoeren",
   item: "Bed",
   label: "Bed vervoeren",

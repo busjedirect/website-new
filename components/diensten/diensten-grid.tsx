@@ -1,57 +1,9 @@
 import Link from "next/link";
+import Image from "next/image";
 
 // ---------------------------------------------------------------------------
 // Icons
 // ---------------------------------------------------------------------------
-
-function SofaIcon() {
-  return (
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <path d="M3 10.5A2.5 2.5 0 015.5 8h13A2.5 2.5 0 0121 10.5V14H3v-3.5z" />
-      <path d="M3 14v2a1 1 0 001 1h16a1 1 0 001-1v-2" />
-      <path d="M5 8V6a1 1 0 011-1h12a1 1 0 011 1v2" />
-      <path d="M5 17v1M19 17v1" />
-    </svg>
-  );
-}
-
-function HomeIcon() {
-  return (
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
-      <polyline points="9 22 9 12 15 12 15 22" />
-    </svg>
-  );
-}
-
-function ShoppingBagIcon() {
-  return (
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
-      <line x1="3" y1="6" x2="21" y2="6" />
-      <path d="M16 10a4 4 0 01-8 0" />
-    </svg>
-  );
-}
-
-function BriefcaseIcon() {
-  return (
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <rect x="2" y="7" width="20" height="14" rx="2" />
-      <path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2" />
-    </svg>
-  );
-}
-
-function GlobeIcon() {
-  return (
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <circle cx="12" cy="12" r="10" />
-      <line x1="2" y1="12" x2="22" y2="12" />
-      <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
-    </svg>
-  );
-}
 
 function CheckIcon() {
   return (
@@ -76,7 +28,7 @@ function ArrowRight() {
 
 const SERVICES = [
   {
-    icon: <SofaIcon />,
+    image: "/Diensten/Meubeltransport.png",
     title: "Meubeltransport",
     description: "Van banken en kasten tot witgoed. Wij vervoeren jouw spullen veilig en zonder beschadigingen.",
     bullets: ["Banken & fauteuils", "Kasten & tafels", "Witgoed & matrassen"],
@@ -84,7 +36,7 @@ const SERVICES = [
     cta: "Meer over meubeltransport",
   },
   {
-    icon: <HomeIcon />,
+    image: "/Diensten/Kleine Verhuizing.png",
     title: "Kleine verhuizing",
     description: "Een paar spullen of een complete studio. Wij regelen jouw verhuizing snel en efficiënt.",
     bullets: ["Studioflat verhuizing", "1–2 kamer verhuizing", "Kleine inboedels"],
@@ -92,7 +44,7 @@ const SERVICES = [
     cta: "Meer over kleine verhuizing",
   },
   {
-    icon: <ShoppingBagIcon />,
+    image: "/Diensten/Ophaalservice.png",
     title: "Ophaalservice",
     description: "Iets gekocht via Marktplaats of IKEA? Wij halen het op en bezorgen het veilig bij jou thuis.",
     bullets: ["Marktplaats ophalen", "Winkel ophaalservice", "IKEA & aankopen"],
@@ -100,7 +52,7 @@ const SERVICES = [
     cta: "Meer over ophaalservice",
   },
   {
-    icon: <BriefcaseIcon />,
+    image: "/Diensten/Zakelijk Transport.png",
     title: "Zakelijk transport",
     description: "Voor bedrijven en ondernemers. Betrouwbaar, discreet en op maat.",
     bullets: ["Kantoorinrichting", "Showroom plaatsingen", "Spoedbezorging"],
@@ -108,7 +60,7 @@ const SERVICES = [
     cta: "Meer over zakelijk transport",
   },
   {
-    icon: <GlobeIcon />,
+    image: "/Diensten/Internationaal Transport.png",
     title: "Internationaal transport",
     description: "Transport naar en vanuit heel Europa. Efficiënt, verzekerd en met vaste prijzen.",
     bullets: ["Europees transport", "Meubels op maat", "Snel tot-deur service"],
@@ -121,21 +73,23 @@ const SERVICES = [
 // Card
 // ---------------------------------------------------------------------------
 
-function ServiceCard({ icon, title, description, bullets, href, cta }: (typeof SERVICES)[0]) {
+function ServiceCard({ image, title, description, bullets, href, cta }: (typeof SERVICES)[0]) {
   return (
     <div className="group flex flex-col overflow-hidden rounded-2xl border border-zinc-100 bg-white shadow-[0_1px_4px_rgba(0,0,0,0.05)] transition duration-200 hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(0,0,0,0.09)]">
 
-      {/* Image placeholder with icon overlay */}
-      <div className="relative h-36 w-full bg-zinc-100" aria-hidden="true">
-        <div className="absolute bottom-0 left-1/2 translate-y-1/2 -translate-x-1/2">
-          <div className="flex h-11 w-11 items-center justify-center rounded-full bg-white shadow-md ring-1 ring-zinc-100">
-            {icon}
-          </div>
-        </div>
+      {/* Image */}
+      <div className="relative h-36 w-full overflow-hidden bg-zinc-100">
+        <Image
+          src={image}
+          alt={title}
+          fill
+          className="object-cover transition-transform duration-500 group-hover:scale-105"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 20vw"
+        />
       </div>
 
       {/* Content */}
-      <div className="flex flex-1 flex-col px-5 pb-6 pt-8">
+      <div className="flex flex-1 flex-col px-5 pb-6 pt-5">
         <h3 className="text-[16px] font-bold text-[#111111]">{title}</h3>
         <p className="mt-2 text-[13px] leading-[1.65] text-zinc-400">{description}</p>
 

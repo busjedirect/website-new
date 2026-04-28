@@ -3,16 +3,17 @@ import { DienstPageTemplate } from "@/components/diensten/shared/dienst-template
 import type { DienstPageData } from "@/components/diensten/shared/dienst-template";
 
 export const metadata: Metadata = {
-  title: "Ophaalservice — Marktplaats & IKEA ophalen | BusjeDirect",
+  title: "Ophaalservice Marktplaats & IKEA",
   description:
-    "Ophaalservice voor Marktplaats aankopen, IKEA en andere winkels. BusjeDirect haalt jouw aankopen op en bezorgt ze veilig thuis. Door heel Nederland.",
+    "Iets gekocht via Marktplaats of IKEA maar geen vervoer? Wij halen het op en bezorgen het bij jou thuis. Actief in Amsterdam en omgeving.",
 };
 
 const data: DienstPageData = {
-  metaTitle: "Ophaalservice — Marktplaats & IKEA ophalen | BusjeDirect",
-  metaDescription: "Ophaalservice voor Marktplaats aankopen, IKEA en andere winkels. BusjeDirect haalt jouw aankopen op en bezorgt ze veilig thuis.",
+  metaTitle: "Ophaalservice Marktplaats & IKEA | BusjeDirect",
+  metaDescription: "Iets gekocht via Marktplaats of IKEA maar geen vervoer? Wij halen het op en bezorgen het bij jou thuis. Actief in Amsterdam en omgeving.",
   label: "Ophaalservice",
   h1: "Ophaalservice snel en betrouwbaar geregeld",
+  heroImage: "/Diensten/Ophaalservice.png",
   heroSubtext:
     "Iets gekocht via Marktplaats, IKEA of een andere winkel? BusjeDirect haalt jouw aankopen op en bezorgt ze veilig bij jou thuis. Snel, betrouwbaar en tegen een transparante prijs.",
   introParagraphs: [
@@ -76,9 +77,9 @@ const data: DienstPageData = {
   ],
   faqs: [
     { question: "Wat kost de ophaalservice?", answer: "De prijs start vanaf €65 excl. btw en hangt af van de afstand tussen het ophaaladres en het afleveradres. Bereken je prijs via onze website." },
-    { question: "Hoe snel kunnen jullie ophalen?", answer: "In de meeste gevallen binnen 24–48 uur. Vul je aanvraag in en we plannen snel een datum in." },
+    { question: "Hoe snel kunnen jullie ophalen?", answer: "In de meeste gevallen kunnen wij binnen 24–48 uur transport regelen. Is er beschikbaarheid? Dan kunnen wij vaak ook dezelfde dag nog rijden. Vul je aanvraag in en we nemen snel contact met je op om een datum en tijdvak af te spreken. Bij last-minute aanvragen kan een toeslag van toepassing zijn." },
     { question: "Kunnen jullie ook bij IKEA ophalen?", answer: "Ja, wij halen regelmatig bestellingen op bij IKEA en andere grote woonwinkels. Geef het adres van de winkel op als ophaaladres." },
-    { question: "Is mijn aankoop verzekerd tijdens transport?", answer: "Ja, al onze transporten zijn verzekerd. Jouw aankopen zijn in goede handen." },
+    { question: "Is mijn aankoop verzekerd tijdens transport?", answer: "Wij gaan zorgvuldig om met uw goederen. Tijdens transport geldt een beperkte aansprakelijkheid conform onze algemene voorwaarden. Wij adviseren om waardevolle goederen vooraf te melden en indien nodig aanvullend te verzekeren. Eventuele schade dient direct bij levering gemeld te worden." },
     { question: "Helpen jullie met tillen?", answer: "Wij werken drempel tot drempel: ophalen en afleveren bij de buitendeur op de begane grond. Wij lopen geen trappen en komen niet binnenshuis." },
     { question: "Rijden jullie ook in het weekend?", answer: "Ja, ook in het weekend beschikbaar. Kies zelf een datum en tijdvak." },
   ],

@@ -9,9 +9,9 @@ import { DienstenFaq } from "@/components/diensten/diensten-faq";
 import { DienstenBottomCta } from "@/components/diensten/diensten-bottom-cta";
 
 export const metadata: Metadata = {
-  title: "Transportdiensten — BusjeDirect",
+  title: "Transportdiensten",
   description:
-    "Bekijk al onze transportdiensten: meubeltransport, kleine verhuizing, ophaalservice, zakelijk transport en internationaal transport. Snel, veilig en transparant geprijsd.",
+    "Meubeltransport, ophaalservice, kleine verhuizing of zakelijk transport. BusjeDirect regelt het snel en tegen een vaste prijs. Actief vanuit Diemen.",
 };
 
 export default function DienstenPage() {

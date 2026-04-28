@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 // ---------------------------------------------------------------------------
 // Icons
 // ---------------------------------------------------------------------------
@@ -69,13 +71,18 @@ export function DienstenHero() {
             </div>
           </div>
 
-          {/* Right: image placeholder */}
+          {/* Right: hero image */}
           <div className="w-full lg:w-[480px] lg:shrink-0">
-            <div
-              className="w-full overflow-hidden rounded-2xl bg-zinc-200"
-              style={{ aspectRatio: "4/3" }}
-              aria-hidden="true"
-            />
+            <div className="w-full overflow-hidden rounded-2xl bg-zinc-200" style={{ aspectRatio: "4/3" }}>
+              <Image
+                src="/Diensten/Hero Diensten.png"
+                alt="BusjeDirect transportdiensten"
+                width={960}
+                height={720}
+                className="h-full w-full object-cover"
+                priority
+              />
+            </div>
           </div>
 
         </div>

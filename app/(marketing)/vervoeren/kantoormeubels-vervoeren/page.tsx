@@ -3,15 +3,15 @@ import { VervoerPageTemplate } from "@/components/vervoeren/shared/vervoer-templ
 import type { VervoerPageData } from "@/components/vervoeren/shared/vervoer-template";
 
 export const metadata: Metadata = {
-  title: "Kantoormeubels vervoeren? Snel en veilig transport | BusjeDirect",
+  title: "Kantoormeubels vervoeren",
   description:
-    "Laat je kantoormeubels veilig en snel vervoeren door BusjeDirect. Transparante prijs en snelle service. Vraag direct vrijblijvend aan.",
+    "Bureaus, vergadertafels of kasten laten vervoeren? BusjeDirect regelt kantoormeubels transport voor bedrijven door heel Nederland.",
 };
 
 const data: VervoerPageData = {
-  metaTitle: "Kantoormeubels vervoeren? Snel en veilig transport | BusjeDirect",
+  metaTitle: "Kantoormeubels vervoeren | BusjeDirect",
   metaDescription:
-    "Laat je kantoormeubels veilig en snel vervoeren door BusjeDirect. Transparante prijs en snelle service. Vraag direct vrijblijvend aan.",
+    "Bureaus, vergadertafels of kasten laten vervoeren? BusjeDirect regelt kantoormeubels transport voor bedrijven door heel Nederland.",
   slug: "kantoormeubels-vervoeren",
   item: "Kantoormeubels",
   label: "Kantoormeubels vervoeren",
@@ -75,7 +75,7 @@ const data: VervoerPageData = {
     {
       question: "Is mijn kantoorinventaris verzekerd tijdens transport?",
       answer:
-        "Ja, al onze transporten zijn verzekerd. Jouw kantoormeubels zijn in goede handen tijdens het hele traject.",
+        "Wij gaan zorgvuldig om met uw goederen. Tijdens transport geldt een beperkte aansprakelijkheid conform onze algemene voorwaarden. Wij adviseren om waardevolle goederen vooraf te melden en indien nodig aanvullend te verzekeren. Eventuele schade dient direct bij levering gemeld te worden.",
     },
     {
       question: "Kunnen jullie ook meerdere locaties bedienen?",

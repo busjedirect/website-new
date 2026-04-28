@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { FaqSection } from "@/components/ui/faq-section";
 import type { Locatie } from "@/lib/locaties";
@@ -104,13 +105,18 @@ function LocatieHero({ locatie }: { locatie: Locatie }) {
             </div>
           </div>
 
-          {/* Right: placeholder */}
+          {/* Right: hero image */}
           <div className="w-full lg:w-[480px] lg:shrink-0">
-            <div
-              className="w-full overflow-hidden rounded-2xl bg-zinc-200"
-              style={{ aspectRatio: "4/3" }}
-              aria-hidden="true"
-            />
+            <div className="w-full overflow-hidden rounded-2xl bg-zinc-200" style={{ aspectRatio: "4/3" }}>
+              <Image
+                src={`/Locaties/${locatie.name}.png`}
+                alt={`Transport in ${locatie.name}`}
+                width={960}
+                height={720}
+                className="h-full w-full object-cover"
+                priority
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -331,11 +337,11 @@ function LocatieFaq({ locatie }: { locatie: Locatie }) {
     },
     {
       question: `Wat kost transport in ${locatie.name}?`,
-      answer: `De prijs is gebaseerd op de rijafstand van ons depot in Diemen naar het ophaaladres, naar het afleveradres en terug. Starttarief is €65 excl. btw. Bereken je prijs via onze website.`,
+      answer: `De prijs start vanaf €65 excl. btw en wordt berekend op basis van de afstand tussen het ophaal- en afleveradres én de geselecteerde items. Bereken je prijs via onze website.`,
     },
     {
       question: "Hoe snel kunnen jullie transport regelen?",
-      answer: "In de meeste gevallen kunnen wij binnen 24–48 uur transport regelen. Vul je aanvraag in en we plannen snel een datum en tijdvak in.",
+      answer: "In de meeste gevallen kunnen wij binnen 24–48 uur transport regelen. Is er beschikbaarheid? Dan kunnen wij vaak ook dezelfde dag nog rijden. Vul je aanvraag in en we nemen snel contact met je op om een datum en tijdvak af te spreken. Bij last-minute aanvragen kan een toeslag van toepassing zijn.",
     },
     {
       question: "Welke spullen kunnen jullie vervoeren?",

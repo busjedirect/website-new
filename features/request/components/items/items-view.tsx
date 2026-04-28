@@ -28,8 +28,8 @@ export function ItemsView() {
   );
 
   return (
-    <div className="min-h-screen bg-[#f5f5f4] pb-20 lg:pb-0">
-      <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
+    <div className="bg-[#f5f5f4] pb-20 lg:pb-0 lg:h-[calc(100vh-4rem)] lg:overflow-hidden">
+      <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8 lg:h-full lg:flex lg:flex-col">
 
         <div className="mb-6">
           <p className="text-[11px] font-semibold uppercase tracking-widest text-zinc-400">
@@ -44,8 +44,8 @@ export function ItemsView() {
         </div>
 
         {/* Desktop */}
-        <div className="hidden lg:flex lg:gap-6 lg:items-start">
-          <div className="flex-1">
+        <div className="hidden lg:flex lg:gap-6 lg:items-start lg:flex-1 lg:min-h-0">
+          <div className="flex-1 lg:overflow-y-auto lg:h-full">
             <ItemSelector />
           </div>
           <div className="w-72 shrink-0 lg:sticky lg:top-6">

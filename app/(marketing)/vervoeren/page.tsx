@@ -8,9 +8,9 @@ import { SiteFooter } from "@/components/layout/site-footer";
 // ---------------------------------------------------------------------------
 
 export const metadata: Metadata = {
-  title: "Wat vervoeren wij? Meubels, witgoed en inboedels | BusjeDirect",
+  title: "Wat vervoeren wij",
   description:
-    "Bekijk wat BusjeDirect voor je kan vervoeren. Van banken, kasten en bedden tot witgoed, apparatuur en complete inboedels. Vraag direct transport aan.",
+    "Van bank en kast tot wasmachine, matras en complete inboedel. Bekijk alles wat BusjeDirect voor je kan vervoeren en bereken direct je prijs.",
   alternates: {
     canonical: "/vervoeren",
   },
@@ -234,7 +234,7 @@ const FAQS = [
   {
     question: "Hoe snel kunnen jullie mijn spullen vervoeren?",
     answer:
-      "In de meeste gevallen kunnen wij binnen 24–48 uur transport regelen. Vul je aanvraag in en we plannen snel een datum en tijdvak in dat jou uitkomt.",
+      "In de meeste gevallen kunnen wij binnen 24–48 uur transport regelen. Is er beschikbaarheid? Dan kunnen wij vaak ook dezelfde dag nog rijden. Vul je aanvraag in en we nemen snel contact met je op om een datum en tijdvak af te spreken. Bij last-minute aanvragen kan een toeslag van toepassing zijn.",
   },
 ];
 

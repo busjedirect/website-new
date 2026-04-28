@@ -19,22 +19,22 @@ const STEPS = [
   {
     number: "1",
     title: "Aanvraag",
-    description: "Vul je gegevens in en dien je aanvraag in via onze website.",
+    description: "Vul eenvoudig de ophaal- en afleverlocatie in en selecteer je items via onze website.",
   },
   {
     number: "2",
-    title: "Offerte",
-    description: "Ontvang direct een prijs op maat, vrijblijvend en gratis.",
+    title: "Prijs berekenen",
+    description: "Je ziet direct een duidelijke prijs op basis van afstand en items. Geen verrassingen achteraf.",
   },
   {
     number: "3",
     title: "Ophalen",
-    description: "We halen je spullen op op het afgesproken moment.",
+    description: "We halen je spullen op het afgesproken moment op. In veel gevallen al binnen 24–48 uur, soms dezelfde dag.",
   },
   {
     number: "4",
     title: "Bezorging",
-    description: "We leveren alles veilig af op de gewenste locatie.",
+    description: "We leveren netjes af bij de buitendeur op de begane grond. Betaling vindt plaats bij aflevering.",
   },
 ];
 

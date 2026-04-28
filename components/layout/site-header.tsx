@@ -5,7 +5,9 @@ import Link from "next/link";
 import Image from "next/image";
 
 const NAV_LINKS: { href: string; label: string }[] = [
-  // Nieuwe nav items komen hier
+  { href: "/diensten", label: "Diensten" },
+  { href: "/vervoeren", label: "Wat we vervoeren" },
+  { href: "/faq", label: "FAQ" },
 ];
 
 // Phone icon
@@ -75,18 +77,18 @@ export function SiteHeader() {
         {/* ---- Desktop right: phone number ---- */}
         <div className="hidden items-center lg:flex">
           <a
-            href="tel:0850606126"
+            href="tel:0631356682"
             className="flex items-center gap-2 text-[13.5px] font-semibold text-zinc-800 transition hover:text-zinc-600"
           >
             <PhoneIcon />
-            085 06 06 126
+            06 31 35 66 82
           </a>
         </div>
 
         {/* ---- Mobile right: phone icon + hamburger ---- */}
         <div className="flex items-center gap-3 lg:hidden">
           <a
-            href="tel:0850606126"
+            href="tel:0631356682"
             aria-label="Bel ons"
             className="flex h-9 w-9 items-center justify-center rounded-lg border border-zinc-200 text-zinc-700"
           >
@@ -121,11 +123,11 @@ export function SiteHeader() {
             ))}
           </nav>
           <a
-            href="tel:0850606126"
+            href="tel:0631356682"
             className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl border border-zinc-200 py-3 text-sm font-semibold text-zinc-800 transition hover:bg-zinc-50"
           >
             <PhoneIcon />
-            085 06 06 126
+            06 31 35 66 82
           </a>
         </div>
       )}

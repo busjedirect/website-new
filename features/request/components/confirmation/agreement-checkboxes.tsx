@@ -18,7 +18,6 @@ function CheckboxRow({ id, checked, onChange, children }: CheckboxRowProps) {
           : "border-zinc-200 bg-white hover:border-zinc-400",
       ].join(" ")}
     >
-      {/* Custom checkbox */}
       <div className="relative mt-0.5 shrink-0">
         <input
           id={id}
@@ -47,31 +46,21 @@ function CheckboxRow({ id, checked, onChange, children }: CheckboxRowProps) {
 
 interface AgreementCheckboxesProps {
   agreedToTerms: boolean;
-  agreedToExtraTime: boolean;
   onTermsChange: (v: boolean) => void;
-  onExtraTimeChange: (v: boolean) => void;
 }
 
 export function AgreementCheckboxes({
   agreedToTerms,
-  agreedToExtraTime,
   onTermsChange,
-  onExtraTimeChange,
 }: AgreementCheckboxesProps) {
   return (
     <div className="flex flex-col gap-3">
       <CheckboxRow id="terms" checked={agreedToTerms} onChange={onTermsChange}>
         Ik ga akkoord met de{" "}
-        <span className="font-medium text-zinc-900 underline underline-offset-2">
+        <a href="/algemene-voorwaarden" target="_blank" rel="noopener noreferrer" className="font-medium text-zinc-900 underline underline-offset-2">
           algemene voorwaarden
-        </span>{" "}
+        </a>{" "}
         van BusjeDirect.
-      </CheckboxRow>
-
-      <CheckboxRow id="extra-time" checked={agreedToExtraTime} onChange={onExtraTimeChange}>
-        Ik begrijp dat extra tijd{" "}
-        <span className="font-medium text-zinc-900">(€25 per 15 minuten)</span>{" "}
-        in rekening kan worden gebracht als de rit langer duurt dan gepland.
       </CheckboxRow>
     </div>
   );

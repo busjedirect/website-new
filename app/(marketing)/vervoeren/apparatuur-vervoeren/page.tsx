@@ -3,15 +3,15 @@ import { VervoerPageTemplate } from "@/components/vervoeren/shared/vervoer-templ
 import type { VervoerPageData } from "@/components/vervoeren/shared/vervoer-template";
 
 export const metadata: Metadata = {
-  title: "Apparatuur vervoeren? Snel en veilig transport | BusjeDirect",
+  title: "Apparatuur vervoeren",
   description:
-    "Laat je apparatuur veilig en snel vervoeren door BusjeDirect. Transparante prijs en snelle service. Vraag direct vrijblijvend aan.",
+    "Fitnessapparatuur, machines of professionele apparaten laten vervoeren? BusjeDirect regelt het veilig door heel Nederland.",
 };
 
 const data: VervoerPageData = {
-  metaTitle: "Apparatuur vervoeren? Snel en veilig transport | BusjeDirect",
+  metaTitle: "Apparatuur vervoeren | BusjeDirect",
   metaDescription:
-    "Laat je apparatuur veilig en snel vervoeren door BusjeDirect. Transparante prijs en snelle service. Vraag direct vrijblijvend aan.",
+    "Fitnessapparatuur, machines of professionele apparaten laten vervoeren? BusjeDirect regelt het veilig door heel Nederland.",
   slug: "apparatuur-vervoeren",
   item: "Apparatuur",
   label: "Apparatuur vervoeren",
@@ -75,7 +75,7 @@ const data: VervoerPageData = {
     {
       question: "Is mijn apparatuur verzekerd tijdens transport?",
       answer:
-        "Ja, al onze transporten zijn verzekerd. Jouw apparatuur is in goede handen tijdens het hele traject.",
+        "Wij gaan zorgvuldig om met uw goederen. Tijdens transport geldt een beperkte aansprakelijkheid conform onze algemene voorwaarden. Wij adviseren om waardevolle goederen vooraf te melden en indien nodig aanvullend te verzekeren. Eventuele schade dient direct bij levering gemeld te worden.",
     },
     {
       question: "Kunnen jullie ook in het weekend apparatuur vervoeren?",

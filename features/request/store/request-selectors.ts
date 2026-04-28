@@ -63,10 +63,14 @@ export const formattedItemCount = (s: RequestState): string => {
   return total === 1 ? "1 item" : `${total} items`;
 };
 
+/** Of één of meer items een geschatte oppervlakte hebben (geen maten opgegeven) */
+export const hasEstimatedItems = (s: RequestState): boolean =>
+  s.hasEstimatedItems;
+
 /** Huidige prijs in centen, of null als nog niet berekend */
 export const currentPriceCents = (s: RequestState): number | null =>
   s.priceCents;
 
-/** Geformatteerde prijs incl. btw, of null als nog niet berekend */
+/** Geformatteerde prijs excl. btw, of null als nog niet berekend */
 export const formattedPrice = (s: RequestState): string | null =>
   s.priceCents !== null ? formatPrice(s.priceCents) : null;

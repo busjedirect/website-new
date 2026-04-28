@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { SiteFooter } from "@/components/layout/site-footer";
 import {
   ShieldCheckIcon,
@@ -39,6 +40,8 @@ export interface DienstPageData {
   label: string;
   h1: string;
   heroSubtext: string;
+  /** Hero image (from /public) */
+  heroImage: string;
   /** Intro */
   introParagraphs: string[];
   /** Wat houdt het in */
@@ -100,7 +103,16 @@ function DienstHero({ data }: { data: DienstPageData }) {
             </div>
           </div>
           <div className="w-full lg:w-[480px] lg:shrink-0">
-            <div className="w-full overflow-hidden rounded-2xl bg-zinc-200" style={{ aspectRatio: "4/3" }} aria-hidden="true" />
+            <div className="w-full overflow-hidden rounded-2xl bg-zinc-200" style={{ aspectRatio: "4/3" }}>
+              <Image
+                src={data.heroImage}
+                alt={data.label}
+                width={960}
+                height={720}
+                className="h-full w-full object-cover"
+                priority
+              />
+            </div>
           </div>
         </div>
       </div>

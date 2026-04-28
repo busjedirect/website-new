@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 // ---------------------------------------------------------------------------
 // Icons
@@ -31,11 +32,16 @@ export function DienstenBottomCta() {
       <div className="mx-auto max-w-[1200px] px-6 sm:px-8">
         <div className="flex flex-col gap-10 overflow-hidden rounded-2xl bg-white shadow-sm lg:flex-row">
 
-          {/* Left: image placeholder */}
-          <div
-            className="h-56 w-full bg-zinc-200 lg:h-auto lg:w-[360px] lg:shrink-0"
-            aria-hidden="true"
-          />
+          {/* Left: image */}
+          <div className="relative h-56 w-full overflow-hidden lg:h-auto lg:w-[360px] lg:shrink-0">
+            <Image
+              src="/Diensten/Footer Diensten.png"
+              alt="BusjeDirect transport"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 360px"
+            />
+          </div>
 
           {/* Right: text + CTA */}
           <div className="flex flex-col justify-center px-8 py-10 lg:py-12">

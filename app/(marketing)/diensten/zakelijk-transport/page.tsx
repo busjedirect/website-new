@@ -3,16 +3,17 @@ import { DienstPageTemplate } from "@/components/diensten/shared/dienst-template
 import type { DienstPageData } from "@/components/diensten/shared/dienst-template";
 
 export const metadata: Metadata = {
-  title: "Zakelijk transport — Betrouwbaar voor bedrijven | BusjeDirect",
+  title: "Zakelijk transport",
   description:
-    "Zakelijk transport voor bedrijven en ondernemers. BusjeDirect verzorgt kantoorinrichting, showroom leveringen en spoedtransport. Snel, discreet en professioneel.",
+    "Kantoorinrichting, showroom levering of spoedtransport voor bedrijven. BusjeDirect rijdt door heel Nederland. Prijs op basis van afstand.",
 };
 
 const data: DienstPageData = {
-  metaTitle: "Zakelijk transport — Betrouwbaar voor bedrijven | BusjeDirect",
-  metaDescription: "Zakelijk transport voor bedrijven en ondernemers. BusjeDirect verzorgt kantoorinrichting, showroom leveringen en spoedtransport.",
+  metaTitle: "Zakelijk transport | BusjeDirect",
+  metaDescription: "Kantoorinrichting, showroom levering of spoedtransport voor bedrijven. BusjeDirect rijdt door heel Nederland. Prijs op basis van afstand.",
   label: "Zakelijk transport",
   h1: "Zakelijk transport snel en professioneel geregeld",
+  heroImage: "/Diensten/Zakelijk Transport.png",
   heroSubtext:
     "Betrouwbaar zakelijk transport voor bedrijven en ondernemers. Van kantoorinrichting en showroom leveringen tot spoedtransport. Wij regelen het discreet, snel en professioneel.",
   introParagraphs: [
@@ -76,7 +77,7 @@ const data: DienstPageData = {
     { question: "Wat kost zakelijk transport?", answer: "De prijs start vanaf €65 excl. btw en hangt af van de afstand. Voor maatwerk of vaste contracten neem je contact met ons op." },
     { question: "Kunnen jullie ook spoedtransport regelen?", answer: "Ja, in veel gevallen kunnen wij spoedtransport binnen 24 uur regelen. Neem direct contact op voor de mogelijkheden." },
     { question: "Rijden jullie ook buiten kantooruren?", answer: "Ja, wij zijn ook in het weekend en buiten reguliere kantooruren beschikbaar. Kies zelf een datum en tijdvak." },
-    { question: "Is zakelijk transport verzekerd?", answer: "Ja, al onze transporten zijn verzekerd. Jouw goederen zijn in goede handen." },
+    { question: "Is zakelijk transport verzekerd?", answer: "Wij gaan zorgvuldig om met uw goederen. Tijdens transport geldt een beperkte aansprakelijkheid conform onze algemene voorwaarden. Wij adviseren om waardevolle goederen vooraf te melden en indien nodig aanvullend te verzekeren. Eventuele schade dient direct bij levering gemeld te worden." },
     { question: "Kunnen jullie ook internationaal rijden?", answer: "Ja, wij verzorgen ook internationaal transport binnen Europa. Bekijk onze internationale transportpagina voor meer informatie." },
     { question: "Kunnen jullie een vaste transportpartner worden?", answer: "Ja, voor bedrijven die regelmatig transport nodig hebben bieden wij maatwerkoplossingen. Neem contact op voor een gesprek." },
   ],

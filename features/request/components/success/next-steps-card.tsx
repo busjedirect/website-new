@@ -1,6 +1,6 @@
 const STEPS = [
   "We controleren je aanvraag en beschikbaarheid.",
-  "Je ontvangt een bevestiging per e-mail of telefoon.",
+  "Je ontvangt een bevestiging via WhatsApp of sms.",
   "Op de afgesproken dag staat ons team voor je klaar.",
 ];
 

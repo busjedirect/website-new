@@ -3,15 +3,15 @@ import { VervoerPageTemplate } from "@/components/vervoeren/shared/vervoer-templ
 import type { VervoerPageData } from "@/components/vervoeren/shared/vervoer-template";
 
 export const metadata: Metadata = {
-  title: "Koelkast vervoeren — Snel & veilig | BusjeDirect",
+  title: "Koelkast vervoeren",
   description:
-    "Koelkast vervoeren in Nederland? BusjeDirect vervoert koelkasten en vriezers veilig en rechtop. Nieuwe koelkast bezorgen of oude ophalen. Wij regelen het.",
+    "Koelkast of vriezer laten vervoeren? Wij vervoeren rechtop en veilig. Nieuw of tweedehands, door heel Nederland.",
 };
 
 const data: VervoerPageData = {
-  metaTitle: "Koelkast vervoeren — Snel & veilig | BusjeDirect",
+  metaTitle: "Koelkast vervoeren | BusjeDirect",
   metaDescription:
-    "Koelkast vervoeren in Nederland? BusjeDirect vervoert koelkasten en vriezers veilig en rechtop. Nieuwe koelkast bezorgen of oude ophalen. Wij regelen het.",
+    "Koelkast of vriezer laten vervoeren? Wij vervoeren rechtop en veilig. Nieuw of tweedehands, door heel Nederland.",
   slug: "koelkast-vervoeren",
   item: "Koelkast",
   label: "Koelkast vervoeren",
@@ -31,9 +31,9 @@ const data: VervoerPageData = {
         "Je hebt een nieuwe koelkast gekocht maar de winkel bezorgt niet. Wij halen hem op en bezorgen hem bij jou thuis.",
     },
     {
-      title: "Oude koelkast laten ophalen",
+      title: "Tweedehands koelkast ophalen",
       description:
-        "Je wilt je oude koelkast kwijt. Wij halen hem op en brengen hem naar het gewenste adres of inleverpunt.",
+        "Je hebt een tweedehands koelkast gevonden maar geen vervoer. Wij halen hem op bij de verkoper en bezorgen hem bij jou.",
     },
     {
       title: "Koelkast meenemen bij verhuizing",
@@ -70,12 +70,12 @@ const data: VervoerPageData = {
     {
       question: "Kunnen jullie ook mijn oude koelkast meenemen?",
       answer:
-        "Ja, wij kunnen je oude koelkast ophalen als extra item. Geef dit aan bij je aanvraag, dan nemen we dit mee in de prijsberekening.",
+        "Nee, wij vervoeren geen oude apparaten ter afvoer. De klant dient zelf zorg te dragen voor het afvoeren van oude koelkasten. Wij vervoeren uitsluitend van A naar B.",
     },
     {
       question: "Hoe snel kunnen jullie een koelkast vervoeren?",
       answer:
-        "In de meeste gevallen kunnen wij binnen 24–48 uur transport regelen. Vul je aanvraag in en we plannen snel een datum en tijdvak in.",
+        "In de meeste gevallen kunnen wij binnen 24–48 uur transport regelen. Is er beschikbaarheid? Dan kunnen wij vaak ook dezelfde dag nog rijden. Vul je aanvraag in en we nemen snel contact met je op om een datum en tijdvak af te spreken. Bij last-minute aanvragen kan een toeslag van toepassing zijn.",
     },
   ],
   anderItems: [

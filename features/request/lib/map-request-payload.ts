@@ -20,7 +20,6 @@ export function mapRequestPayload(state: RequestState): CreateRequestPayload {
     email,
     note,
     agreedToTerms,
-    agreedToExtraTime,
   } = state;
 
   if (!fromAddress) throw new Error("Ophaaladres ontbreekt.");
@@ -47,6 +46,5 @@ export function mapRequestPayload(state: RequestState): CreateRequestPayload {
     email,
     note: note.trim() || undefined,
     agreedToTerms: true,
-    agreedToExtraTime,
   };
 }

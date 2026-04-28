@@ -234,11 +234,12 @@ function VervoerWanneer({ data }: { data: VervoerPageData }) {
 // ---------------------------------------------------------------------------
 
 function VervoerHoeHetWerkt({ data }: { data: VervoerPageData }) {
+  const item = data.item.toLowerCase();
   const steps = [
-    { n: "1", title: "Aanvraag", desc: `Vul je adressen en het aantal ${data.item.toLowerCase()}s in via onze website.` },
-    { n: "2", title: "Offerte", desc: "Ontvang direct een transparante prijs op maat. Geen verborgen kosten." },
-    { n: "3", title: "Ophalen", desc: `We halen jouw ${data.item.toLowerCase()} op op het afgesproken moment.` },
-    { n: "4", title: "Bezorging", desc: "Wij leveren bij de buitendeur op de begane grond. Geen trappen, niet binnenshuis." },
+    { n: "1", title: "Aanvraag", desc: `Vul eenvoudig de ophaal- en afleverlocatie in en selecteer je items via onze website.` },
+    { n: "2", title: "Prijs berekenen", desc: "Je ziet direct een duidelijke prijs op basis van afstand en items. Geen verrassingen achteraf." },
+    { n: "3", title: "Ophalen", desc: `We halen je ${item} op het afgesproken moment op. In veel gevallen kunnen we dit al binnen 24–48 uur regelen, soms zelfs dezelfde dag.` },
+    { n: "4", title: "Bezorging", desc: `We leveren je ${item} netjes af bij de buitendeur op de begane grond. Betaling vindt plaats bij aflevering.` },
   ];
   return (
     <section className="bg-white py-14 sm:py-16">

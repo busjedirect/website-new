@@ -4,9 +4,9 @@ import { SiteFooter } from "@/components/layout/site-footer";
 import { LOCATIES } from "@/lib/locaties";
 
 export const metadata: Metadata = {
-  title: "Onze werkgebieden — Transport door heel de regio | BusjeDirect",
+  title: "Werkgebied",
   description:
-    "BusjeDirect is actief in Amsterdam, Utrecht, Haarlem, Almere en meer. Bekijk alle locaties waar wij transport verzorgen.",
+    "BusjeDirect rijdt vanuit Diemen door heel Nederland. Actief in Amsterdam, Haarlem, Almere, Utrecht en omgeving. Bekijk alle locaties.",
   alternates: {
     canonical: "/locaties",
   },

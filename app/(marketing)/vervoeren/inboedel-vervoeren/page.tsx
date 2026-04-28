@@ -3,15 +3,15 @@ import { VervoerPageTemplate } from "@/components/vervoeren/shared/vervoer-templ
 import type { VervoerPageData } from "@/components/vervoeren/shared/vervoer-template";
 
 export const metadata: Metadata = {
-  title: "Inboedel vervoeren? Snel en veilig transport | BusjeDirect",
+  title: "Inboedel vervoeren",
   description:
-    "Laat je inboedel veilig en snel vervoeren door BusjeDirect. Transparante prijs en snelle service. Vraag direct vrijblijvend aan.",
+    "Complete inboedel laten vervoeren? BusjeDirect regelt het transport van A naar B. Ophalen en bezorgen aan de buitendeur op de begane grond.",
 };
 
 const data: VervoerPageData = {
-  metaTitle: "Inboedel vervoeren? Snel en veilig transport | BusjeDirect",
+  metaTitle: "Inboedel vervoeren | BusjeDirect",
   metaDescription:
-    "Laat je inboedel veilig en snel vervoeren door BusjeDirect. Transparante prijs en snelle service. Vraag direct vrijblijvend aan.",
+    "Complete inboedel laten vervoeren? BusjeDirect regelt het transport van A naar B. Ophalen en bezorgen aan de buitendeur op de begane grond.",
   slug: "inboedel-vervoeren",
   item: "Inboedel",
   label: "Inboedel vervoeren",
@@ -80,7 +80,7 @@ const data: VervoerPageData = {
     {
       question: "Is mijn inboedel verzekerd tijdens transport?",
       answer:
-        "Ja, al onze transporten zijn verzekerd. Jouw inboedel is in goede handen tijdens het hele traject.",
+        "Wij gaan zorgvuldig om met uw goederen. Tijdens transport geldt een beperkte aansprakelijkheid conform onze algemene voorwaarden. Wij adviseren om waardevolle goederen vooraf te melden en indien nodig aanvullend te verzekeren. Eventuele schade dient direct bij levering gemeld te worden.",
     },
   ],
   anderItems: [

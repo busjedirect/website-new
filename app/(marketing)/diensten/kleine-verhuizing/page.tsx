@@ -3,16 +3,17 @@ import { DienstPageTemplate } from "@/components/diensten/shared/dienst-template
 import type { DienstPageData } from "@/components/diensten/shared/dienst-template";
 
 export const metadata: Metadata = {
-  title: "Kleine verhuizing — Snel & betaalbaar | BusjeDirect",
+  title: "Kleine verhuizing regelen",
   description:
-    "Kleine verhuizing regelen? BusjeDirect verzorgt studio- en appartementverhuizingen snel, veilig en tegen een vaste prijs. Door heel Nederland.",
+    "Studio, appartement of een paar meubels verhuizen? BusjeDirect regelt het snel. Grotere verhuizing? Mail ons voor een prijs op maat.",
 };
 
 const data: DienstPageData = {
-  metaTitle: "Kleine verhuizing — Snel & betaalbaar | BusjeDirect",
-  metaDescription: "Kleine verhuizing regelen? BusjeDirect verzorgt studio- en appartementverhuizingen snel, veilig en tegen een vaste prijs.",
+  metaTitle: "Kleine verhuizing regelen | BusjeDirect",
+  metaDescription: "Studio, appartement of een paar meubels verhuizen? BusjeDirect regelt het snel. Grotere verhuizing? Mail ons voor een prijs op maat.",
   label: "Kleine verhuizing",
   h1: "Kleine verhuizing snel en betaalbaar geregeld",
+  heroImage: "/Diensten/Kleine Verhuizing.png",
   heroSubtext:
     "Professionele kleine verhuizing voor particulieren. Of je nu een studio, appartement of een paar kamers verhuist. Wij regelen het snel, veilig en zonder gedoe.",
   introParagraphs: [
@@ -76,9 +77,9 @@ const data: DienstPageData = {
   ],
   faqs: [
     { question: "Wat kost een kleine verhuizing?", answer: "De prijs start vanaf €65 excl. btw en hangt af van de afstand tussen het ophaaladres en het afleveradres. Bereken je prijs via onze website." },
-    { question: "Hoe snel kunnen jullie de verhuizing regelen?", answer: "In de meeste gevallen binnen 24–48 uur. Vul je aanvraag in en we plannen snel een datum in." },
+    { question: "Hoe snel kunnen jullie de verhuizing regelen?", answer: "In de meeste gevallen kunnen wij binnen 24–48 uur transport regelen. Is er beschikbaarheid? Dan kunnen wij vaak ook dezelfde dag nog rijden. Vul je aanvraag in en we nemen snel contact met je op om een datum en tijdvak af te spreken. Bij last-minute aanvragen kan een toeslag van toepassing zijn." },
     { question: "Helpen jullie met inpakken?", answer: "Wij zijn een transportbedrijf, geen verhuisbedrijf. Wij werken drempel tot drempel: ophalen en afleveren bij de buitendeur op de begane grond. Wij lopen geen trappen en komen niet binnenshuis." },
-    { question: "Is mijn inboedel verzekerd tijdens de verhuizing?", answer: "Ja, al onze transporten zijn verzekerd. Jouw spullen zijn in goede handen." },
+    { question: "Is mijn inboedel verzekerd tijdens de verhuizing?", answer: "Wij gaan zorgvuldig om met uw goederen. Tijdens transport geldt een beperkte aansprakelijkheid conform onze algemene voorwaarden. Wij adviseren om waardevolle goederen vooraf te melden en indien nodig aanvullend te verzekeren. Eventuele schade dient direct bij levering gemeld te worden." },
     { question: "Kunnen jullie ook naar een verdieping?", answer: "Wij werken drempel tot drempel: ophalen en afleveren bij de buitendeur op de begane grond. Wij lopen geen trappen en komen niet binnenshuis." },
     { question: "Rijden jullie ook in het weekend?", answer: "Ja, ook in het weekend beschikbaar. Kies zelf een datum en tijdvak." },
   ],

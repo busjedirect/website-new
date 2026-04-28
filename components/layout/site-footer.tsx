@@ -73,19 +73,28 @@ export function SiteFooter() {
 
           {/* Brand — full width on mobile, 2fr on desktop */}
           <div className="col-span-2 sm:col-span-4 lg:col-span-1">
-            <Link href="/" className="mb-3 inline-flex items-center text-[17px] font-extrabold">
-              <span className="text-white">Busje</span>
-              <span className="text-[#FF7A00]">Direct</span>
+            <Link href="/" className="mb-3 inline-flex items-center gap-2.5">
+              {/* Logo icon — white version */}
+              <svg width="28" height="21" viewBox="0 0 145 109" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M21.4375 90H13.0091C7.70442 90 3.86868 84.9312 5.31011 79.8262L24.7925 10.8262C25.7655 7.37984 28.9104 5 32.4915 5H101.938C115.745 5 126.938 16.1929 126.938 30C126.938 43.8071 115.745 55 101.938 55H95.9375C90.9669 55 86.9375 50.9706 86.9375 46C86.9375 41.0294 90.9669 37 95.9375 37H112.938C127.573 37 139.438 48.8645 139.438 63.5C139.438 78.1355 127.573 90 112.938 90H110.938M51.4375 90H86.9375" stroke="white" strokeWidth="10"/>
+                <circle cx="36.4375" cy="89.5" r="14.5" stroke="white" strokeWidth="10"/>
+                <circle cx="101.438" cy="89.5" r="14.5" stroke="white" strokeWidth="10"/>
+              </svg>
+              <span className="text-[17px] font-extrabold tracking-tight">
+                <span className="text-white">Busje</span>
+                <span className="text-white">Direct</span>
+              </span>
             </Link>
             <p className="mb-5 text-[12px] leading-relaxed text-zinc-400">
               Groot vervoer, zonder gedoe.<br />
-              Snel, veilig en transparant van A naar B.
+              Snel, veilig en transparant van A naar B.<br />
+              <span className="text-zinc-500">KVK: 42018328</span>
             </p>
             {/* Contact compact */}
             <ul className="mb-5 flex flex-col gap-2">
               <li>
-                <a href="tel:0850606126" className="flex items-center gap-2 text-[12px] text-zinc-400 transition hover:text-white">
-                  <PhoneIcon /> 085 06 06 126
+                <a href="tel:0631356682" className="flex items-center gap-2 text-[12px] text-zinc-400 transition hover:text-white">
+                  <PhoneIcon /> 06 31 35 66 82
                 </a>
               </li>
               <li>
@@ -95,8 +104,13 @@ export function SiteFooter() {
               </li>
               <li>
                 <span className="flex items-center gap-2 text-[12px] text-zinc-400">
-                  <ClockIcon /> Ma – Za 08:00 – 22:00
+                  <ClockIcon /> Ma – Zo 09:00 – 22:00
                 </span>
+              </li>
+              <li>
+                <Link href="/contact" className="text-[12.5px] text-[#FF7A00] transition hover:text-[#E86E00]">
+                  Contactpagina →
+                </Link>
               </li>
             </ul>
             {/* Google rating */}
@@ -104,13 +118,13 @@ export function SiteFooter() {
               <div>
                 <div className="flex items-center gap-1.5">
                   <span className="text-[11px] font-bold text-white">G</span>
-                  <span className="text-[14px] font-extrabold text-white">4.8 / 5</span>
+                  <span className="text-[14px] font-extrabold text-white">5 / 5</span>
                 </div>
                 <div className="mt-1 flex gap-0.5">
                   {Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} />)}
                 </div>
               </div>
-              <p className="text-[11px] leading-snug text-zinc-400">250+<br />reviews</p>
+              <p className="text-[11px] leading-snug text-zinc-400">15+<br />reviews</p>
             </div>
           </div>
 
@@ -173,8 +187,8 @@ export function SiteFooter() {
           <p className="text-[11px] text-zinc-500">© {new Date().getFullYear()} BusjeDirect.nl · Gevestigd in Diemen</p>
           <div className="flex flex-wrap gap-4">
             {[
-              { label: "Algemene voorwaarden", href: "/contact" },
-              { label: "Privacyverklaring", href: "/contact" },
+              { label: "Algemene voorwaarden", href: "/algemene-voorwaarden" },
+              { label: "Privacyverklaring", href: "/privacyverklaring" },
               { label: "Cookieverklaring", href: "/contact" },
             ].map((l) => (
               <Link key={l.label} href={l.href} className="text-[11px] text-zinc-500 transition hover:text-zinc-300">

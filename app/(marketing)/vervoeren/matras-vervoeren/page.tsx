@@ -3,15 +3,15 @@ import { VervoerPageTemplate } from "@/components/vervoeren/shared/vervoer-templ
 import type { VervoerPageData } from "@/components/vervoeren/shared/vervoer-template";
 
 export const metadata: Metadata = {
-  title: "Matras vervoeren — Snel & veilig | BusjeDirect",
+  title: "Matras vervoeren",
   description:
-    "Matras vervoeren in Nederland? BusjeDirect vervoert matrassen van alle formaten snel en veilig. Nieuw matras bezorgen of oud matras ophalen. Wij regelen het.",
+    "Matras laten vervoeren? BusjeDirect vervoert matrassen van alle formaten door heel Nederland. Ophalen en bezorgen aan de buitendeur.",
 };
 
 const data: VervoerPageData = {
-  metaTitle: "Matras vervoeren — Snel & veilig | BusjeDirect",
+  metaTitle: "Matras vervoeren | BusjeDirect",
   metaDescription:
-    "Matras vervoeren in Nederland? BusjeDirect vervoert matrassen van alle formaten snel en veilig. Nieuw matras bezorgen of oud matras ophalen. Wij regelen het.",
+    "Matras laten vervoeren? BusjeDirect vervoert matrassen van alle formaten door heel Nederland. Ophalen en bezorgen aan de buitendeur.",
   slug: "matras-vervoeren",
   item: "Matras",
   label: "Matras vervoeren",
@@ -21,7 +21,7 @@ const data: VervoerPageData = {
   heroImage: "/Vervoeren/Matrassen.png",
   introParagraphs: [
     "Een matras vervoeren is lastiger dan het lijkt. Matrassen zijn groot, zwaar en moeilijk te hanteren zonder de juiste hulp. Ze passen zelden in een gewone auto en kunnen beschadigen als ze niet goed worden vervoerd. BusjeDirect neemt dit werk van je over.",
-    "Of je nu een nieuw matras wilt laten bezorgen, een oud matras wilt laten ophalen, of je matras wilt meenemen bij een verhuizing. Wij regelen het transport. Onze chauffeurs weten hoe ze matrassen veilig inladen en vervoeren zonder beschadigingen.",
+    "Of je nu een nieuw matras wilt laten bezorgen of je matras wilt meenemen bij een verhuizing. Wij regelen het transport. Onze chauffeurs weten hoe ze matrassen veilig inladen en vervoeren zonder beschadigingen.",
     "Matras vervoeren via BusjeDirect is eenvoudig: vul je adressen in, geef het formaat op en ontvang direct een transparante prijs. Snel geregeld, zonder gedoe.",
   ],
   wanneerItems: [
@@ -31,9 +31,9 @@ const data: VervoerPageData = {
         "Je hebt een nieuw matras gekocht maar de winkel bezorgt niet. Wij halen het op en bezorgen het bij jou thuis.",
     },
     {
-      title: "Oud matras laten ophalen",
+      title: "Tweedehands matras ophalen",
       description:
-        "Je wilt je oude matras kwijt. Wij halen het op en brengen het naar het gewenste adres of inleverpunt.",
+        "Je hebt een tweedehands matras gevonden maar geen vervoer. Wij halen het op bij de verkoper en bezorgen het bij jou.",
     },
     {
       title: "Matras meenemen bij verhuizing",
@@ -70,12 +70,12 @@ const data: VervoerPageData = {
     {
       question: "Kunnen jullie ook mijn oude matras meenemen?",
       answer:
-        "Ja, wij kunnen je oude matras ophalen als extra item. Geef dit aan bij je aanvraag, dan nemen we dit mee in de prijsberekening.",
+        "Nee, wij vervoeren geen oude matrassen ter afvoer. De klant dient zelf zorg te dragen voor het afvoeren van oude matrassen. Wij vervoeren uitsluitend van A naar B.",
     },
     {
       question: "Hoe snel kunnen jullie een matras vervoeren?",
       answer:
-        "In de meeste gevallen kunnen wij binnen 24–48 uur transport regelen. Vul je aanvraag in en we plannen snel een datum en tijdvak in.",
+        "In de meeste gevallen kunnen wij binnen 24–48 uur transport regelen. Is er beschikbaarheid? Dan kunnen wij vaak ook dezelfde dag nog rijden. Vul je aanvraag in en we nemen snel contact met je op om een datum en tijdvak af te spreken. Bij last-minute aanvragen kan een toeslag van toepassing zijn.",
     },
   ],
   anderItems: [

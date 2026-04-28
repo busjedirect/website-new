@@ -3,19 +3,19 @@ import { FaqSection as SharedFaqSection } from "@/components/ui/faq-section";
 const FAQS = [
   {
     question: "Hoe snel kunnen jullie transport regelen?",
-    answer: "In veel gevallen kunnen wij binnen 24–48 uur transport regelen. Vul je aanvraag in en we nemen snel contact met je op om een datum en tijdvak af te spreken.",
+    answer: "In de meeste gevallen kunnen wij binnen 24–48 uur transport regelen. Is er beschikbaarheid? Dan kunnen wij vaak ook dezelfde dag nog rijden. Vul je aanvraag in en we nemen snel contact met je op om een datum en tijdvak af te spreken. Bij last-minute aanvragen kan een toeslag van toepassing zijn.",
   },
   {
     question: "Is mijn transport verzekerd?",
-    answer: "Ja, al onze transporten zijn verzekerd. Jouw spullen zijn in goede handen tijdens het hele traject van ophalen tot bezorgen.",
+    answer: "Wij gaan zorgvuldig om met uw goederen. Tijdens transport geldt een beperkte aansprakelijkheid conform onze algemene voorwaarden. Wij adviseren om waardevolle goederen vooraf te melden en indien nodig aanvullend te verzekeren. Eventuele schade dient direct bij levering gemeld te worden.",
   },
   {
     question: "Wat kost transport?",
-    answer: "De kosten zijn gebaseerd op de afstand en het aantal items. Via onze prijsberekening krijg je direct een indicatie, zonder verrassingen achteraf. Alle prijzen zijn excl. btw.",
+    answer: "De prijs start vanaf €65 excl. btw en wordt berekend op basis van de afstand tussen het ophaal- en afleveradres én de geselecteerde items. Via onze website zie je direct wat jouw transport kost.",
   },
   {
     question: "Welke betaalmethoden accepteren jullie?",
-    answer: "Wij accepteren iDEAL, creditcard en bankoverschrijving. Betaling vindt plaats na bevestiging van de aanvraag.",
+    answer: "Betaling vindt plaats bij aflevering. Je kunt betalen via pin, contant of betaalverzoek. Bij transporten over langere afstanden kunnen wij een aanbetaling vragen. Dit wordt altijd vooraf duidelijk gecommuniceerd.",
   },
   {
     question: "Helpen jullie met tillen en dragen?",

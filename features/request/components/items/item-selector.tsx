@@ -14,7 +14,9 @@ import { SelectedItemsList } from "./selected-items-list";
 type PanelState =
   | { type: "none" }
   | { type: "category"; category: ItemCategory_ }
-  | { type: "custom"; initialName: string };
+  | { type: "category-edit"; category: ItemCategory_; item: import("../../types/item.types").RequestItem }
+  | { type: "custom"; initialName: string }
+  | { type: "custom-edit"; item: import("../../types/item.types").RequestItem };
 
 // ---------------------------------------------------------------------------
 // Mobile bottom-sheet overlay
@@ -142,6 +144,7 @@ function DesktopSidePanel({ open, children }: DesktopSidePanelProps) {
 
 export function ItemSelector() {
   const addItem = useRequestStore((s) => s.addItem);
+  const updateItem = useRequestStore((s) => s.updateItem);
 
   const [query, setQuery] = useState("");
   const [panel, setPanel] = useState<PanelState>({ type: "none" });
@@ -153,7 +156,9 @@ export function ItemSelector() {
   }, [query]);
 
   const activeItemId =
-    panel.type === "category" ? panel.category.id : null;
+    panel.type === "category" || panel.type === "category-edit"
+      ? panel.category.id
+      : null;
   const panelOpen = panel.type !== "none";
 
   // ESC closes the desktop panel
@@ -187,6 +192,20 @@ export function ItemSelector() {
     setQuery("");
   }
 
+  function handleUpdate(id: string, updates: Partial<RequestItemInput>) {
+    updateItem(id, updates);
+    setPanel({ type: "none" });
+  }
+
+  function handleEdit(item: import("../../types/item.types").RequestItem) {
+    if (item.subtype === "custom") {
+      setPanel({ type: "custom-edit", item });
+    } else {
+      const category = ITEM_CATEGORY_MAP[item.category as keyof typeof ITEM_CATEGORY_MAP];
+      if (category) setPanel({ type: "category-edit", category, item });
+    }
+  }
+
   function handleCancel() {
     setPanel({ type: "none" });
   }
@@ -199,10 +218,38 @@ export function ItemSelector() {
         onAdd={handleAdd}
         onCancel={handleCancel}
       />
+    ) : panel.type === "category-edit" ? (
+      <ItemConfigPanel
+        category={panel.category}
+        editItem={{
+          id: panel.item.id,
+          subtype: panel.item.subtype,
+          aantal: panel.item.aantal,
+          properties: panel.item.properties as Record<string, unknown>,
+          dimensions: panel.item.dimensions,
+          opmerking: panel.item.opmerking,
+        }}
+        onAdd={handleAdd}
+        onUpdate={handleUpdate}
+        onCancel={handleCancel}
+      />
     ) : panel.type === "custom" ? (
       <CustomItemForm
         initialNaam={panel.initialName}
         onAdd={handleAdd}
+        onCancel={handleCancel}
+      />
+    ) : panel.type === "custom-edit" ? (
+      <CustomItemForm
+        initialNaam={panel.item.label}
+        editItem={{
+          id: panel.item.id,
+          aantal: panel.item.aantal,
+          dimensions: panel.item.dimensions,
+          opmerking: panel.item.opmerking,
+        }}
+        onAdd={handleAdd}
+        onUpdate={handleUpdate}
         onCancel={handleCancel}
       />
     ) : null;
@@ -234,7 +281,7 @@ export function ItemSelector() {
             />
           </div>
         </div>
-        <SelectedItemsList />
+        <SelectedItemsList onEdit={handleEdit} />
       </div>
 
       <DesktopFocusOverlay open={panelOpen} onClose={handleCancel} />
@@ -261,7 +308,7 @@ export function ItemSelector() {
             />
           </div>
         </div>
-        <SelectedItemsList />
+        <SelectedItemsList onEdit={handleEdit} />
       </div>
 
       <MobileOverlay open={panelOpen} onClose={handleCancel}>

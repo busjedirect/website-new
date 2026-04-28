@@ -24,17 +24,13 @@ import {
 
 interface ConfirmationViewProps {
   agreedToTerms: boolean;
-  agreedToExtraTime: boolean;
   onTermsChange: (v: boolean) => void;
-  onExtraTimeChange: (v: boolean) => void;
   onLoadingChange: (v: boolean) => void;
 }
 
 export function ConfirmationView({
   agreedToTerms,
-  agreedToExtraTime,
   onTermsChange,
-  onExtraTimeChange,
   onLoadingChange,
 }: ConfirmationViewProps) {
   const router = useRouter();
@@ -76,12 +72,11 @@ export function ConfirmationView({
     setLoading(true);
     onLoadingChange(true);
     try {
-      setAgreements(agreedToTerms, agreedToExtraTime);
+      setAgreements(agreedToTerms, false);
 
       const payload = mapRequestPayload({
         ...getFullState(),
         agreedToTerms,
-        agreedToExtraTime,
       });
 
       const receipt = await submitRequest(payload);
@@ -188,18 +183,45 @@ export function ConfirmationView({
 
       {/* Tijdinformatie */}
       <ConfirmationSection title="Tijdinformatie">
-        <ul className="flex flex-col gap-1.5">
-          {[
-            "Inclusief 15 min laden",
-            "Inclusief 15 min lossen",
-            "Extra tijd: €25 per 15 minuten",
-          ].map((line) => (
-            <li key={line} className="flex items-start gap-2 text-sm text-gray-600">
-              <span className="mt-0.5 text-gray-300">—</span>
-              {line}
-            </li>
-          ))}
-        </ul>
+        <div className="flex flex-col gap-3">
+          {/* Inbegrepen tijd */}
+          <div className="rounded-lg bg-zinc-50 px-4 py-3">
+            <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-zinc-400">
+              Inbegrepen in de prijs
+            </p>
+            <ul className="flex flex-col gap-1.5">
+              <li className="flex items-center gap-2 text-sm text-zinc-700">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16a34a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                15 minuten laadtijd
+              </li>
+              <li className="flex items-center gap-2 text-sm text-zinc-700">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16a34a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                15 minuten lostijd
+              </li>
+            </ul>
+          </div>
+
+          {/* Extra kosten */}
+          <div className="rounded-lg border border-amber-100 bg-amber-50 px-4 py-3">
+            <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-amber-600">
+              Mogelijke extra kosten
+            </p>
+            <ul className="flex flex-col gap-1.5">
+              <li className="flex items-start gap-2 text-sm text-zinc-700">
+                <span className="mt-0.5 shrink-0 text-amber-500">+</span>
+                <span>
+                  <span className="font-medium">€25 per kwartier</span> als het inladen of uitladen langer duurt dan 15 minuten
+                </span>
+              </li>
+              <li className="flex items-start gap-2 text-sm text-zinc-700">
+                <span className="mt-0.5 shrink-0 text-amber-500">+</span>
+                <span>
+                  <span className="font-medium">€15 per adres</span> binnen de Ring Amsterdam
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </ConfirmationSection>
 
       {/* Contactgegevens */}
@@ -216,9 +238,7 @@ export function ConfirmationView({
       {/* Akkoordverklaringen */}
       <AgreementCheckboxes
         agreedToTerms={agreedToTerms}
-        agreedToExtraTime={agreedToExtraTime}
         onTermsChange={onTermsChange}
-        onExtraTimeChange={onExtraTimeChange}
       />
 
       {/* Foutmelding */}

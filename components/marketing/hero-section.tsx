@@ -120,13 +120,15 @@ export function HeroSection() {
 
                 <AddressHeroForm />
 
-                <div className="mt-6 flex flex-wrap items-center gap-x-7 gap-y-3 border-t border-zinc-100 pt-5">
+                <div className="mt-6 flex flex-wrap justify-center items-center gap-x-6 gap-y-3 border-t border-zinc-100 pt-5">
                   {TRUST_ITEMS.map((item) => (
                     <span
                       key={item.label}
                       className="flex items-center gap-2 text-[13px] font-medium text-zinc-500"
                     >
-                      <span className="text-zinc-400">{item.icon}</span>
+                      <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-zinc-100 text-zinc-400">
+                        {item.icon}
+                      </span>
                       {item.label}
                     </span>
                   ))}
@@ -187,15 +189,17 @@ export function HeroSection() {
           </div>
         </div>
 
-        {/* Trust items — vertical list */}
-        <div className="px-5 pt-5 pb-8">
-          <div className="flex flex-col gap-4">
+        {/* Trust items — 2-column grid */}
+        <div className="px-5 pt-4 pb-8">
+          <div className="grid grid-cols-2 gap-x-4 gap-y-3">
             {TRUST_ITEMS.map((item) => (
               <span
                 key={item.label}
-                className="flex items-center gap-3 text-[14px] font-medium text-zinc-600"
+                className="flex items-center gap-2 text-[13px] font-medium text-zinc-500"
               >
-                <span className="text-zinc-400">{item.icon}</span>
+                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-zinc-100 text-zinc-400">
+                  {item.icon}
+                </span>
                 {item.label}
               </span>
             ))}

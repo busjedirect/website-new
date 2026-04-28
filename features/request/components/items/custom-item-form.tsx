@@ -10,15 +10,24 @@ const inputClass =
 
 interface CustomItemFormProps {
   initialNaam?: string;
+  /** Bestaand item voor bewerkingsmodus */
+  editItem?: {
+    id: string;
+    aantal: number;
+    dimensions?: import("../../types/item.types").ItemDimensions;
+    opmerking?: string;
+  };
   onAdd: (input: RequestItemInput) => void;
+  onUpdate?: (id: string, updates: Partial<RequestItemInput>) => void;
   onCancel: () => void;
 }
 
-export function CustomItemForm({ initialNaam = "", onAdd, onCancel }: CustomItemFormProps) {
+export function CustomItemForm({ initialNaam = "", editItem, onAdd, onUpdate, onCancel }: CustomItemFormProps) {
   const [naam, setNaam] = useState(initialNaam);
-  const [aantal, setAantal] = useState(1);
-  const [dimensions, setDimensions] = useState<Partial<ItemDimensions>>({});
-  const [opmerking, setOpmerking] = useState("");
+  const [aantal, setAantal] = useState(editItem?.aantal ?? 1);
+  const [dimensions, setDimensions] = useState<Partial<ItemDimensions>>(editItem?.dimensions ?? {});
+  const [opmerking, setOpmerking] = useState(editItem?.opmerking ?? "");
+  const isEditMode = Boolean(editItem);
 
   const canSubmit = naam.trim().length >= 2;
 
@@ -29,15 +38,22 @@ export function CustomItemForm({ initialNaam = "", onAdd, onCancel }: CustomItem
       dimensions.lengthCm !== undefined &&
       dimensions.widthCm !== undefined &&
       dimensions.heightCm !== undefined;
-    onAdd({
-      category: "dozen", // generic fallback category
-      subtype: "custom",
+    const updates: Partial<RequestItemInput> = {
       label: naam.trim(),
       aantal,
-      properties: {},
       dimensions: hasDimensions ? (dimensions as ItemDimensions) : undefined,
       opmerking: opmerking.trim() || undefined,
-    });
+    };
+    if (isEditMode && editItem && onUpdate) {
+      onUpdate(editItem.id, updates);
+    } else {
+      onAdd({
+        category: "dozen",
+        subtype: "custom",
+        properties: {},
+        ...updates,
+      } as RequestItemInput);
+    }
   }
 
   return (
@@ -109,7 +125,7 @@ export function CustomItemForm({ initialNaam = "", onAdd, onCancel }: CustomItem
           disabled={!canSubmit}
           className="flex-1 rounded-lg bg-zinc-900 py-2.5 text-sm font-semibold text-white transition hover:bg-zinc-700 disabled:cursor-not-allowed disabled:opacity-40 active:scale-[0.98]"
         >
-          Toevoegen
+          {isEditMode ? "Opslaan" : "Toevoegen"}
         </button>
       </div>
     </form>

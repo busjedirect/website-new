@@ -14,17 +14,6 @@ function ArrowRight({ className = "" }: { className?: string }) {
   );
 }
 
-function TruckIcon() {
-  return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <rect x="1" y="7" width="15" height="11" rx="1.5" />
-      <path d="M16 10h4l3 4v4h-7V10z" />
-      <circle cx="5.5" cy="18.5" r="1.5" />
-      <circle cx="18.5" cy="18.5" r="1.5" />
-    </svg>
-  );
-}
-
 // ---------------------------------------------------------------------------
 // Category data — 6 cards per reference
 // ---------------------------------------------------------------------------
@@ -144,26 +133,6 @@ export function WhatWeTransportSection() {
             </div>
           </div>
 
-        </div>
-
-        {/* ── Bottom CTA block ── */}
-        <div className="mt-10 flex flex-col items-start gap-5 rounded-2xl bg-[#F8F9FA] px-6 py-6 sm:flex-row sm:items-center sm:justify-between sm:px-8">
-          <div className="flex items-center gap-4">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#FFF3E8]">
-              <TruckIcon />
-            </div>
-            <div>
-              <p className="text-[15px] font-bold text-[#111111]">Groot of klein, wij vervoeren het.</p>
-              <p className="text-[13px] text-zinc-400">Of het nu gaat om één bank of een volledige inboedel, wij zorgen voor een snelle, veilige en zorgvuldige levering.</p>
-            </div>
-          </div>
-          <Link
-            href="/vervoeren"
-            className="inline-flex shrink-0 items-center gap-2 rounded-xl bg-[#FF7A00] px-6 py-3 text-[14px] font-bold text-white transition hover:bg-[#E86E00] active:scale-[0.98] sm:w-auto w-full justify-center"
-          >
-            Bekijk alles wat we vervoeren
-            <ArrowRight />
-          </Link>
         </div>
 
       </div>

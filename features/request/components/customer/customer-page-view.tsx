@@ -33,17 +33,27 @@ function useCustomerForm(): UseCustomerFormReturn {
   const router = useRouter();
   const setCustomerDetails = useStore((s) => s.setCustomerDetails);
 
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [email, setEmail] = useState("");
-  const [note, setNote] = useState("");
+  // Initialiseer vanuit de store zodat terugnavigeren de velden behoudt
+  const storedFirstName = useStore((s) => s.firstName);
+  const storedLastName  = useStore((s) => s.lastName);
+  const storedPhone     = useStore((s) => s.phone);
+  const storedEmail     = useStore((s) => s.email);
+  const storedNote      = useStore((s) => s.note);
+
+  const [firstName, setFirstName] = useState(storedFirstName);
+  const [lastName,  setLastName]  = useState(storedLastName);
+  const [phone,     setPhone]     = useState(storedPhone);
+  const [email,     setEmail]     = useState(storedEmail);
+  const [note,      setNote]      = useState(storedNote);
+
+  // Als er al gegevens zijn, markeer velden als touched zodat validatie direct werkt
+  const alreadyFilled = storedFirstName !== "" || storedLastName !== "" || storedPhone !== "" || storedEmail !== "";
 
   const [touched, setTouched] = useState({
-    firstName: false,
-    lastName: false,
-    phone: false,
-    email: false,
+    firstName: alreadyFilled,
+    lastName:  alreadyFilled,
+    phone:     alreadyFilled,
+    email:     alreadyFilled,
   });
 
   function touch(field: keyof typeof touched) {
