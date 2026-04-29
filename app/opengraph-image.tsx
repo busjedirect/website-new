@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "BusjeDirect — Meubels & witgoed vervoeren";
+export const alt = "BusjeDirect";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -14,16 +14,13 @@ export default function OgImage() {
           width: "100%",
           height: "100%",
           display: "flex",
-          flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          fontFamily: "system-ui, sans-serif",
         }}
       >
-        {/* Logo icon — SVG paths inline */}
         <svg
-          width="120"
-          height="90"
+          width="280"
+          height="210"
           viewBox="0 0 145 109"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -33,36 +30,11 @@ export default function OgImage() {
             stroke="white"
             strokeWidth="10"
             strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <circle cx="36.4375" cy="89.5" r="14.5" stroke="white" strokeWidth="10" />
           <circle cx="101.438" cy="89.5" r="14.5" stroke="white" strokeWidth="10" />
         </svg>
-
-        {/* Brand name */}
-        <div
-          style={{
-            display: "flex",
-            marginTop: 32,
-            fontSize: 72,
-            fontWeight: 800,
-            letterSpacing: "-2px",
-            color: "white",
-          }}
-        >
-          BusjeDirect
-        </div>
-
-        {/* Tagline */}
-        <div
-          style={{
-            marginTop: 16,
-            fontSize: 28,
-            color: "rgba(255,255,255,0.75)",
-            fontWeight: 400,
-          }}
-        >
-          Meubels &amp; witgoed vervoeren door heel Nederland
-        </div>
       </div>
     ),
     { ...size }
