@@ -36,7 +36,7 @@ export function UspSection() {
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {USPS.map((usp) => (
             <div key={usp.title} className="flex flex-col gap-4">
-              <div className="h-0.5 w-8 rounded-full bg-orange-500" aria-hidden="true" />
+              <div className="h-0.5 w-8 rounded-full bg-red-600" aria-hidden="true" />
               <h3 className="text-lg font-bold text-white">{usp.title}</h3>
               <p className="text-sm leading-relaxed text-zinc-400">{usp.description}</p>
             </div>

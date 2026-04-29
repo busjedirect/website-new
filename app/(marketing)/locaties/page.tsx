@@ -23,7 +23,7 @@ function ArrowRightIcon({ size = 13 }: { size?: number }) {
 
 function MapPinIcon() {
   return (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E31B1B" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <path d="M12 2C8.69 2 6 4.69 6 8c0 4.5 6 12 6 12s6-7.5 6-12c0-3.31-2.69-6-6-6z" />
       <circle cx="12" cy="8" r="2" />
     </svg>
@@ -40,7 +40,7 @@ export default function LocatiesPage() {
         {/* Hero */}
         <section className="bg-[#F5F6F7] py-14 sm:py-20">
           <div className="mx-auto max-w-[1200px] px-6 sm:px-8">
-            <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.15em] text-[#FF7A00]">
+            <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.15em] text-[#E31B1B]">
               Werkgebied
             </p>
             <h1 className="text-[32px] font-extrabold leading-[1.1] tracking-tight text-[#111111] sm:text-[44px]">
@@ -68,20 +68,20 @@ export default function LocatiesPage() {
                         <Link
                           key={locatie.slug}
                           href={`/locaties/${locatie.slug}`}
-                          className="group flex items-start gap-4 rounded-2xl border border-zinc-100 bg-[#F5F6F7] p-5 transition hover:border-[#FF7A00]/30 hover:bg-white hover:shadow-md"
+                          className="group flex items-start gap-4 rounded-2xl border border-zinc-100 bg-[#F5F6F7] p-5 transition hover:border-[#E31B1B]/30 hover:bg-white hover:shadow-md"
                         >
-                          <div className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#FFF3E8]">
+                          <div className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#FFF0F0]">
                             <MapPinIcon />
                           </div>
                           <div className="flex-1 min-w-0">
-                            <p className="text-[15px] font-bold text-[#111111] group-hover:text-[#FF7A00]">
+                            <p className="text-[15px] font-bold text-[#111111] group-hover:text-[#E31B1B]">
                               {locatie.name}
                             </p>
                             <p className="mt-1 text-[12.5px] leading-[1.6] text-zinc-400">
                               {locatie.description}
                             </p>
                           </div>
-                          <span className="mt-1 shrink-0 text-zinc-300 transition group-hover:text-[#FF7A00]">
+                          <span className="mt-1 shrink-0 text-zinc-300 transition group-hover:text-[#E31B1B]">
                             <ArrowRightIcon />
                           </span>
                         </Link>
@@ -109,7 +109,7 @@ export default function LocatiesPage() {
               <div className="flex flex-col gap-3 sm:flex-row">
                 <Link
                   href="/"
-                  className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#FF7A00] px-7 py-3.5 text-[14px] font-bold text-white transition hover:bg-[#E86E00] sm:w-auto"
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#E31B1B] px-7 py-3.5 text-[14px] font-bold text-white transition hover:bg-[#C91818] sm:w-auto"
                 >
                   Transport aanvragen <ArrowRightIcon />
                 </Link>

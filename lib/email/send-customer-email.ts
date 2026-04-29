@@ -9,7 +9,7 @@ import { TIME_SLOT_MAP } from "@/features/request/constants/time-slots";
 
 const LOGO_HTML = `
   <span style="font-size:20px;font-weight:800;letter-spacing:-0.5px;color:#fff">
-    Busje<span style="color:#FF7A00">Direct</span>
+    Busje<span style="color:#E31B1B">Direct</span>
   </span>
 `;
 

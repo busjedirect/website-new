@@ -4,7 +4,7 @@
 
 function ArrowRight() {
   return (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFD4A8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFBABA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <line x1="5" y1="12" x2="19" y2="12" />
       <polyline points="12 5 19 12 12 19" />
     </svg>
@@ -68,8 +68,8 @@ export function DienstenHoeHetWerkt() {
               )}
 
               {/* Number circle */}
-              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#FFF3E8] ring-4 ring-white">
-                <span className="text-[18px] font-extrabold text-[#FF7A00]">{step.number}</span>
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#FFF0F0] ring-4 ring-white">
+                <span className="text-[18px] font-extrabold text-[#E31B1B]">{step.number}</span>
               </div>
 
               <h3 className="mt-4 text-[15px] font-bold text-[#111111]">{step.title}</h3>

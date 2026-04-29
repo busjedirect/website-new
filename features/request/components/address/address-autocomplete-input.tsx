@@ -378,7 +378,7 @@ export function AddressAutocompleteInput({
       )}
 
       {fetchError && !hasValidationError && (
-        <p id={`${id}-fetch-error`} className="text-xs text-orange-500">
+        <p id={`${id}-fetch-error`} className="text-xs text-red-600">
           {fetchError}
         </p>
       )}

@@ -111,7 +111,7 @@ export default function AlgemeneVoorwaardenPage() {
         {/* Hero */}
         <section className="bg-[#F5F6F7] py-14 sm:py-20">
           <div className="mx-auto max-w-[1200px] px-6 sm:px-8">
-            <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.15em] text-[#FF7A00]">
+            <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.15em] text-[#E31B1B]">
               Juridisch
             </p>
             <h1 className="text-[32px] font-extrabold leading-[1.1] tracking-tight text-[#111111] sm:text-[44px]">
@@ -135,7 +135,7 @@ export default function AlgemeneVoorwaardenPage() {
                   <ul className="flex flex-col gap-3">
                     {article.items.map((item, i) => (
                       <li key={i} className="flex items-start gap-3">
-                        <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#FF7A00]" />
+                        <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#E31B1B]" />
                         <span className="text-[14px] leading-[1.75] text-zinc-600">{item}</span>
                       </li>
                     ))}

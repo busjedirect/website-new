@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import { ConfirmationPageView } from "@/features/request/components/confirmation/confirmation-page-view";
+
+export const metadata: Metadata = {
+  title: "Controleer je aanvraag",
+  robots: { index: false },
+};
 
 export default function BevestigenPage() {
   return (

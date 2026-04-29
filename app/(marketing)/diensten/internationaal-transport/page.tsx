@@ -62,10 +62,10 @@ const data: DienstPageData = {
     { situation: "Tijdelijk verblijf", description: "Spullen meenemen voor een tijdelijk verblijf in het buitenland? Wij regelen het heen en terug." },
   ],
   vervoerItems: [
-    { label: "Bank vervoeren", href: "/vervoeren/bank-vervoeren", icon: <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 10.5A2.5 2.5 0 015.5 8h13A2.5 2.5 0 0121 10.5V14H3v-3.5z"/><path d="M3 14v2a1 1 0 001 1h16a1 1 0 001-1v-2"/></svg> },
-    { label: "Kast vervoeren", href: "/vervoeren/kast-vervoeren", icon: <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="2"/><line x1="12" y1="2" x2="12" y2="22"/></svg> },
-    { label: "Meubeltransport", href: "/diensten/meubeltransport", icon: <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="1" y="7" width="15" height="11" rx="1.5"/><path d="M16 10h4l3 4v4h-7V10z"/></svg> },
-    { label: "Inboedel vervoeren", href: "/vervoeren/inboedel-vervoeren", icon: <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg> },
+    { label: "Bank vervoeren", href: "/vervoeren/bank-vervoeren", icon: <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E31B1B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 10.5A2.5 2.5 0 015.5 8h13A2.5 2.5 0 0121 10.5V14H3v-3.5z"/><path d="M3 14v2a1 1 0 001 1h16a1 1 0 001-1v-2"/></svg> },
+    { label: "Kast vervoeren", href: "/vervoeren/kast-vervoeren", icon: <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E31B1B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="2"/><line x1="12" y1="2" x2="12" y2="22"/></svg> },
+    { label: "Meubeltransport", href: "/diensten/meubeltransport", icon: <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E31B1B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="1" y="7" width="15" height="11" rx="1.5"/><path d="M16 10h4l3 4v4h-7V10z"/></svg> },
+    { label: "Inboedel vervoeren", href: "/vervoeren/inboedel-vervoeren", icon: <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E31B1B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg> },
   ],
   prijsTitel: "Wat kost internationaal transport?",
   prijsUitleg: [

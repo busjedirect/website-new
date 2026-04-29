@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import { SuccessView } from "@/features/request/components/success/success-view";
+
+export const metadata: Metadata = {
+  title: "Aanvraag ontvangen",
+  robots: { index: false },
+};
 
 export default function SuccesPage() {
   return (

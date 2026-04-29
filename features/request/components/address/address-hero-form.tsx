@@ -40,8 +40,8 @@ function ArrowDown() {
 
 const ctaBase = [
   "flex shrink-0 items-center justify-center gap-2 rounded-xl font-bold text-white transition active:scale-[0.98]",
-  "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#FF7A00]",
-  "bg-[#FF7A00] hover:bg-[#E86E00]",
+  "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E31B1B]",
+  "bg-[#E31B1B] hover:bg-[#C91818]",
 ].join(" ");
 
 function CtaContent({ loading }: { loading: boolean }) {

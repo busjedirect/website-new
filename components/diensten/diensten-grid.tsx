@@ -7,7 +7,7 @@ import Image from "next/image";
 
 function CheckIcon() {
   return (
-    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#E31B1B" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <polyline points="20 6 9 17 4 12" />
     </svg>
   );
@@ -106,7 +106,7 @@ function ServiceCard({ image, title, description, bullets, href, cta }: (typeof 
         {/* CTA */}
         <Link
           href={href}
-          className="mt-auto pt-5 inline-flex items-center gap-1.5 text-[13px] font-semibold text-[#FF7A00] transition-all group-hover:gap-2.5"
+          className="mt-auto pt-5 inline-flex items-center gap-1.5 text-[13px] font-semibold text-[#E31B1B] transition-all group-hover:gap-2.5"
         >
           {cta} <ArrowRight />
         </Link>

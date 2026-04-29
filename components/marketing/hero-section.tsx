@@ -102,7 +102,7 @@ export function HeroSection() {
               <h1 className="text-[52px] font-extrabold leading-[1.04] tracking-tight text-[#111111]">
                 Groot transport,
                 <br />
-                <span className="text-[#FF7A00]">zonder gedoe.</span>
+                <span className="text-[#E31B1B]">zonder gedoe.</span>
               </h1>
               <p className="mt-5 text-[17px] leading-[1.65] text-zinc-600">
                 Van banken en kasten tot witgoed en dozen: wij regelen jouw transport snel, veilig en zonder gedoe, door heel Nederland.
@@ -113,7 +113,7 @@ export function HeroSection() {
             <div className="mt-8 w-full z-[4]">
               <div className="rounded-[20px] bg-white px-8 py-7 shadow-[0_8px_48px_rgba(0,0,0,0.13)]">
 
-                <div className="mb-5 flex items-center gap-1.5 text-[13.5px] font-semibold text-[#FF7A00]">
+                <div className="mb-5 flex items-center gap-1.5 text-[13.5px] font-semibold text-[#E31B1B]">
                   <ClockIcon />
                   Binnen 1 minuut een prijsindicatie
                 </div>
@@ -154,7 +154,7 @@ export function HeroSection() {
           <h1 className="text-[36px] font-extrabold leading-[1.05] tracking-tight text-[#111111]">
             Groot transport,
             <br />
-            <span className="text-[#FF7A00]">zonder gedoe.</span>
+            <span className="text-[#E31B1B]">zonder gedoe.</span>
           </h1>
           <p className="mt-3 text-[15px] leading-[1.65] text-zinc-500">
             Van banken en kasten tot witgoed en dozen: wij regelen jouw transport snel, veilig en zonder gedoe, door heel Nederland.
@@ -178,7 +178,7 @@ export function HeroSection() {
           <div className="rounded-[20px] bg-white px-5 py-6 shadow-[0_4px_28px_rgba(0,0,0,0.10)] border border-zinc-100">
 
             {/* "Binnen 1 minuut" label */}
-            <div className="mb-4 flex items-center gap-1.5 text-[13px] font-semibold text-[#FF7A00]">
+            <div className="mb-4 flex items-center gap-1.5 text-[13px] font-semibold text-[#E31B1B]">
               <ClockIcon />
               Binnen 1 minuut een prijsindicatie
             </div>

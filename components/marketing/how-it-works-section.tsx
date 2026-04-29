@@ -62,7 +62,7 @@ function StepCard({
       {/* Number badge — overlapping image bottom */}
       <div className="absolute left-1/2 top-[168px] -translate-x-1/2 sm:top-[184px]">
         <div className="flex h-11 w-11 items-center justify-center rounded-full bg-white shadow-md ring-1 ring-zinc-100">
-          <span className="text-[18px] font-extrabold leading-none text-[#FF7A00]">
+          <span className="text-[18px] font-extrabold leading-none text-[#E31B1B]">
             {number}
           </span>
         </div>
@@ -90,7 +90,7 @@ export function HowItWorksSection() {
 
         {/* Header */}
         <div className="mb-12 text-center">
-          <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.15em] text-[#FF7A00]">
+          <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.15em] text-[#E31B1B]">
             Zo werkt het
           </p>
           <h2 className="text-[26px] font-extrabold tracking-tight text-[#111111] sm:text-[32px]">
@@ -108,7 +108,7 @@ export function HowItWorksSection() {
           <div
             className="absolute inset-x-[12.5%] top-[88px] hidden lg:block"
             aria-hidden="true"
-            style={{ borderTop: "2px dashed #FFD4A8" }}
+            style={{ borderTop: "2px dashed #FFBABA" }}
           />
 
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">

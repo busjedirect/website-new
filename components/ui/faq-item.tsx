@@ -14,7 +14,7 @@ export function FaqItem({ question, answer }: { question: string; answer: string
       >
         <span className="text-[14px] font-medium text-[#111111]">{question}</span>
         <span
-          className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-zinc-100 text-zinc-400 transition-colors group-hover:bg-[#FFF3E8]"
+          className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-zinc-100 text-zinc-400 transition-colors group-hover:bg-[#FFF0F0]"
           aria-hidden="true"
         >
           <svg

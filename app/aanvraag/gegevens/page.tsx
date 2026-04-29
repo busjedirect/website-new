@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import { CustomerPageView } from "@/features/request/components/customer/customer-page-view";
+
+export const metadata: Metadata = {
+  title: "Jouw gegevens",
+  robots: { index: false },
+};
 
 export default function GegevensPage() {
   return (

@@ -18,7 +18,7 @@ export function LocationsSection() {
 
           {/* Left */}
           <div className="lg:w-[340px] lg:shrink-0">
-            <p className="mb-3 text-[11px] font-bold uppercase tracking-widest text-[#FF7A00]">
+            <p className="mb-3 text-[11px] font-bold uppercase tracking-widest text-[#E31B1B]">
               Werkgebied
             </p>
             <h2 className="text-[28px] font-extrabold leading-[1.15] tracking-tight text-[#111111] sm:text-[34px]">
@@ -29,7 +29,7 @@ export function LocationsSection() {
             </p>
             <Link
               href="/locaties"
-              className="mt-6 inline-flex items-center gap-1.5 text-[14px] font-semibold text-[#FF7A00] transition hover:text-[#E86E00]"
+              className="mt-6 inline-flex items-center gap-1.5 text-[14px] font-semibold text-[#E31B1B] transition hover:text-[#C91818]"
             >
               Bekijk alle locaties <ArrowRightIcon />
             </Link>
@@ -42,12 +42,12 @@ export function LocationsSection() {
                 <Link
                   key={locatie.slug}
                   href={`/locaties/${locatie.slug}`}
-                  className="group flex items-center justify-between rounded-xl border border-zinc-200 bg-white px-4 py-3 transition hover:border-[#FF7A00]/30 hover:shadow-sm"
+                  className="group flex items-center justify-between rounded-xl border border-zinc-200 bg-white px-4 py-3 transition hover:border-[#E31B1B]/30 hover:shadow-sm"
                 >
-                  <span className="text-[13.5px] font-medium text-[#111111] group-hover:text-[#FF7A00]">
+                  <span className="text-[13.5px] font-medium text-[#111111] group-hover:text-[#E31B1B]">
                     {locatie.name}
                   </span>
-                  <span className="text-zinc-300 transition group-hover:text-[#FF7A00]">
+                  <span className="text-zinc-300 transition group-hover:text-[#E31B1B]">
                     <ArrowRightIcon />
                   </span>
                 </Link>

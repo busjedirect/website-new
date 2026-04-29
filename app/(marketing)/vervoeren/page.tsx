@@ -39,7 +39,7 @@ const ALL_ITEMS: VervoerItem[] = [
     description: "Hoekbank, 2-zits of 3-zits. Wij tillen en vervoeren jouw bank veilig.",
     image: "/Vervoeren/Banken.png",
     icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E31B1B" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M3 10.5A2.5 2.5 0 015.5 8h13A2.5 2.5 0 0121 10.5V14H3v-3.5z" />
         <path d="M3 14v2a1 1 0 001 1h16a1 1 0 001-1v-2" />
         <path d="M5 8V6a1 1 0 011-1h12a1 1 0 011 1v2" />
@@ -53,7 +53,7 @@ const ALL_ITEMS: VervoerItem[] = [
     description: "Garderobekasten, IKEA-kasten en grote kasten. Professioneel vervoerd.",
     image: "/Vervoeren/Kasten.png",
     icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E31B1B" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <rect x="2" y="2" width="20" height="20" rx="2" />
         <line x1="12" y1="2" x2="12" y2="22" />
         <line x1="7" y1="12" x2="7" y2="12.01" />
@@ -67,7 +67,7 @@ const ALL_ITEMS: VervoerItem[] = [
     description: "Wasmachine of droger verplaatsen? Wij regelen het veilig en snel.",
     image: "/Vervoeren/Wasmachine.png",
     icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E31B1B" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <rect x="2" y="2" width="20" height="20" rx="2" />
         <circle cx="12" cy="13" r="4" />
         <line x1="6" y1="6" x2="6.01" y2="6" />
@@ -81,7 +81,7 @@ const ALL_ITEMS: VervoerItem[] = [
     description: "Eenpersoons, tweepersoons of boxspring. Wij vervoeren elk bed.",
     image: "/Vervoeren/Bed.png",
     icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E31B1B" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M2 9V4a1 1 0 011-1h18a1 1 0 011 1v5" />
         <path d="M2 20v-5a2 2 0 012-2h16a2 2 0 012 2v5" />
         <line x1="2" y1="15" x2="22" y2="15" />
@@ -93,7 +93,7 @@ const ALL_ITEMS: VervoerItem[] = [
     href: "/vervoeren/tafel-vervoeren",
     description: "Eettafel, bureau of salontafel. Wij vervoeren tafels van elk formaat.",
     icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E31B1B" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <line x1="3" y1="8" x2="21" y2="8" />
         <line x1="8" y1="8" x2="8" y2="20" />
         <line x1="16" y1="8" x2="16" y2="20" />
@@ -107,7 +107,7 @@ const ALL_ITEMS: VervoerItem[] = [
     href: "/vervoeren/koelkast-vervoeren",
     description: "Koelkast of vriezer vervoeren? Wij doen het rechtop en veilig.",
     icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E31B1B" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <rect x="4" y="2" width="16" height="20" rx="2" />
         <line x1="4" y1="10" x2="20" y2="10" />
         <line x1="9" y1="6" x2="9" y2="6.01" />
@@ -120,7 +120,7 @@ const ALL_ITEMS: VervoerItem[] = [
     href: "/vervoeren/matras-vervoeren",
     description: "Matras of topper vervoeren zonder gedoe. Wij regelen het.",
     icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E31B1B" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <rect x="2" y="7" width="20" height="10" rx="2" />
         <line x1="6" y1="11" x2="6" y2="13" />
         <line x1="10" y1="11" x2="10" y2="13" />
@@ -134,7 +134,7 @@ const ALL_ITEMS: VervoerItem[] = [
     href: "/vervoeren/dressoir-vervoeren",
     description: "Zwaar dressoir verplaatsen? Wij tillen en vervoeren het zonder beschadigingen.",
     icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E31B1B" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <rect x="2" y="6" width="20" height="12" rx="2" />
         <line x1="2" y1="12" x2="22" y2="12" />
         <line x1="7" y1="9" x2="7" y2="9.01" />
@@ -149,7 +149,7 @@ const ALL_ITEMS: VervoerItem[] = [
     href: "/vervoeren/kantoormeubels-vervoeren",
     description: "Bureaus, vergadertafels en kasten. Wij vervoeren jouw kantoorinventaris.",
     icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E31B1B" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <rect x="2" y="7" width="20" height="14" rx="2" />
         <path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2" />
         <line x1="12" y1="12" x2="12" y2="16" />
@@ -162,7 +162,7 @@ const ALL_ITEMS: VervoerItem[] = [
     href: "/vervoeren/apparatuur-vervoeren",
     description: "Fitnessapparatuur, machines en professionele apparaten. Veilig vervoerd.",
     icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E31B1B" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <rect x="2" y="3" width="20" height="14" rx="2" />
         <line x1="8" y1="21" x2="16" y2="21" />
         <line x1="12" y1="17" x2="12" y2="21" />
@@ -174,7 +174,7 @@ const ALL_ITEMS: VervoerItem[] = [
     href: "/vervoeren/inboedel-vervoeren",
     description: "Complete inboedel verplaatsen? Wij regelen het transport van A tot Z.",
     icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E31B1B" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
         <polyline points="9 22 9 12 15 12 15 22" />
       </svg>
@@ -185,7 +185,7 @@ const ALL_ITEMS: VervoerItem[] = [
     href: "/vervoeren/witgoed-vervoeren",
     description: "Wasmachine, droger, koelkast of vaatwasser. Wij vervoeren al je witgoed.",
     icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E31B1B" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <rect x="2" y="2" width="20" height="20" rx="2" />
         <circle cx="12" cy="13" r="5" />
         <line x1="7" y1="6" x2="7" y2="6.01" />
@@ -253,7 +253,7 @@ function ArrowRightIcon({ size = 15 }: { size?: number }) {
 
 function CheckIcon({ size = 14 }: { size?: number }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="#E31B1B" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <polyline points="20 6 9 17 4 12" />
     </svg>
   );
@@ -271,7 +271,7 @@ function VervoerHero() {
 
           {/* Left: text */}
           <div className="flex-1">
-            <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.15em] text-[#FF7A00]">
+            <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.15em] text-[#E31B1B]">
               Wat we vervoeren
             </p>
             <h1 className="text-[32px] font-extrabold leading-[1.1] tracking-tight text-[#111111] sm:text-[44px]">
@@ -285,19 +285,19 @@ function VervoerHero() {
             <div className="mt-7 flex flex-wrap gap-3">
               {[
                 { label: "Veilig transport", icon: (
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E31B1B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                     <polyline points="9 12 11 14 15 10" />
                   </svg>
                 )},
                 { label: "Snel geregeld", icon: (
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E31B1B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <circle cx="12" cy="12" r="10" />
                     <polyline points="12 6 12 12 16 14" />
                   </svg>
                 )},
                 { label: "Transparante prijs", icon: (
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E31B1B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z" />
                     <line x1="7" y1="7" x2="7.01" y2="7" />
                   </svg>
@@ -314,7 +314,7 @@ function VervoerHero() {
             <div className="mt-8">
               <Link
                 href="/"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#FF7A00] px-7 py-3.5 text-[14px] font-bold text-white transition hover:bg-[#E86E00] active:scale-[0.98] sm:w-auto"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#E31B1B] px-7 py-3.5 text-[14px] font-bold text-white transition hover:bg-[#C91818] active:scale-[0.98] sm:w-auto"
               >
                 Transport aanvragen <ArrowRightIcon />
               </Link>
@@ -350,7 +350,7 @@ function PopulaireItems() {
     <section className="bg-white py-14 sm:py-16">
       <div className="mx-auto max-w-[1200px] px-6 sm:px-8">
         <div className="mb-10">
-          <p className="mb-2 text-[11px] font-bold uppercase tracking-[0.15em] text-[#FF7A00]">
+          <p className="mb-2 text-[11px] font-bold uppercase tracking-[0.15em] text-[#E31B1B]">
             Meest gevraagd
           </p>
           <h2 className="text-[24px] font-extrabold tracking-tight text-[#111111] sm:text-[30px]">
@@ -388,7 +388,7 @@ function PopulaireItems() {
                 <p className="mt-1.5 flex-1 text-[13px] leading-[1.6] text-zinc-400">
                   {item.description}
                 </p>
-                <span className="mt-4 inline-flex items-center gap-1.5 text-[13px] font-semibold text-[#FF7A00] transition-all group-hover:gap-2.5">
+                <span className="mt-4 inline-flex items-center gap-1.5 text-[13px] font-semibold text-[#E31B1B] transition-all group-hover:gap-2.5">
                   Meer info <ArrowRightIcon size={13} />
                 </span>
               </div>
@@ -422,20 +422,20 @@ function AlleItems() {
             <Link
               key={item.label}
               href={item.href}
-              className="group flex items-center gap-4 rounded-xl border border-zinc-100 bg-white px-5 py-4 shadow-sm transition hover:border-[#FF7A00]/30 hover:shadow-md"
+              className="group flex items-center gap-4 rounded-xl border border-zinc-100 bg-white px-5 py-4 shadow-sm transition hover:border-[#E31B1B]/30 hover:shadow-md"
             >
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#FFF3E8]">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#FFF0F0]">
                 {item.icon}
               </div>
               <div className="flex-1 min-w-0">
-                <p className="text-[14px] font-semibold text-[#111111] group-hover:text-[#FF7A00]">
+                <p className="text-[14px] font-semibold text-[#111111] group-hover:text-[#E31B1B]">
                   {item.label}
                 </p>
                 <p className="mt-0.5 truncate text-[12.5px] text-zinc-400">
                   {item.description}
                 </p>
               </div>
-              <span className="shrink-0 text-zinc-300 transition group-hover:text-[#FF7A00]">
+              <span className="shrink-0 text-zinc-300 transition group-hover:text-[#E31B1B]">
                 <ArrowRightIcon size={14} />
               </span>
             </Link>
@@ -454,7 +454,7 @@ function WaaromBusjeDirect() {
   const usps = [
     {
       icon: (
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E31B1B" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
           <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
           <polyline points="9 12 11 14 15 10" />
         </svg>
@@ -464,7 +464,7 @@ function WaaromBusjeDirect() {
     },
     {
       icon: (
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E31B1B" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
           <circle cx="12" cy="12" r="10" />
           <polyline points="12 6 12 12 16 14" />
         </svg>
@@ -474,7 +474,7 @@ function WaaromBusjeDirect() {
     },
     {
       icon: (
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E31B1B" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
           <path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z" />
           <line x1="7" y1="7" x2="7.01" y2="7" />
         </svg>
@@ -484,7 +484,7 @@ function WaaromBusjeDirect() {
     },
     {
       icon: (
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E31B1B" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
           <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
           <circle cx="12" cy="7" r="4" />
         </svg>
@@ -506,7 +506,7 @@ function WaaromBusjeDirect() {
               key={usp.title}
               className="flex flex-col items-center rounded-2xl border border-zinc-100 bg-[#F5F6F7] p-6 text-center"
             >
-              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#FFF3E8]">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#FFF0F0]">
                 {usp.icon}
               </div>
               <p className="mt-3 text-[14px] font-bold text-[#111111]">{usp.title}</p>
@@ -542,14 +542,14 @@ function HoeHetWerkt() {
             <div key={step.n} className="relative flex flex-col items-center text-center">
               {i < steps.length - 1 && (
                 <div className="absolute -right-3 top-5 hidden lg:block" aria-hidden="true">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFD4A8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFBABA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <line x1="5" y1="12" x2="19" y2="12" />
                     <polyline points="12 5 19 12 12 19" />
                   </svg>
                 </div>
               )}
-              <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[#FFF3E8] ring-4 ring-white">
-                <span className="text-[17px] font-extrabold text-[#FF7A00]">{step.n}</span>
+              <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[#FFF0F0] ring-4 ring-white">
+                <span className="text-[17px] font-extrabold text-[#E31B1B]">{step.n}</span>
               </div>
               <p className="mt-3 text-[14px] font-bold text-[#111111]">{step.title}</p>
               <p className="mt-1 text-[12.5px] leading-[1.6] text-zinc-500">{step.desc}</p>
@@ -559,7 +559,7 @@ function HoeHetWerkt() {
         <div className="mt-10 text-center">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 rounded-xl bg-[#FF7A00] px-7 py-3.5 text-[14px] font-bold text-white transition hover:bg-[#E86E00] active:scale-[0.98]"
+            className="inline-flex items-center gap-2 rounded-xl bg-[#E31B1B] px-7 py-3.5 text-[14px] font-bold text-white transition hover:bg-[#C91818] active:scale-[0.98]"
           >
             Direct aanvragen <ArrowRightIcon />
           </Link>
@@ -599,7 +599,7 @@ function SeoContent() {
 
           {/* Prijs card */}
           <div className="w-full rounded-2xl border border-zinc-100 bg-[#F5F6F7] p-8 lg:w-[340px] lg:shrink-0">
-            <p className="text-[12px] font-bold uppercase tracking-widest text-[#FF7A00]">
+            <p className="text-[12px] font-bold uppercase tracking-widest text-[#E31B1B]">
               Prijs berekenen
             </p>
             <p className="mt-2 text-[26px] font-extrabold text-[#111111]">Vanaf €65,–</p>
@@ -609,7 +609,6 @@ function SeoContent() {
                 "Prijs op basis van afstand",
                 "Drempel tot drempel service",
                 "Geen verborgen kosten",
-                "Inclusief tilhulp",
               ].map((f) => (
                 <li key={f} className="flex items-center gap-2">
                   <CheckIcon />
@@ -619,7 +618,7 @@ function SeoContent() {
             </ul>
             <Link
               href="/"
-              className="mt-6 flex w-full items-center justify-center gap-2 rounded-xl bg-[#FF7A00] py-3.5 text-[14px] font-bold text-white transition hover:bg-[#E86E00]"
+              className="mt-6 flex w-full items-center justify-center gap-2 rounded-xl bg-[#E31B1B] py-3.5 text-[14px] font-bold text-white transition hover:bg-[#C91818]"
             >
               Bereken je prijs <ArrowRightIcon />
             </Link>
@@ -650,15 +649,15 @@ function GerelateerdeServices() {
             <Link
               key={service.label}
               href={service.href}
-              className="group flex flex-col rounded-xl border border-zinc-100 bg-white p-5 shadow-sm transition hover:border-[#FF7A00]/30 hover:shadow-md"
+              className="group flex flex-col rounded-xl border border-zinc-100 bg-white p-5 shadow-sm transition hover:border-[#E31B1B]/30 hover:shadow-md"
             >
-              <p className="text-[14px] font-semibold text-[#111111] group-hover:text-[#FF7A00]">
+              <p className="text-[14px] font-semibold text-[#111111] group-hover:text-[#E31B1B]">
                 {service.label}
               </p>
               <p className="mt-1.5 flex-1 text-[12.5px] leading-[1.6] text-zinc-400">
                 {service.description}
               </p>
-              <span className="mt-4 inline-flex items-center gap-1 text-[12.5px] font-semibold text-[#FF7A00] transition-all group-hover:gap-2">
+              <span className="mt-4 inline-flex items-center gap-1 text-[12.5px] font-semibold text-[#E31B1B] transition-all group-hover:gap-2">
                 Meer info <ArrowRightIcon size={12} />
               </span>
             </Link>
@@ -707,7 +706,7 @@ function BottomCta() {
           <div className="shrink-0">
             <Link
               href="/"
-              className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#FF7A00] px-8 py-4 text-[15px] font-bold text-white transition hover:bg-[#E86E00] active:scale-[0.98] sm:w-auto"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#E31B1B] px-8 py-4 text-[15px] font-bold text-white transition hover:bg-[#C91818] active:scale-[0.98] sm:w-auto"
             >
               Transport aanvragen <ArrowRightIcon />
             </Link>

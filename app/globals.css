@@ -10,11 +10,11 @@
   --font-sans: var(--font-geist-sans);
 
   /* -------------------------------------------------------------------------
-   * Brand accent — energetic orange, used for primary CTAs and highlights
+   * Brand accent — red, used for primary CTAs and highlights
    * ------------------------------------------------------------------------- */
-  --color-accent:       #F97316; /* orange-500 */
-  --color-accent-hover: #EA6C0A; /* slightly darker */
-  --color-accent-light: #FFF7ED; /* orange-50 */
+  --color-accent:       #E31B1B; /* red */
+  --color-accent-hover: #C91818; /* slightly darker */
+  --color-accent-light: #FFF0F0; /* light red */
 
   /* -------------------------------------------------------------------------
    * Dark foundation — near-black for headers, hero contrast, premium feel

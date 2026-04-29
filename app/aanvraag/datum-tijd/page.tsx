@@ -1,6 +1,12 @@
+import type { Metadata } from "next";
 import { ScheduleSelector } from "@/features/request/components/schedule/schedule-selector";
 import { RequestSummary } from "@/components/summary/request-summary";
 import { SchedulePageView } from "@/features/request/components/schedule/schedule-page-view";
+
+export const metadata: Metadata = {
+  title: "Kies datum en tijdvak",
+  robots: { index: false },
+};
 
 export default function DatumTijdPage() {
   return (

@@ -155,7 +155,7 @@ export default function FaqPage() {
         {/* Hero */}
         <section className="bg-[#F5F6F7] py-14 sm:py-20">
           <div className="mx-auto max-w-[1200px] px-6 sm:px-8">
-            <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.15em] text-[#FF7A00]">
+            <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.15em] text-[#E31B1B]">
               Veelgestelde vragen
             </p>
             <h1 className="text-[32px] font-extrabold leading-[1.1] tracking-tight text-[#111111] sm:text-[44px]">
@@ -216,7 +216,7 @@ export default function FaqPage() {
               <div className="flex flex-col gap-3 sm:flex-row">
                 <Link
                   href="/"
-                  className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#FF7A00] px-7 py-3.5 text-[14px] font-bold text-white transition hover:bg-[#E86E00] sm:w-auto"
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#E31B1B] px-7 py-3.5 text-[14px] font-bold text-white transition hover:bg-[#C91818] sm:w-auto"
                 >
                   Transport aanvragen <ArrowRightIcon />
                 </Link>

@@ -71,7 +71,7 @@ function CategoryCard({
         />
         {/* Icon overlay — bottom-left */}
         <div className="absolute bottom-3 left-3 flex h-8 w-8 items-center justify-center rounded-full bg-white/90 shadow-sm">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E31B1B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
             <rect x="1" y="7" width="15" height="11" rx="1.5" />
             <path d="M16 10h4l3 4v4h-7V10z" />
             <circle cx="5.5" cy="18.5" r="1.5" />
@@ -84,7 +84,7 @@ function CategoryCard({
       <div className="flex flex-1 flex-col p-4">
         <h3 className="text-[14px] font-bold text-[#111111]">{label}</h3>
         <p className="mt-1 flex-1 text-[12.5px] leading-[1.6] text-zinc-400">{description}</p>
-        <span className="mt-3 inline-flex items-center gap-1 text-[12.5px] font-semibold text-[#FF7A00] transition-all group-hover:gap-2">
+        <span className="mt-3 inline-flex items-center gap-1 text-[12.5px] font-semibold text-[#E31B1B] transition-all group-hover:gap-2">
           <ArrowRight />
         </span>
       </div>
@@ -106,7 +106,7 @@ export function WhatWeTransportSection() {
 
           {/* Left: text block */}
           <div className="lg:w-[380px] lg:shrink-0">
-            <p className="mb-3 text-[11px] font-bold uppercase tracking-widest text-[#FF7A00]">
+            <p className="mb-3 text-[11px] font-bold uppercase tracking-widest text-[#E31B1B]">
               Wat we vervoeren
             </p>
             <h2 className="text-[28px] font-extrabold leading-[1.15] tracking-tight text-[#111111] sm:text-[34px]">
@@ -117,7 +117,7 @@ export function WhatWeTransportSection() {
             </p>
             <Link
               href="/vervoeren"
-              className="mt-6 inline-flex items-center gap-1.5 text-[14px] font-semibold text-[#FF7A00] transition hover:text-[#E86E00]"
+              className="mt-6 inline-flex items-center gap-1.5 text-[14px] font-semibold text-[#E31B1B] transition hover:text-[#C91818]"
             >
               Bekijk alles wat we vervoeren
               <ArrowRight />

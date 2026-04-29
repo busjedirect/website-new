@@ -33,7 +33,7 @@ function ClockIcon() {
 
 function StarIcon() {
   return (
-    <svg width="13" height="13" viewBox="0 0 24 24" fill="#FF7A00" stroke="none" aria-hidden="true">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="#E31B1B" stroke="none" aria-hidden="true">
       <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
     </svg>
   );
@@ -108,7 +108,7 @@ export function SiteFooter() {
                 </span>
               </li>
               <li>
-                <Link href="/contact" className="text-[12.5px] text-[#FF7A00] transition hover:text-[#E86E00]">
+                <Link href="/contact" className="text-[12.5px] text-[#E31B1B] transition hover:text-[#C91818]">
                   Contactpagina →
                 </Link>
               </li>
@@ -154,7 +154,7 @@ export function SiteFooter() {
                 </li>
               ))}
               <li>
-                <Link href="/vervoeren" className="text-[12.5px] text-[#FF7A00] transition hover:text-[#E86E00]">
+                <Link href="/vervoeren" className="text-[12.5px] text-[#E31B1B] transition hover:text-[#C91818]">
                   Bekijk alle items →
                 </Link>
               </li>
@@ -175,7 +175,7 @@ export function SiteFooter() {
                 </Link>
               ))}
             </div>
-            <Link href="/locaties" className="mt-3 inline-block text-[12.5px] text-[#FF7A00] transition hover:text-[#E86E00]">
+            <Link href="/locaties" className="mt-3 inline-block text-[12.5px] text-[#E31B1B] transition hover:text-[#C91818]">
               Alle locaties →
             </Link>
           </div>

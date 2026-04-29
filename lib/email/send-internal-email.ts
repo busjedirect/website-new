@@ -6,7 +6,7 @@ import { TIME_SLOT_MAP } from "@/features/request/constants/time-slots";
 
 const LOGO_HTML = `
   <span style="font-size:20px;font-weight:800;letter-spacing:-0.5px;color:#fff">
-    Busje<span style="color:#FF7A00">Direct</span>
+    Busje<span style="color:#E31B1B">Direct</span>
   </span>
 `;
 
@@ -43,7 +43,7 @@ function buildInternalHtml(
             <tr>
               <td>${LOGO_HTML}</td>
               <td style="text-align:right">
-                <span style="background:#FF7A00;color:#fff;font-size:11px;font-weight:700;padding:4px 10px;border-radius:20px;text-transform:uppercase;letter-spacing:.05em">Nieuwe aanvraag</span>
+                <span style="background:#E31B1B;color:#fff;font-size:11px;font-weight:700;padding:4px 10px;border-radius:20px;text-transform:uppercase;letter-spacing:.05em">Nieuwe aanvraag</span>
               </td>
             </tr>
           </table>

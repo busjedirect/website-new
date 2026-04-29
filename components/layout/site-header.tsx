@@ -122,13 +122,6 @@ export function SiteHeader() {
               </Link>
             ))}
           </nav>
-          <a
-            href="tel:0631356682"
-            className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl border border-zinc-200 py-3 text-sm font-semibold text-zinc-800 transition hover:bg-zinc-50"
-          >
-            <PhoneIcon />
-            06 31 35 66 82
-          </a>
         </div>
       )}
     </header>

@@ -19,7 +19,7 @@ function ArrowRightIcon({ size = 14 }: { size?: number }) {
 
 function CheckIcon({ size = 14 }: { size?: number }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="#E31B1B" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <polyline points="20 6 9 17 4 12" />
     </svg>
   );
@@ -27,7 +27,7 @@ function CheckIcon({ size = 14 }: { size?: number }) {
 
 function MapPinIcon({ size = 16 }: { size?: number }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="#E31B1B" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <path d="M12 2C8.69 2 6 4.69 6 8c0 4.5 6 12 6 12s6-7.5 6-12c0-3.31-2.69-6-6-6z" />
       <circle cx="12" cy="8" r="2" />
     </svg>
@@ -73,7 +73,7 @@ function LocatieHero({ locatie }: { locatie: Locatie }) {
           <div className="flex-1">
             <div className="mb-3 flex items-center gap-2">
               <MapPinIcon size={14} />
-              <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-[#FF7A00]">
+              <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-[#E31B1B]">
                 {locatie.regio}
               </p>
             </div>
@@ -98,7 +98,7 @@ function LocatieHero({ locatie }: { locatie: Locatie }) {
             <div className="mt-8">
               <Link
                 href="/"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#FF7A00] px-7 py-3.5 text-[14px] font-bold text-white transition hover:bg-[#E86E00] active:scale-[0.98] sm:w-auto"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#E31B1B] px-7 py-3.5 text-[14px] font-bold text-white transition hover:bg-[#C91818] active:scale-[0.98] sm:w-auto"
               >
                 Transport aanvragen <ArrowRightIcon />
               </Link>
@@ -167,9 +167,9 @@ function LocatieDiensten({ locatie }: { locatie: Locatie }) {
             <Link
               key={dienst.label}
               href={dienst.href}
-              className="group flex items-center justify-between rounded-xl border border-zinc-100 bg-white px-5 py-4 shadow-sm transition hover:border-[#FF7A00]/30 hover:shadow-md"
+              className="group flex items-center justify-between rounded-xl border border-zinc-100 bg-white px-5 py-4 shadow-sm transition hover:border-[#E31B1B]/30 hover:shadow-md"
             >
-              <span className="text-[14px] font-semibold text-[#111111] group-hover:text-[#FF7A00]">
+              <span className="text-[14px] font-semibold text-[#111111] group-hover:text-[#E31B1B]">
                 {dienst.label}
               </span>
               <ArrowRightIcon />
@@ -200,9 +200,9 @@ function LocatieVervoerItems({ locatie }: { locatie: Locatie }) {
             <Link
               key={item.label}
               href={item.href}
-              className="group flex items-center gap-3 rounded-xl border border-zinc-100 bg-[#F5F6F7] px-4 py-3.5 transition hover:border-[#FF7A00]/30 hover:bg-white hover:shadow-sm"
+              className="group flex items-center gap-3 rounded-xl border border-zinc-100 bg-[#F5F6F7] px-4 py-3.5 transition hover:border-[#E31B1B]/30 hover:bg-white hover:shadow-sm"
             >
-              <span className="flex-1 text-[13px] font-medium text-[#111111] group-hover:text-[#FF7A00]">
+              <span className="flex-1 text-[13px] font-medium text-[#111111] group-hover:text-[#E31B1B]">
                 {item.label}
               </span>
               <ArrowRightIcon size={12} />
@@ -235,7 +235,7 @@ function LocatieWaarom({ locatie }: { locatie: Locatie }) {
         <div className="grid grid-cols-2 gap-5 lg:grid-cols-4">
           {usps.map((usp) => (
             <div key={usp.title} className="flex flex-col items-center rounded-2xl bg-white p-6 text-center shadow-sm">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#FFF3E8]">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#FFF0F0]">
                 <CheckIcon size={16} />
               </div>
               <p className="mt-3 text-[14px] font-bold text-[#111111]">{usp.title}</p>
@@ -271,7 +271,7 @@ function LocatiePrijs({ locatie }: { locatie: Locatie }) {
             </div>
           </div>
           <div className="w-full rounded-2xl border border-zinc-100 bg-[#F5F6F7] p-8 lg:w-[340px] lg:shrink-0">
-            <p className="text-[12px] font-bold uppercase tracking-widest text-[#FF7A00]">Prijs berekenen</p>
+            <p className="text-[12px] font-bold uppercase tracking-widest text-[#E31B1B]">Prijs berekenen</p>
             <p className="mt-2 text-[26px] font-extrabold text-[#111111]">Vanaf €65,–</p>
             <p className="mt-1 text-[13px] text-zinc-500">excl. btw · op basis van afstand</p>
             <ul className="mt-5 flex flex-col gap-2.5">
@@ -284,7 +284,7 @@ function LocatiePrijs({ locatie }: { locatie: Locatie }) {
             </ul>
             <Link
               href="/"
-              className="mt-6 flex w-full items-center justify-center gap-2 rounded-xl bg-[#FF7A00] py-3.5 text-[14px] font-bold text-white transition hover:bg-[#E86E00]"
+              className="mt-6 flex w-full items-center justify-center gap-2 rounded-xl bg-[#E31B1B] py-3.5 text-[14px] font-bold text-white transition hover:bg-[#C91818]"
             >
               Bereken je prijs <ArrowRightIcon />
             </Link>
@@ -314,7 +314,7 @@ function AndereLocaties({ locatie }: { locatie: Locatie }) {
             <Link
               key={l.slug}
               href={`/locaties/${l.slug}`}
-              className="inline-flex items-center gap-1.5 rounded-full border border-zinc-200 px-4 py-2 text-[13px] font-medium text-zinc-600 transition hover:border-[#FF7A00]/40 hover:text-[#FF7A00]"
+              className="inline-flex items-center gap-1.5 rounded-full border border-zinc-200 px-4 py-2 text-[13px] font-medium text-zinc-600 transition hover:border-[#E31B1B]/40 hover:text-[#E31B1B]"
             >
               {l.name} <ArrowRightIcon size={11} />
             </Link>
@@ -388,7 +388,7 @@ function LocatieBottomCta({ locatie }: { locatie: Locatie }) {
           <div className="shrink-0">
             <Link
               href="/"
-              className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#FF7A00] px-8 py-4 text-[15px] font-bold text-white transition hover:bg-[#E86E00] active:scale-[0.98] sm:w-auto"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#E31B1B] px-8 py-4 text-[15px] font-bold text-white transition hover:bg-[#C91818] active:scale-[0.98] sm:w-auto"
             >
               Transport aanvragen <ArrowRightIcon />
             </Link>

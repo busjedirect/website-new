@@ -3,12 +3,12 @@ import Image from "next/image";
 import { SiteFooter } from "@/components/layout/site-footer";
 
 // ---------------------------------------------------------------------------
-// Icons (inline SVG, stroke="#FF7A00", strokeWidth="1.75")
+// Icons (inline SVG, stroke="#E31B1B", strokeWidth="1.75")
 // ---------------------------------------------------------------------------
 
 function ShieldCheckIcon({ size = 20 }: { size?: number }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="#E31B1B" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
       <polyline points="9 12 11 14 15 10" />
     </svg>
@@ -17,7 +17,7 @@ function ShieldCheckIcon({ size = 20 }: { size?: number }) {
 
 function ClockIcon({ size = 20 }: { size?: number }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="#E31B1B" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <circle cx="12" cy="12" r="10" />
       <polyline points="12 6 12 12 16 14" />
     </svg>
@@ -26,7 +26,7 @@ function ClockIcon({ size = 20 }: { size?: number }) {
 
 function TagIcon({ size = 20 }: { size?: number }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="#E31B1B" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z" />
       <line x1="7" y1="7" x2="7.01" y2="7" />
     </svg>
@@ -35,7 +35,7 @@ function TagIcon({ size = 20 }: { size?: number }) {
 
 function UserIcon({ size = 20 }: { size?: number }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="#E31B1B" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
       <circle cx="12" cy="7" r="4" />
     </svg>
@@ -44,7 +44,7 @@ function UserIcon({ size = 20 }: { size?: number }) {
 
 function MapPinIcon({ size = 16 }: { size?: number }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="#E31B1B" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <path d="M12 2C8.69 2 6 4.69 6 8c0 4.5 6 12 6 12s6-7.5 6-12c0-3.31-2.69-6-6-6z" />
       <circle cx="12" cy="8" r="2" />
     </svg>
@@ -53,7 +53,7 @@ function MapPinIcon({ size = 16 }: { size?: number }) {
 
 function CheckIcon({ size = 14 }: { size?: number }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="#FF7A00" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="#E31B1B" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <polyline points="20 6 9 17 4 12" />
     </svg>
   );
@@ -123,7 +123,7 @@ function VervoerHero({ data }: { data: VervoerPageData }) {
       <div className="mx-auto max-w-[1200px] px-6 sm:px-8">
         <div className="flex flex-col gap-10 lg:flex-row lg:items-center lg:gap-16">
           <div className="flex-1">
-            <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.15em] text-[#FF7A00]">
+            <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.15em] text-[#E31B1B]">
               {data.label}
             </p>
             <h1 className="text-[32px] font-extrabold leading-[1.1] tracking-tight text-[#111111] sm:text-[42px]">
@@ -150,7 +150,7 @@ function VervoerHero({ data }: { data: VervoerPageData }) {
             <div className="mt-8">
               <Link
                 href="/"
-                className="inline-flex items-center gap-2 rounded-xl bg-[#FF7A00] px-7 py-3.5 text-[14px] font-bold text-white transition hover:bg-[#E86E00] active:scale-[0.98]"
+                className="inline-flex items-center gap-2 rounded-xl bg-[#E31B1B] px-7 py-3.5 text-[14px] font-bold text-white transition hover:bg-[#C91818] active:scale-[0.98]"
               >
                 Transport aanvragen <ArrowRightIcon />
               </Link>
@@ -252,14 +252,14 @@ function VervoerHoeHetWerkt({ data }: { data: VervoerPageData }) {
             <div key={step.n} className="relative flex flex-col items-center text-center">
               {i < steps.length - 1 && (
                 <div className="absolute -right-3 top-5 hidden lg:block" aria-hidden="true">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFD4A8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFBABA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <line x1="5" y1="12" x2="19" y2="12" />
                     <polyline points="12 5 19 12 12 19" />
                   </svg>
                 </div>
               )}
-              <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[#FFF3E8] ring-4 ring-white">
-                <span className="text-[17px] font-extrabold text-[#FF7A00]">{step.n}</span>
+              <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[#FFF0F0] ring-4 ring-white">
+                <span className="text-[17px] font-extrabold text-[#E31B1B]">{step.n}</span>
               </div>
               <p className="mt-3 text-[14px] font-bold text-[#111111]">{step.title}</p>
               <p className="mt-1 text-[12.5px] leading-[1.6] text-zinc-500">{step.desc}</p>
@@ -293,7 +293,7 @@ function VervoerPrijs({ data }: { data: VervoerPageData }) {
             </div>
           </div>
           <div className="w-full rounded-2xl border border-zinc-100 bg-white p-8 shadow-sm lg:w-[360px] lg:shrink-0">
-            <p className="text-[13px] font-semibold uppercase tracking-widest text-[#FF7A00]">
+            <p className="text-[13px] font-semibold uppercase tracking-widest text-[#E31B1B]">
               Prijs berekenen
             </p>
             <p className="mt-2 text-[22px] font-extrabold text-[#111111]">Vanaf €65,–</p>
@@ -312,7 +312,7 @@ function VervoerPrijs({ data }: { data: VervoerPageData }) {
             </ul>
             <Link
               href="/"
-              className="mt-6 flex w-full items-center justify-center gap-2 rounded-xl bg-[#FF7A00] py-3.5 text-[14px] font-bold text-white transition hover:bg-[#E86E00]"
+              className="mt-6 flex w-full items-center justify-center gap-2 rounded-xl bg-[#E31B1B] py-3.5 text-[14px] font-bold text-white transition hover:bg-[#C91818]"
             >
               Bereken je prijs <ArrowRightIcon />
             </Link>
@@ -339,9 +339,9 @@ function VervoerGerelateerde({ items }: { items: VervoerGerelateerd[] }) {
             <Link
               key={item.label}
               href={item.href}
-              className="group flex items-center justify-between rounded-xl border border-zinc-100 bg-[#F5F6F7] px-5 py-4 transition hover:border-[#FF7A00]/30 hover:bg-white hover:shadow-sm"
+              className="group flex items-center justify-between rounded-xl border border-zinc-100 bg-[#F5F6F7] px-5 py-4 transition hover:border-[#E31B1B]/30 hover:bg-white hover:shadow-sm"
             >
-              <span className="text-[13.5px] font-medium text-[#111111] group-hover:text-[#FF7A00]">
+              <span className="text-[13.5px] font-medium text-[#111111] group-hover:text-[#E31B1B]">
                 {item.label}
               </span>
               <ArrowRightIcon size={13} />
@@ -372,9 +372,9 @@ function VervoerAndereItems({ items }: { items: VervoerAnderItem[] }) {
             <Link
               key={item.label}
               href={item.href}
-              className="group flex items-center gap-3 rounded-xl border border-zinc-100 bg-white px-4 py-3.5 transition hover:border-[#FF7A00]/30 hover:shadow-sm"
+              className="group flex items-center gap-3 rounded-xl border border-zinc-100 bg-white px-4 py-3.5 transition hover:border-[#E31B1B]/30 hover:shadow-sm"
             >
-              <span className="flex-1 text-[13px] font-medium text-[#111111] group-hover:text-[#FF7A00]">
+              <span className="flex-1 text-[13px] font-medium text-[#111111] group-hover:text-[#E31B1B]">
                 {item.label}
               </span>
               <ArrowRightIcon size={12} />
@@ -409,7 +409,7 @@ function VervoerLocaties({ data }: { data: VervoerPageData }) {
             <Link
               key={loc.city}
               href={loc.href}
-              className="group flex items-center justify-between rounded-xl border border-zinc-100 bg-[#F5F6F7] px-5 py-4 transition hover:border-[#FF7A00]/30 hover:bg-white hover:shadow-sm"
+              className="group flex items-center justify-between rounded-xl border border-zinc-100 bg-[#F5F6F7] px-5 py-4 transition hover:border-[#E31B1B]/30 hover:bg-white hover:shadow-sm"
             >
               <div className="flex items-center gap-2.5">
                 <MapPinIcon size={16} />
@@ -466,7 +466,7 @@ function VervoerBottomCta({ data }: { data: VervoerPageData }) {
           <div className="shrink-0">
             <Link
               href="/"
-              className="inline-flex items-center gap-2 rounded-xl bg-[#FF7A00] px-8 py-4 text-[15px] font-bold text-white transition hover:bg-[#E86E00] active:scale-[0.98]"
+              className="inline-flex items-center gap-2 rounded-xl bg-[#E31B1B] px-8 py-4 text-[15px] font-bold text-white transition hover:bg-[#C91818] active:scale-[0.98]"
             >
               Transport aanvragen <ArrowRightIcon />
             </Link>
