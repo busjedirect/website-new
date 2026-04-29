@@ -181,10 +181,10 @@ export function ConfirmationView({
         />
       </ConfirmationSection>
 
-      {/* Tijdinformatie */}
-      <ConfirmationSection title="Tijdinformatie">
+      {/* Belangrijke informatie */}
+      <ConfirmationSection title="Belangrijke informatie">
         <div className="flex flex-col gap-3">
-          {/* Inbegrepen tijd */}
+          {/* Inbegrepen + drempel */}
           <div className="rounded-lg bg-zinc-50 px-4 py-3">
             <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-zinc-400">
               Inbegrepen in de prijs
@@ -197,6 +197,10 @@ export function ConfirmationView({
               <li className="flex items-center gap-2 text-sm text-zinc-700">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16a34a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
                 15 minuten lostijd
+              </li>
+              <li className="flex items-center gap-2 text-sm text-zinc-700">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16a34a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Drempel tot drempel transport
               </li>
             </ul>
           </div>
