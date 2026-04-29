@@ -210,13 +210,13 @@ export function ConfirmationView({
               <li className="flex items-start gap-2 text-sm text-zinc-700">
                 <span className="mt-0.5 shrink-0 text-amber-500">+</span>
                 <span>
-                  <span className="font-medium">€25 per kwartier</span> als het inladen of uitladen langer duurt dan 15 minuten
+                  <span className="font-medium">€25 per 20 minuten</span> extra wachttijd als het laden of lossen langer duurt dan 15 minuten
                 </span>
               </li>
               <li className="flex items-start gap-2 text-sm text-zinc-700">
                 <span className="mt-0.5 shrink-0 text-amber-500">+</span>
                 <span>
-                  <span className="font-medium">€15 per adres</span> binnen de Ring Amsterdam
+                  <span className="font-medium">€15 per adres</span> voor adressen in drukke delen van Amsterdam (grachten, smalle straten of moeilijk bereikbare plekken)
                 </span>
               </li>
             </ul>

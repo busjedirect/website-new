@@ -21,7 +21,7 @@ const FAQ_CATEGORIES = [
       {
         question: "Hoe werkt BusjeDirect?",
         answer:
-          "Vul op onze website je ophaal- en afleveradres in en geef aan wat je wilt laten vervoeren. Je ontvangt direct een prijsindicatie. Na bevestiging plannen we een datum en tijdvak in en zorgen we voor het transport.",
+          "Vul op onze website je ophaal- en afleveradres in en geef aan wat je wilt laten vervoeren. Je ziet direct de prijs. Na bevestiging plannen we een datum en tijdvak in en zorgen we voor het transport.",
       },
       {
         question: "Komen jullie ook binnenshuis of lopen jullie trappen?",
@@ -62,7 +62,7 @@ const FAQ_CATEGORIES = [
       {
         question: "Zijn er extra kosten?",
         answer:
-          "De prijs is inclusief 15 minuten laadtijd en 15 minuten lostijd. Duurt het inladen of uitladen langer? Dan rekenen wij €25 per kwartier extra. Voor adressen binnen de Ring Amsterdam geldt een toeslag van €15 per adres.",
+          "De prijs is inclusief 15 minuten laadtijd en 15 minuten lostijd. Duurt het laden of lossen langer? Dan rekenen wij €25 per 20 minuten extra wachttijd. Voor adressen in drukke delen van Amsterdam (grachten, smalle straten of moeilijk bereikbare plekken) geldt een toeslag van €15 per adres i.v.m. extra tijd en bereikbaarheid.",
       },
       {
         question: "Zijn de prijzen inclusief of exclusief btw?",
@@ -124,7 +124,7 @@ const FAQ_CATEGORIES = [
       {
         question: "Geldt er een toeslag voor Amsterdam?",
         answer:
-          "Voor adressen binnen de Ring Amsterdam geldt een toeslag van €15 per adres. Als beide adressen binnen de ring liggen, is dat €30 in totaal.",
+          "Voor adressen in drukke delen van Amsterdam (zoals grachten, smalle straten of plekken waar moeilijk gestopt kan worden) rekenen wij €15 extra per adres i.v.m. extra tijd en bereikbaarheid. Als beide adressen in zo'n gebied liggen, is dat €30 in totaal.",
       },
     ],
   },

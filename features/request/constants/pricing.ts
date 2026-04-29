@@ -53,10 +53,10 @@ export const FALLBACK_FLOOR_AREA_M2 = 0.5;
 // ---------------------------------------------------------------------------
 
 /** Inbegrepen laadtijd in minuten */
-export const INCLUDED_LOAD_MINUTES = 15;
+export const INCLUDED_LOAD_MINUTES = 20;
 
 /** Inbegrepen lostijd in minuten */
-export const INCLUDED_UNLOAD_MINUTES = 15;
+export const INCLUDED_UNLOAD_MINUTES = 20;
 
 /** Toeslag per kwartier extra tijd, excl. btw in centen (€25,00) */
 export const EXTRA_TIME_PER_QUARTER_CENTS = 2500;

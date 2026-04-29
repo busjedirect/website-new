@@ -115,7 +115,7 @@ export function HeroSection() {
 
                 <div className="mb-5 flex items-center gap-1.5 text-[13.5px] font-semibold text-[#E31B1B]">
                   <ClockIcon />
-                  Binnen 1 minuut een prijsindicatie
+                  Binnen 1 minuut je prijs berekenen
                 </div>
 
                 <AddressHeroForm />
@@ -180,7 +180,7 @@ export function HeroSection() {
             {/* "Binnen 1 minuut" label */}
             <div className="mb-4 flex items-center gap-1.5 text-[13px] font-semibold text-[#E31B1B]">
               <ClockIcon />
-              Binnen 1 minuut een prijsindicatie
+              Binnen 1 minuut je prijs berekenen
             </div>
 
             {/* Form */}

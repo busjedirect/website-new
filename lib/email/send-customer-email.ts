@@ -8,8 +8,8 @@ import { TIME_SLOT_MAP } from "@/features/request/constants/time-slots";
 // ---------------------------------------------------------------------------
 
 const LOGO_HTML = `
-  <span style="font-size:20px;font-weight:800;letter-spacing:-0.5px;color:#fff">
-    Busje<span style="color:#E31B1B">Direct</span>
+  <span style="font-size:20px;font-weight:800;letter-spacing:-0.5px;color:#E31B1B">
+    BusjeDirect
   </span>
 `;
 
@@ -113,8 +113,8 @@ function buildCustomerHtml(
                 </div>
                 <div style="background:#fffbeb;border:1px solid #fde68a;border-radius:8px;padding:12px 16px">
                   <p style="margin:0 0 6px;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:#92400e">Mogelijke extra kosten</p>
-                  <p style="margin:0 0 4px;font-size:13px;color:#78350f">+ &nbsp;<strong>&#8364;25 per kwartier</strong> als het inladen of uitladen langer duurt dan 15 minuten</p>
-                  <p style="margin:0;font-size:13px;color:#78350f">+ &nbsp;<strong>&#8364;15 per adres</strong> binnen de Ring Amsterdam</p>
+                  <p style="margin:0 0 4px;font-size:13px;color:#78350f">+ &nbsp;<strong>&#8364;25 per 20 minuten</strong> extra wachttijd als het laden of lossen langer duurt dan 15 minuten</p>
+                  <p style="margin:0;font-size:13px;color:#78350f">+ &nbsp;<strong>&#8364;15 per adres</strong> in drukke delen van Amsterdam (grachten, smalle straten of moeilijk bereikbare plekken)</p>
                 </div>
               </td>
             </tr>
