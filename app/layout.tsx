@@ -10,14 +10,14 @@ const geistSans = Geist({
 
 export const metadata: Metadata = {
   title: {
-    default: "BusjeDirect — Transport snel geregeld",
+    default: "BusjeDirect | Transport snel geregeld",
     template: "%s | BusjeDirect",
   },
   description:
     "Regel snel en eenvoudig transport voor banken, kasten, witgoed en meer. Kies ophaaladres en bestemming en ontdek direct de prijs. Door heel Nederland.",
   metadataBase: new URL("https://www.busjedirect.nl"),
   openGraph: {
-    title: "BusjeDirect — Meubels & witgoed vervoeren",
+    title: "BusjeDirect | Meubels & witgoed vervoeren",
     description:
       "Bank, kast, wasmachine of complete inboedel laten vervoeren? BusjeDirect haalt op en bezorgt door heel Nederland.",
     locale: "nl_NL",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "BusjeDirect — Meubels & witgoed vervoeren",
+    title: "BusjeDirect | Meubels & witgoed vervoeren",
     description:
       "Bank, kast, wasmachine of complete inboedel laten vervoeren? BusjeDirect haalt op en bezorgt door heel Nederland.",
   },
