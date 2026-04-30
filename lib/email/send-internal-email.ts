@@ -113,11 +113,16 @@ function buildInternalHtml(
           <!-- Prijs -->
           <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:24px;border-top:2px solid #111">
             <tr>
-              <td style="padding:12px 0 4px;font-size:14px;font-weight:600">Totaalprijs</td>
-              <td style="padding:12px 0 4px;font-size:20px;font-weight:700;text-align:right">${formatPrice(payload.priceCents)}</td>
+              <td style="padding:12px 0 4px;font-size:13px;color:#888">Subtotaal excl. btw</td>
+              <td style="padding:12px 0 4px;font-size:14px;font-weight:500;text-align:right">${formatPrice(payload.priceCents)}</td>
             </tr>
             <tr>
-              <td colspan="2" style="font-size:12px;color:#aaa;padding-bottom:12px">excl. btw</td>
+              <td style="padding:4px 0;font-size:13px;color:#888">BTW (21%)</td>
+              <td style="padding:4px 0;font-size:14px;font-weight:500;text-align:right">${formatPrice(Math.round(payload.priceCents * 0.21))}</td>
+            </tr>
+            <tr style="border-top:1px solid #e5e5e5">
+              <td style="padding:10px 0 4px;font-size:14px;font-weight:700">Totaal incl. btw</td>
+              <td style="padding:10px 0 4px;font-size:20px;font-weight:700;text-align:right">${formatPrice(Math.round(payload.priceCents * 1.21))}</td>
             </tr>
           </table>
 

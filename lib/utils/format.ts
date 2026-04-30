@@ -3,13 +3,13 @@
  * Gebruik deze functies overal waar bedragen of datums worden getoond.
  */
 
-/** Formatteert centen naar een leesbare euro-string, afgerond op hele euro's */
+/** Formatteert centen naar een leesbare euro-string met 2 decimalen */
 export function formatPrice(cents: number): string {
   return new Intl.NumberFormat("nl-NL", {
     style: "currency",
     currency: "EUR",
-    minimumFractionDigits: 0,
-    maximumFractionDigits: 0,
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
   }).format(cents / 100);
 }
 
