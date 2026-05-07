@@ -26,8 +26,39 @@ export function mapPayloadToAirtableFields(
   const timeSlot = TIME_SLOT_MAP[payload.selectedTimeSlot];
 
   const itemsSummary = payload.items
-    .map((item) => `${item.aantal}× ${item.label}`)
-    .join("\n");
+    .map((item) => {
+      const lines: string[] = [`${item.aantal}× ${item.label}`];
+
+      // Afmetingen
+      if (item.dimensions) {
+        const { lengthCm, widthCm, heightCm } = item.dimensions;
+        const dims = [
+          lengthCm ? `L: ${lengthCm}cm` : null,
+          widthCm  ? `B: ${widthCm}cm`  : null,
+          heightCm ? `H: ${heightCm}cm` : null,
+        ].filter(Boolean).join(" · ");
+        if (dims) lines.push(`  Afmetingen: ${dims}`);
+      }
+
+      // Properties (materiaal, breekbaar, zwaar, etc.)
+      if (item.properties && typeof item.properties === "object") {
+        const props = item.properties as Record<string, unknown>;
+        const propLines = Object.entries(props)
+          .filter(([, v]) => v !== undefined && v !== false && v !== "")
+          .map(([k, v]) => {
+            if (typeof v === "boolean") return v ? k : null;
+            return `${k}: ${v}`;
+          })
+          .filter(Boolean);
+        if (propLines.length) lines.push(`  Kenmerken: ${propLines.join(", ")}`);
+      }
+
+      // Opmerking
+      if (item.opmerking) lines.push(`  Opmerking: ${item.opmerking}`);
+
+      return lines.join("\n");
+    })
+    .join("\n\n");
 
   // Telefoon: singleLineText — stuur als string
   const phoneString = payload.phone.trim();

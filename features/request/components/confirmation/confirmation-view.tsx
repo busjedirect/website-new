@@ -194,7 +194,7 @@ export function ConfirmationView({
             <div>
               <p className="mb-1.5 text-[13px] font-bold text-green-700">Inbegrepen in de prijs</p>
               <ul className="flex flex-col gap-1">
-                {["15 minuten laadtijd", "15 minuten lostijd", "Drempel tot drempel transport"].map((item) => (
+                {["15 minuten laadtijd", "15 minuten lostijd", "Drempel-tot-drempeltransport (tot de eerste deur op de begane grond)"].map((item) => (
                   <li key={item} className="flex items-center gap-2 text-[13px] text-zinc-700">
                     <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#16a34a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
                     {item}

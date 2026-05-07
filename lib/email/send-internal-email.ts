@@ -133,7 +133,12 @@ function buildInternalHtml(
                 <div style="background:#f0fdf4;border-radius:8px;padding:12px 16px;margin-bottom:8px">
                   <p style="margin:0 0 6px;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:#166534">Inbegrepen</p>
                   <p style="margin:0 0 4px;font-size:13px;color:#15803d">&#10003;&nbsp; 15 minuten laadtijd</p>
-                  <p style="margin:0;font-size:13px;color:#15803d">&#10003;&nbsp; 15 minuten lostijd</p>
+                  <p style="margin:0 0 4px;font-size:13px;color:#15803d">&#10003;&nbsp; 15 minuten lostijd</p>
+                  <p style="margin:0;font-size:13px;color:#15803d">&#10003;&nbsp; Drempel-tot-drempeltransport (tot de eerste deur op de begane grond)</p>
+                </div>
+                <div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:8px;padding:12px 16px;margin-bottom:8px">
+                  <p style="margin:0 0 6px;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:#1d4ed8">Let op bij zware items</p>
+                  <p style="margin:0;font-size:13px;color:#1e40af;line-height:1.6">De chauffeur werkt alleen. Bij zware of grote items vragen wij om hulp bij het in- en uitladen. Is dit niet mogelijk? Neem vooraf contact met ons op zodat we extra hulp kunnen inplannen (tegen meerprijs).</p>
                 </div>
                 <div style="background:#fffbeb;border:1px solid #fde68a;border-radius:8px;padding:12px 16px">
                   <p style="margin:0 0 6px;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:#92400e">Mogelijke extra kosten</p>

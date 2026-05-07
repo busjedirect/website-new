@@ -166,12 +166,8 @@ export const mapboxClient = {
     url.searchParams.set("language", "nl");
     url.searchParams.set("types", "address,place,postcode");
     url.searchParams.set("limit", "5");
-    // Alleen Europese landen bereikbaar per auto vanuit Nederland
-    url.searchParams.set("country", [
-      "NL","BE","DE","FR","LU","AT","CH","DK","PL","CZ","SK","HU",
-      "SI","HR","IT","ES","PT","GB","IE","SE","NO","FI","EE","LV",
-      "LT","RO","BG","GR","RS","BA","ME","MK","AL","XK","MD","UA",
-    ].join(","));
+    // Alleen NL, BE, DE en FR — de rest op maat via contact
+    url.searchParams.set("country", "NL,BE,DE,FR");
     // Geef Nederlandse resultaten voorrang
     url.searchParams.set("proximity", "4.9041,52.3676");
 
