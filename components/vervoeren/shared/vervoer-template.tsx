@@ -160,7 +160,7 @@ function VervoerHero({ data }: { data: VervoerPageData }) {
             <div className="w-full overflow-hidden rounded-2xl bg-zinc-200" style={{ aspectRatio: "4/3" }}>
               <Image
                 src={data.heroImage}
-                alt={data.label}
+                alt={`${data.label} door BusjeDirect`}
                 width={960}
                 height={720}
                 className="h-full w-full object-cover"
@@ -482,8 +482,45 @@ function VervoerBottomCta({ data }: { data: VervoerPageData }) {
 // ---------------------------------------------------------------------------
 
 export function VervoerPageTemplate({ data }: { data: VervoerPageData }) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": data.label,
+    "description": data.heroSubtext,
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "BusjeDirect",
+      "url": "https://www.busjedirect.nl",
+      "telephone": "+31631356682",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Diemen",
+        "addressCountry": "NL",
+      },
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Netherlands",
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "EUR",
+      "price": "65",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "65",
+        "priceCurrency": "EUR",
+        "description": "Vanaf €65 excl. btw",
+      },
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
       <main>
         <VervoerHero data={data} />
         <VervoerIntro data={data} />

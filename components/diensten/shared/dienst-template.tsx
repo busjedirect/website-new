@@ -106,7 +106,7 @@ function DienstHero({ data }: { data: DienstPageData }) {
             <div className="w-full overflow-hidden rounded-2xl bg-zinc-200" style={{ aspectRatio: "4/3" }}>
               <Image
                 src={data.heroImage}
-                alt={data.label}
+                alt={`${data.label} door BusjeDirect`}
                 width={960}
                 height={720}
                 className="h-full w-full object-cover"

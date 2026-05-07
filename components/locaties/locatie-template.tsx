@@ -134,7 +134,7 @@ function LocatieIntro({ locatie }: { locatie: Locatie }) {
       <div className="mx-auto max-w-[1200px] px-6 sm:px-8">
         <div className="mx-auto max-w-[760px]">
           <p className="text-[15px] leading-[1.8] text-zinc-600">
-            Op zoek naar betrouwbaar transport in {locatie.name}? BusjeDirect is actief in {locatie.name} en de directe omgeving. Wij vervoeren dagelijks meubels, witgoed en andere grote spullen voor particulieren en bedrijven. Van een bank of wasmachine tot een complete inboedel. Wij regelen het.
+            {locatie.introParagraph}
           </p>
           <p className="mt-4 text-[15px] leading-[1.8] text-zinc-600">
             Ons depot staat in Diemen, waardoor we {locatie.name} snel kunnen bereiken. Je betaalt een eerlijke prijs op basis van de werkelijke rijafstand. Geen vaste tarieven of verborgen kosten. Via onze website vraag je eenvoudig een prijs aan en plannen we snel een datum in.
@@ -404,8 +404,26 @@ function LocatieBottomCta({ locatie }: { locatie: Locatie }) {
 // ---------------------------------------------------------------------------
 
 export function LocatieTemplate({ locatie }: { locatie: Locatie }) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "BusjeDirect",
+    "url": "https://www.busjedirect.nl",
+    "telephone": "+31631356682",
+    "areaServed": {
+      "@type": "City",
+      "name": locatie.name,
+      "addressCountry": "NL",
+    },
+    "serviceType": "Meubeltransport en verhuisservice",
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
       <main>
         <LocatieHero locatie={locatie} />
         <LocatieIntro locatie={locatie} />

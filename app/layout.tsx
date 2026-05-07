@@ -38,6 +38,48 @@ export default function RootLayout({
   return (
     <html lang="nl" className={geistSans.variable}>
       <body>
+        {/* LocalBusiness schema markup */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "BusjeDirect",
+              "description": "Transportservice voor meubels, witgoed en grote spullen. Drempel-tot-drempeltransport door heel Nederland.",
+              "url": "https://www.busjedirect.nl",
+              "telephone": "+31631356682",
+              "email": "info@busjedirect.nl",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Diemen",
+                "addressRegion": "Noord-Holland",
+                "addressCountry": "NL"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 52.333905,
+                "longitude": 4.977463
+              },
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+                  "opens": "09:00",
+                  "closes": "22:00"
+                }
+              ],
+              "priceRange": "€€",
+              "areaServed": {
+                "@type": "Country",
+                "name": "Netherlands"
+              },
+              "serviceType": "Transport en verhuisservice",
+              "sameAs": []
+            })
+          }}
+        />
+
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-6524N6L21N"
