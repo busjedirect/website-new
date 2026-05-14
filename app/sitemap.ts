@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { LOCATIES } from "@/lib/locaties";
+import { STAD_ITEMS } from "@/lib/stad-items";
 
 const BASE_URL = "https://www.busjedirect.nl";
 
@@ -180,5 +181,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticRoutes, ...locatieRoutes];
+  // ---------------------------------------------------------------------------
+  // Stad + item pagina's — 12 steden × 5 items = 60 pagina's
+  // ---------------------------------------------------------------------------
+
+  const stadItemRoutes: MetadataRoute.Sitemap = LOCATIES.flatMap((locatie) =>
+    STAD_ITEMS.map((item) => ({
+      url: `${BASE_URL}/${locatie.slug}/${item.slug}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.75,
+    }))
+  );
+
+  return [...staticRoutes, ...locatieRoutes, ...stadItemRoutes];
 }

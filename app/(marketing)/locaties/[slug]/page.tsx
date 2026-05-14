@@ -23,8 +23,8 @@ export async function generateMetadata(
   if (!locatie) return {};
 
   return {
-    title: `Transport in ${locatie.name} — Snel & veilig | BusjeDirect`,
-    description: `Meubels, witgoed en inboedels vervoeren in ${locatie.name}? BusjeDirect regelt het snel, veilig en tegen een transparante prijs. Vraag direct vrijblijvend aan.`,
+    title: `Transport in ${locatie.name}`,
+    description: `Meubels, witgoed en inboedels vervoeren in ${locatie.name}? BusjeDirect regelt het snel en veilig. Prijs direct berekenen via onze website.`,
     alternates: {
       canonical: `/locaties/${locatie.slug}`,
     },

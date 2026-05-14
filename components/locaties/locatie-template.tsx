@@ -47,18 +47,18 @@ const DIENSTEN = [
 ];
 
 const VERVOER_ITEMS = [
-  { label: "Bank vervoeren", href: "/vervoeren/bank-vervoeren" },
-  { label: "Kast vervoeren", href: "/vervoeren/kast-vervoeren" },
-  { label: "Wasmachine vervoeren", href: "/vervoeren/wasmachine-vervoeren" },
-  { label: "Bed vervoeren", href: "/vervoeren/bed-vervoeren" },
-  { label: "Tafel vervoeren", href: "/vervoeren/tafel-vervoeren" },
-  { label: "Koelkast vervoeren", href: "/vervoeren/koelkast-vervoeren" },
-  { label: "Matras vervoeren", href: "/vervoeren/matras-vervoeren" },
-  { label: "Dressoir vervoeren", href: "/vervoeren/dressoir-vervoeren" },
-  { label: "Witgoed vervoeren", href: "/vervoeren/witgoed-vervoeren" },
-  { label: "Inboedel vervoeren", href: "/vervoeren/inboedel-vervoeren" },
-  { label: "Kantoormeubels vervoeren", href: "/vervoeren/kantoormeubels-vervoeren" },
-  { label: "Apparatuur vervoeren", href: "/vervoeren/apparatuur-vervoeren" },
+  { label: "Bank vervoeren", href: "/vervoeren/bank-vervoeren", stadSlug: "bank-vervoeren" },
+  { label: "Kast vervoeren", href: "/vervoeren/kast-vervoeren", stadSlug: "kast-vervoeren" },
+  { label: "Wasmachine vervoeren", href: "/vervoeren/wasmachine-vervoeren", stadSlug: "wasmachine-vervoeren" },
+  { label: "Bed vervoeren", href: "/vervoeren/bed-vervoeren", stadSlug: "bed-vervoeren" },
+  { label: "Tafel vervoeren", href: "/vervoeren/tafel-vervoeren", stadSlug: null },
+  { label: "Koelkast vervoeren", href: "/vervoeren/koelkast-vervoeren", stadSlug: "koelkast-vervoeren" },
+  { label: "Matras vervoeren", href: "/vervoeren/matras-vervoeren", stadSlug: null },
+  { label: "Dressoir vervoeren", href: "/vervoeren/dressoir-vervoeren", stadSlug: null },
+  { label: "Witgoed vervoeren", href: "/vervoeren/witgoed-vervoeren", stadSlug: null },
+  { label: "Inboedel vervoeren", href: "/vervoeren/inboedel-vervoeren", stadSlug: null },
+  { label: "Kantoormeubels vervoeren", href: "/vervoeren/kantoormeubels-vervoeren", stadSlug: null },
+  { label: "Apparatuur vervoeren", href: "/vervoeren/apparatuur-vervoeren", stadSlug: null },
 ];
 
 // ---------------------------------------------------------------------------
@@ -196,18 +196,21 @@ function LocatieVervoerItems({ locatie }: { locatie: Locatie }) {
           Van losse meubels tot complete inboedels. Bekijk alles wat wij voor je kunnen vervoeren.
         </p>
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
-          {VERVOER_ITEMS.map((item) => (
-            <Link
-              key={item.label}
-              href={item.href}
-              className="group flex items-center gap-3 rounded-xl border border-zinc-100 bg-[#F5F6F7] px-4 py-3.5 transition hover:border-[#E31B1B]/30 hover:bg-white hover:shadow-sm"
-            >
-              <span className="flex-1 text-[13px] font-medium text-[#111111] group-hover:text-[#E31B1B]">
-                {item.label}
-              </span>
-              <ArrowRightIcon size={12} />
-            </Link>
-          ))}
+          {VERVOER_ITEMS.map((item) => {
+            const href = item.stadSlug ? `/${locatie.slug}/${item.stadSlug}` : item.href;
+            return (
+              <Link
+                key={item.label}
+                href={href}
+                className="group flex items-center gap-3 rounded-xl border border-zinc-100 bg-[#F5F6F7] px-4 py-3.5 transition hover:border-[#E31B1B]/30 hover:bg-white hover:shadow-sm"
+              >
+                <span className="flex-1 text-[13px] font-medium text-[#111111] group-hover:text-[#E31B1B]">
+                  {item.label}
+                </span>
+                <ArrowRightIcon size={12} />
+              </Link>
+            );
+          })}
         </div>
       </div>
     </section>

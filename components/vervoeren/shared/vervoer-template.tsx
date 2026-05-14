@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { SiteFooter } from "@/components/layout/site-footer";
+import { STAD_ITEM_MAP } from "@/lib/stad-items";
 
 // ---------------------------------------------------------------------------
 // Icons (inline SVG, stroke="#E31B1B", strokeWidth="1.75")
@@ -391,12 +392,17 @@ function VervoerAndereItems({ items }: { items: VervoerAnderItem[] }) {
 // ---------------------------------------------------------------------------
 
 function VervoerLocaties({ data }: { data: VervoerPageData }) {
+  // Top 5 steden — linken naar /[stad]/[item] als die pagina bestaat
   const locaties = [
-    { city: "Amsterdam", href: `/locaties/amsterdam` },
-    { city: "Haarlem", href: `/locaties/haarlem` },
-    { city: "Almere", href: `/locaties/almere` },
-    { city: "Utrecht", href: `/locaties/utrecht` },
+    { city: "Amsterdam", slug: "amsterdam" },
+    { city: "Haarlem", slug: "haarlem" },
+    { city: "Almere", slug: "almere" },
+    { city: "Utrecht", slug: "utrecht" },
+    { city: "Amstelveen", slug: "amstelveen" },
   ];
+
+  // Controleer of er een stad+item pagina bestaat voor dit item
+  const hasStadItemPage = Boolean(STAD_ITEM_MAP[data.slug]);
   return (
     <section className="bg-white py-14 sm:py-16">
       <div className="mx-auto max-w-[1200px] px-6 sm:px-8">
@@ -404,20 +410,25 @@ function VervoerLocaties({ data }: { data: VervoerPageData }) {
           {data.label} in jouw regio
         </h2>
         <p className="mb-8 text-[14px] text-zinc-500">Wij zijn actief door heel Nederland.</p>
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-          {locaties.map((loc) => (
-            <Link
-              key={loc.city}
-              href={loc.href}
-              className="group flex items-center justify-between rounded-xl border border-zinc-100 bg-[#F5F6F7] px-5 py-4 transition hover:border-[#E31B1B]/30 hover:bg-white hover:shadow-sm"
-            >
-              <div className="flex items-center gap-2.5">
-                <MapPinIcon size={16} />
-                <span className="text-[13.5px] font-medium text-[#111111]">{loc.city}</span>
-              </div>
-              <ArrowRightIcon size={13} />
-            </Link>
-          ))}
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-5">
+          {locaties.map((loc) => {
+            const href = hasStadItemPage
+              ? `/${loc.slug}/${data.slug}`
+              : `/locaties/${loc.slug}`;
+            return (
+              <Link
+                key={loc.city}
+                href={href}
+                className="group flex items-center justify-between rounded-xl border border-zinc-100 bg-[#F5F6F7] px-5 py-4 transition hover:border-[#E31B1B]/30 hover:bg-white hover:shadow-sm"
+              >
+                <div className="flex items-center gap-2.5">
+                  <MapPinIcon size={16} />
+                  <span className="text-[13.5px] font-medium text-[#111111]">{loc.city}</span>
+                </div>
+                <ArrowRightIcon size={13} />
+              </Link>
+            );
+          })}
         </div>
       </div>
     </section>

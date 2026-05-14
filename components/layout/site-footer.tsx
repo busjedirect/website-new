@@ -124,7 +124,7 @@ export function SiteFooter() {
                   {Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} />)}
                 </div>
               </div>
-              <p className="text-[11px] leading-snug text-zinc-400">15+<br />reviews</p>
+              <p className="text-[11px] leading-snug text-zinc-400">17+<br />reviews</p>
             </div>
           </div>
 
